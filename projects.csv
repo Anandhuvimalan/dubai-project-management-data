@@ -1,0 +1,51 @@
+project_id,project_name,type,client_id,manager_id,start_date,end_date,status,budget_aed,location,priority,completion_percentage,description
+PRJ-001,Implement E-Business Eyeballs,Logistics - Warehouse Automation,CL-003,EMP-0152,2025-09-14,2026-10-09,In Progress,18388576,Jebel Ali Free Zone (JAFZA),Medium,92,Phased radical Internet solution
+PRJ-002,Optimize Back-End E-Services,Infrastructure - Road Network,CL-019,EMP-0056,2023-05-17,2024-03-12,Completed,22371116,City Walk,High,100,Multi-layered attitude-oriented portal
+PRJ-003,Drive Integrated Interfaces,Marketing - Tourism Campaign,CL-005,EMP-0201,2023-02-28,2023-10-26,Completed,54382215,Sheikh Zayed Road,Low,100,Seamless solution-oriented model
+PRJ-004,Unleash Leading-Edge Roi,Healthcare - Hospital Wing Expansion,CL-020,EMP-0074,2024-03-21,2025-09-12,Completed,32544647,Expo City Dubai,Low,100,Sharable modular intranet
+PRJ-005,Aggregate Front-End Solutions,Infrastructure - Road Network,CL-010,EMP-0218,2023-01-17,2026-05-31,Delayed,85823196,Sheikh Zayed Road,Medium,46,Automated zero tolerance policy
+PRJ-006,Mesh Bleeding-Edge E-Business,Construction - Commercial Mall,CL-020,EMP-0184,2025-03-04,2026-04-28,In Progress,107763216,Bur Dubai,High,80,Down-sized systematic alliance
+PRJ-007,Incentivize Clicks-And-Mortar Communities,Consulting - Strategic Vision 2030,CL-025,EMP-0245,2024-07-12,2026-08-31,In Progress,18036856,Dubai Silicon Oasis,Critical,56,Cross-group even-keeled time-frame
+PRJ-008,Seize Impactful Interfaces,Logistics - Warehouse Automation,CL-018,EMP-0150,2024-09-12,2026-05-05,Delayed,8047029,Dubai Creek Harbour,Medium,19,Reverse-engineered dedicated model
+PRJ-009,Extend Innovative Infrastructures,Marketing - Tourism Campaign,CL-012,EMP-0128,2023-01-24,2025-07-12,Completed,91573812,DIFC,Critical,100,Reactive executive success
+PRJ-010,Redefine Cross-Media Convergence,Infrastructure - Road Network,CL-023,EMP-0014,2025-05-18,2025-11-14,Completed,72111774,Sheikh Zayed Road,Critical,100,Grass-roots directional portal
+PRJ-011,Target Wireless Networks,Marketing - Tourism Campaign,CL-011,EMP-0014,2023-10-30,2027-02-11,Delayed,149015581,City Walk,Critical,57,Adaptive empowering conglomeration
+PRJ-012,Deliver Sticky Schemas,Consulting - Strategic Vision 2030,CL-004,EMP-0154,2024-09-24,2027-10-09,In Progress,95004117,Jebel Ali Free Zone (JAFZA),Medium,91,Compatible motivating frame
+PRJ-013,Embrace Dot-Com Users,Construction - Residential Tower,CL-005,EMP-0218,2024-06-12,2025-11-04,Completed,51988141,Al Barsha,Critical,100,Re-engineered eco-centric solution
+PRJ-014,Synergize Compelling Action-Items,IT - Government Smart Services Portal,CL-013,EMP-0014,2024-11-18,2028-08-29,On Hold,73252392,City Walk,High,91,Versatile global time-frame
+PRJ-015,Innovate Ubiquitous Applications,Consulting - Strategic Vision 2030,CL-002,EMP-0130,2024-12-13,2027-04-02,In Progress,46929356,Expo City Dubai,Critical,58,Assimilated mission-critical budgetary management
+PRJ-016,Optimize Enterprise Functionalities,Logistics - Warehouse Automation,CL-023,EMP-0080,2024-02-05,2027-08-18,Delayed,44849653,Bur Dubai,Medium,65,Face-to-face systematic standardization
+PRJ-017,Exploit Turn-Key E-Markets,Energy - Solar Park Installation,CL-013,EMP-0198,2023-12-24,2024-09-19,Completed,115429317,DIFC,Critical,100,Multi-channeled multi-state monitoring
+PRJ-018,Scale Back-End Action-Items,IT - Government Smart Services Portal,CL-022,EMP-0041,2023-01-16,2026-08-28,Delayed,148021205,Meydan,High,85,Horizontal background initiative
+PRJ-019,Extend Cross-Platform Partnerships,IT - ERP Implementation,CL-007,EMP-0046,2025-11-12,2028-01-01,In Progress,78588599,Meydan,Low,89,Reactive context-sensitive leverage
+PRJ-020,Seize Killer Networks,Construction - Residential Tower,CL-015,EMP-0184,2024-05-02,2024-10-29,Completed,19386517,Dubai Marina,Low,100,Future-proofed contextually-based synergy
+PRJ-021,Re-Contextualize Dynamic Models,Consulting - Strategic Vision 2030,CL-018,EMP-0150,2025-11-27,2029-08-08,In Progress,50896234,City Walk,Medium,34,User-centric dedicated encoding
+PRJ-022,Cultivate Back-End E-Tailers,IT - Government Smart Services Portal,CL-005,EMP-0081,2024-01-12,2025-01-06,Completed,148682072,Dubai Hills Estate,Medium,100,Focused dedicated encryption
+PRJ-023,Seize B2C Platforms,Marketing - Tourism Campaign,CL-004,EMP-0245,2025-08-18,2027-04-10,In Progress,71591035,Dubai Marina,Medium,12,Decentralized attitude-oriented service-desk
+PRJ-024,Synthesize Clicks-And-Mortar Users,Infrastructure - Road Network,CL-015,EMP-0080,2025-10-27,2026-05-25,In Progress,80770374,Dubai Creek Harbour,Low,41,Balanced mission-critical hub
+PRJ-025,Harness Rich Networks,Events - Global Conference Setup,CL-012,EMP-0184,2025-08-22,2027-10-11,In Progress,16527322,Dubai Creek Harbour,High,87,Grass-roots mobile contingency
+PRJ-026,Empower Impactful E-Services,Events - Global Conference Setup,CL-003,EMP-0178,2025-03-05,2026-03-30,On Hold,4524789,Palm Jumeirah,Low,14,Versatile object-oriented capacity
+PRJ-027,Mesh Cutting-Edge Info-Mediaries,Healthcare - Hospital Wing Expansion,CL-013,EMP-0130,2023-03-26,2024-06-18,Completed,56146816,Expo City Dubai,Low,100,Quality-focused 5thgeneration middleware
+PRJ-028,Strategize Virtual Bandwidth,Consulting - Strategic Vision 2030,CL-016,EMP-0056,2024-06-23,2026-04-14,In Progress,5861032,Bur Dubai,Low,55,Decentralized tangible model
+PRJ-029,Harness Value-Added Synergies,Energy - Solar Park Installation,CL-008,EMP-0204,2024-12-15,2027-10-01,In Progress,48873021,Palm Jumeirah,Medium,15,Synergistic demand-driven implementation
+PRJ-030,Transform World-Class Relationships,IT - Government Smart Services Portal,CL-024,EMP-0245,2025-06-21,2026-08-15,In Progress,125854887,Downtown Dubai,Critical,12,Seamless empowering contingency
+PRJ-031,Morph Web-Enabled Niches,Construction - Commercial Mall,CL-011,EMP-0046,2025-05-02,2025-10-29,Completed,134330666,Expo City Dubai,Low,100,Phased reciprocal Graphical User Interface
+PRJ-032,Reinvent Rich E-Commerce,Energy - Solar Park Installation,CL-013,EMP-0184,2024-07-22,2027-11-04,Delayed,62777703,Deira,High,40,Expanded intangible standardization
+PRJ-033,Disintermediate Wireless Niches,IT - ERP Implementation,CL-024,EMP-0081,2024-08-01,2025-08-26,Completed,57725405,Dubai Creek Harbour,High,100,Organized contextually-based orchestration
+PRJ-034,Maximize Bleeding-Edge Platforms,IT - Government Smart Services Portal,CL-007,EMP-0046,2023-07-23,2024-07-17,Completed,111920042,City Walk,Critical,100,Up-sized encompassing website
+PRJ-035,Engage User-Centric Architectures,Construction - Commercial Mall,CL-014,EMP-0150,2024-01-02,2026-03-22,In Progress,130468489,Jebel Ali Free Zone (JAFZA),Medium,48,Exclusive client-server website
+PRJ-036,Syndicate Value-Added Roi,Construction - Commercial Mall,CL-015,EMP-0056,2023-08-21,2024-02-17,Completed,121154477,Dubai Hills Estate,Low,100,Operative modular challenge
+PRJ-037,Mesh Turn-Key Models,Marketing - Tourism Campaign,CL-015,EMP-0036,2025-09-06,2027-06-28,In Progress,6865422,Dubai Silicon Oasis,High,73,Innovative eco-centric open architecture
+PRJ-038,Streamline Impactful Platforms,Construction - Residential Tower,CL-004,EMP-0177,2025-06-01,2027-12-18,In Progress,76822312,Dubai Silicon Oasis,Critical,69,Team-oriented cohesive approach
+PRJ-039,Transition Dot-Com Info-Mediaries,Logistics - Warehouse Automation,CL-014,EMP-0056,2023-12-01,2027-06-13,Delayed,89348871,Dubai Hills Estate,Medium,44,Self-enabling bandwidth-monitored knowledge user
+PRJ-040,Morph Bricks-And-Clicks Relationships,IT - Government Smart Services Portal,CL-017,EMP-0036,2024-06-03,2026-11-20,Delayed,83543592,Dubai Marina,Medium,51,Realigned next generation workforce
+PRJ-041,Seize Vertical E-Markets,Construction - Commercial Mall,CL-019,EMP-0074,2024-02-05,2027-10-17,In Progress,140262795,Dubai Silicon Oasis,Medium,74,Decentralized grid-enabled service-desk
+PRJ-042,Aggregate Virtual Technologies,Healthcare - Hospital Wing Expansion,CL-017,EMP-0233,2025-07-29,2028-07-13,On Hold,6271054,Downtown Dubai,Critical,39,Multi-channeled fresh-thinking service-desk
+PRJ-043,Synthesize Customized Infrastructures,IT - Government Smart Services Portal,CL-025,EMP-0056,2025-03-03,2028-10-13,On Hold,96912155,Expo City Dubai,High,40,Multi-tiered reciprocal forecast
+PRJ-044,Whiteboard B2B Communities,Consulting - Strategic Vision 2030,CL-003,EMP-0094,2024-12-21,2028-06-03,In Progress,9203471,Downtown Dubai,Low,18,Sharable global instruction set
+PRJ-045,Re-Intermediate Wireless Partnerships,Logistics - Warehouse Automation,CL-012,EMP-0150,2025-09-07,2026-03-06,In Progress,139310938,Jebel Ali Free Zone (JAFZA),Low,82,Configurable cohesive Graphical User Interface
+PRJ-046,Harness Turn-Key Experiences,Events - Global Conference Setup,CL-002,EMP-0027,2023-12-21,2025-01-14,Completed,131382080,DIFC,High,100,Implemented tertiary flexibility
+PRJ-047,Visualize Impactful Niches,Events - Global Conference Setup,CL-008,EMP-0154,2025-07-29,2026-08-23,On Hold,130786169,Bur Dubai,Medium,47,Organic zero-defect hierarchy
+PRJ-048,Mesh Customized E-Markets,Energy - Solar Park Installation,CL-005,EMP-0094,2025-06-30,2028-05-15,In Progress,34467330,Business Bay,Critical,28,Down-sized contextually-based adapter
+PRJ-049,Drive Web-Enabled Web Services,IT - ERP Implementation,CL-021,EMP-0017,2023-07-14,2026-09-26,In Progress,75193821,Dubai Silicon Oasis,Critical,10,Function-based value-added standardization
+PRJ-050,Architect Frictionless Interfaces,IT - ERP Implementation,CL-014,EMP-0017,2023-05-05,2026-12-15,In Progress,745045,Al Quoz Industrial Area,Low,87,Customer-focused bandwidth-monitored architecture

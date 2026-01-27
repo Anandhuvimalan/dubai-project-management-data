@@ -1,0 +1,251 @@
+employee_id,full_name,department,role,nationality,joining_date,salary_aed,visa_status,labor_card_number
+EMP-0001,Victoria Valdez,Finance,Payroll Officer,Canada,2020-01-13,19962,Golden Visa,8412411824
+EMP-0002,Daniel Cooper,Information Technology,IT Support,USA,2022-12-03,41207,Employment Visa,4874016400
+EMP-0003,Carlos Whitney,Legal,Legal Counsel,USA,2020-09-08,24923,Partner Visa,7868011280
+EMP-0004,Lauren Hernandez,Finance,Payroll Officer,India,2020-07-16,40403,Employment Visa,0450533158
+EMP-0005,Jennifer Oliver,Legal,Legal Counsel,USA,2020-08-28,43841,Mission Visa,3226025634
+EMP-0006,Michael Reyes,Sales & Marketing,Digital Specialist,Egypt,2020-03-01,44854,Partner Visa,7337543303
+EMP-0007,Donald Jones,Procurement,Procurement Specialist,Syria,2021-03-09,8048,Golden Visa,5868501429
+EMP-0008,Deborah Rodriguez,Information Technology,IT Support,Philippines,2021-11-06,33407,Employment Visa,5569816934
+EMP-0009,Jeffrey Meyer,Quality Assurance,Specialist,Pakistan,2022-04-16,53464,Mission Visa,3561595148
+EMP-0010,Jason Powell,Operations,Specialist,Lebanon,2021-04-04,24322,Golden Visa,8236629946
+EMP-0011,April Mitchell,Quality Assurance,Officer,USA,2021-10-29,16820,Mission Visa,9957773872
+EMP-0012,Diane Beck,Sales & Marketing,Sales Executive,Canada,2022-08-19,10235,Partner Visa,5134332003
+EMP-0013,Miss Patricia Gibson,Information Technology,Data Scientist,India,2022-09-05,61017,Partner Visa,9367632016
+EMP-0014,Robert Dominguez,Project Management Office (PMO),Project Coordinator,Germany,2021-12-22,37051,Mission Visa,0831727889
+EMP-0015,Pedro Ramos,Legal,Legal Counsel,Pakistan,2022-02-23,34109,Partner Visa,6872774348
+EMP-0016,Mr. Jeremiah Reeves,Finance,Payroll Officer,USA,2020-12-30,49307,Golden Visa,4558122362
+EMP-0017,Amy Russell,Project Management Office (PMO),Project Manager,Canada,2022-04-22,14148,Employment Visa,7603669096
+EMP-0018,Tommy Evans,Sales & Marketing,Marketing Manager,India,2021-08-28,29682,Partner Visa,6889373467
+EMP-0019,George Shelton,Quality Assurance,Manager,USA,2021-09-20,7660,Mission Visa,2729806990
+EMP-0020,Jeffrey Camacho,Engineering,Architect,Philippines,2020-10-09,52240,Employment Visa,0465375564
+EMP-0021,Sandra King,Engineering,MEP Engineer,USA,2020-05-07,40145,Partner Visa,7080531003
+EMP-0022,Alex Hernandez,Procurement,Buyer,USA,2020-07-15,64176,Mission Visa,7193745299
+EMP-0023,Michelle Strickland,Operations,Manager,Australia,2020-09-11,41553,Mission Visa,4190496631
+EMP-0024,Sandra Sanchez,Finance,Payroll Officer,Jordan,2022-12-19,61792,Employment Visa,4919058651
+EMP-0025,Gloria Atkinson,Legal,Contract Specialist,South Africa,2022-01-31,17827,Employment Visa,1657262849
+EMP-0026,Kimberly Webb,Legal,Contract Specialist,Philippines,2021-11-07,62379,Golden Visa,9453147379
+EMP-0027,Jamie Johnson,Project Management Office (PMO),Project Manager,Philippines,2021-05-19,35489,Golden Visa,2735454948
+EMP-0028,Travis Miller,Engineering,Architect,Australia,2021-09-23,42900,Partner Visa,7837770143
+EMP-0029,David Beck,Human Resources,PRO (Public Relations Officer),South Africa,2021-07-27,35108,Mission Visa,7885685574
+EMP-0030,David Griffith,Procurement,Vendor Manager,UAE,2021-05-05,37747,Mission Visa,1823374989
+EMP-0031,Brian Lee,Information Technology,IT Support,Egypt,2020-12-19,5024,Golden Visa,5240824008
+EMP-0032,Tony Little,Procurement,Buyer,France,2022-02-01,63657,Golden Visa,1094777520
+EMP-0033,Scott Wilson,Engineering,Civil Engineer,UK,2020-04-11,15207,Mission Visa,6719022941
+EMP-0034,Bailey Duran DDS,Legal,Legal Counsel,France,2022-08-18,54739,Mission Visa,3867749649
+EMP-0035,Lisa Singh,Procurement,Procurement Specialist,Australia,2020-11-18,56819,Golden Visa,3412328120
+EMP-0036,Michael Harrison,Project Management Office (PMO),Program Manager,South Africa,2020-02-20,44086,Golden Visa,3447134936
+EMP-0037,Danny Hernandez,Project Management Office (PMO),Project Manager,France,2021-02-16,18914,Employment Visa,2102499471
+EMP-0038,Eric Powell,Sales & Marketing,Sales Executive,Canada,2021-02-26,32856,Mission Visa,8877190659
+EMP-0039,Brandon Hayden,Human Resources,Recruiter,Egypt,2022-06-12,43306,Mission Visa,9049027874
+EMP-0040,Kevin Walters,Operations,Specialist,Australia,2022-02-02,61584,Partner Visa,1756551256
+EMP-0041,Donna Landry,Project Management Office (PMO),Program Manager,Syria,2022-05-04,44790,Employment Visa,0715451680
+EMP-0042,Kimberly Gutierrez,Finance,Financial Analyst,Egypt,2020-10-18,22356,Mission Visa,8597703482
+EMP-0043,Jessica Wolfe,Sales & Marketing,Sales Executive,South Africa,2020-07-07,44454,Mission Visa,0932480861
+EMP-0044,Ryan Wilson,Quality Assurance,Manager,Philippines,2020-07-01,17720,Mission Visa,2748467737
+EMP-0045,Janet Weeks,Procurement,Vendor Manager,India,2022-02-28,23359,Mission Visa,2146584044
+EMP-0046,Lauren Keller,Project Management Office (PMO),Scheduler,Jordan,2020-08-18,32710,Employment Visa,7875588675
+EMP-0047,Veronica Allen,Legal,Legal Counsel,UK,2021-08-17,6025,Mission Visa,3605766270
+EMP-0048,Vincent Rivera,Quality Assurance,Specialist,Australia,2020-06-04,51322,Mission Visa,7187026217
+EMP-0049,Deborah Hanson,Sales & Marketing,Marketing Manager,Germany,2021-09-09,9411,Partner Visa,1586578091
+EMP-0050,Michael Mitchell,Procurement,Vendor Manager,Lebanon,2020-12-19,59655,Mission Visa,1611724005
+EMP-0051,Elaine Brooks,Operations,Officer,Pakistan,2020-08-14,55877,Partner Visa,3869222196
+EMP-0052,Cynthia Durham,Human Resources,PRO (Public Relations Officer),Canada,2020-08-10,18269,Mission Visa,3747407482
+EMP-0053,Tony Huerta,Operations,Manager,Egypt,2021-04-09,62269,Golden Visa,6474367136
+EMP-0054,Laura Haney,Quality Assurance,Specialist,Germany,2021-04-03,30639,Golden Visa,0640909743
+EMP-0055,Heather Fields,Operations,Specialist,Germany,2022-08-22,34329,Partner Visa,4210470952
+EMP-0056,Edward Burgess,Project Management Office (PMO),Project Coordinator,UK,2020-09-29,12856,Golden Visa,3285884247
+EMP-0057,Elizabeth Harrell,Procurement,Procurement Specialist,Jordan,2020-06-27,49293,Golden Visa,7123685160
+EMP-0058,Caleb Richardson,Information Technology,Software Developer,UAE,2022-11-10,19003,Mission Visa,4965137098
+EMP-0059,Leonard Holland,Finance,Payroll Officer,USA,2022-09-14,35854,Golden Visa,7461200471
+EMP-0060,Stephen Taylor,Operations,Specialist,Pakistan,2021-12-05,14503,Partner Visa,5869261796
+EMP-0061,Diana Vaughn,Human Resources,PRO (Public Relations Officer),Germany,2020-12-03,13007,Golden Visa,7735158506
+EMP-0062,Walter Rush,Human Resources,PRO (Public Relations Officer),Canada,2021-12-07,26436,Employment Visa,1390053293
+EMP-0063,Phillip Clark,Legal,Legal Counsel,Philippines,2020-12-01,37720,Employment Visa,3529042284
+EMP-0064,Ashley Delacruz,Legal,Contract Specialist,Canada,2020-07-23,11751,Mission Visa,0539502402
+EMP-0065,Kelly Reese,Sales & Marketing,Digital Specialist,South Africa,2022-01-09,9167,Golden Visa,7589178390
+EMP-0066,Susan Hopkins,Operations,Manager,UK,2021-04-13,31858,Employment Visa,7007661771
+EMP-0067,Erica Hernandez,Finance,Financial Analyst,Canada,2020-07-15,48493,Golden Visa,4998569847
+EMP-0068,Jessica Mcguire,Sales & Marketing,Marketing Manager,Australia,2020-06-26,11969,Golden Visa,8367365766
+EMP-0069,Emily Edwards,Human Resources,Recruiter,Egypt,2021-01-30,43985,Golden Visa,5271111615
+EMP-0070,Kristie Willis,Finance,Financial Analyst,France,2022-05-22,34054,Partner Visa,8516560494
+EMP-0071,Kenneth Lewis,Legal,Legal Counsel,Australia,2022-10-17,39741,Employment Visa,7315851493
+EMP-0072,Sarah Villegas,Human Resources,Recruiter,Egypt,2022-08-23,56620,Partner Visa,9809402445
+EMP-0073,Christopher Thomas,Quality Assurance,Officer,UAE,2022-10-18,12722,Mission Visa,6120183667
+EMP-0074,Jacob Griffith,Project Management Office (PMO),Project Manager,Australia,2022-05-31,40429,Partner Visa,9102290147
+EMP-0075,Karla Ramos,Finance,Accountant,India,2021-02-28,8487,Employment Visa,3815614978
+EMP-0076,Amber Foster,Quality Assurance,Manager,USA,2022-07-20,30063,Employment Visa,0034324451
+EMP-0077,Paul Thompson,Sales & Marketing,Digital Specialist,Germany,2021-08-13,6197,Golden Visa,8388516060
+EMP-0078,Blake Edwards,Quality Assurance,Specialist,Philippines,2021-10-28,36795,Golden Visa,9664160529
+EMP-0079,Michael Cox,Information Technology,IT Support,Jordan,2021-11-09,32563,Golden Visa,1369681645
+EMP-0080,Richard Jones,Project Management Office (PMO),Project Coordinator,Lebanon,2022-09-10,63207,Partner Visa,1883552312
+EMP-0081,Christopher Hernandez,Project Management Office (PMO),Project Manager,Philippines,2022-10-15,64620,Mission Visa,1277997995
+EMP-0082,Lori Hernandez,Sales & Marketing,Marketing Manager,India,2020-04-16,63302,Employment Visa,7744905814
+EMP-0083,Andrew Wood,Sales & Marketing,Digital Specialist,India,2021-03-21,36810,Partner Visa,1199867980
+EMP-0084,Robert Pearson,Engineering,Civil Engineer,Egypt,2021-05-14,53504,Employment Visa,9782071518
+EMP-0085,Amanda Zimmerman,Legal,Legal Counsel,South Africa,2021-11-13,5446,Golden Visa,8892554665
+EMP-0086,Amy Mccoy,Finance,Financial Analyst,UK,2021-06-03,47600,Mission Visa,1518644925
+EMP-0087,Matthew Rangel,Legal,Legal Counsel,Syria,2021-04-26,41374,Mission Visa,6291486528
+EMP-0088,Michael Romero,Procurement,Procurement Specialist,South Africa,2020-01-29,48331,Golden Visa,5423573322
+EMP-0089,Ryan Garcia,Quality Assurance,Manager,Pakistan,2022-04-18,48746,Golden Visa,8059296222
+EMP-0090,Patricia Lamb,Finance,Financial Analyst,Pakistan,2020-09-14,21694,Employment Visa,7065379473
+EMP-0091,Emily Stokes,Finance,Payroll Officer,Jordan,2021-12-29,52830,Partner Visa,3597746886
+EMP-0092,Ruth Solis,Procurement,Vendor Manager,Pakistan,2020-08-02,64723,Partner Visa,4075818141
+EMP-0093,Denise Whitehead,Human Resources,PRO (Public Relations Officer),UK,2020-08-16,33187,Employment Visa,6137506068
+EMP-0094,James Miller,Project Management Office (PMO),Project Manager,Australia,2020-12-14,30065,Employment Visa,0515220472
+EMP-0095,Julie Gilbert,Sales & Marketing,Sales Executive,Canada,2020-05-03,57769,Partner Visa,0432898614
+EMP-0096,Bryan Allen,Legal,Legal Counsel,Lebanon,2022-09-19,48951,Employment Visa,9711798089
+EMP-0097,Charles Patterson,Engineering,Site Engineer,Lebanon,2022-08-13,31962,Mission Visa,5396218518
+EMP-0098,Rachel Romero,Quality Assurance,Officer,France,2020-02-01,50092,Partner Visa,6706540515
+EMP-0099,Matthew Garcia,Engineering,Site Engineer,Pakistan,2022-06-22,18484,Partner Visa,5205852772
+EMP-0100,Amy Parsons,Operations,Manager,Jordan,2021-12-11,36049,Golden Visa,0430305486
+EMP-0101,Kimberly King PhD,Information Technology,Data Scientist,UAE,2020-10-23,45065,Golden Visa,4505415667
+EMP-0102,Jasmine Beltran,Engineering,Architect,France,2022-02-09,22238,Golden Visa,7584161692
+EMP-0103,Erica Miller,Legal,Legal Counsel,UK,2022-10-23,30131,Employment Visa,4479627570
+EMP-0104,Susan Mendez,Quality Assurance,Officer,Jordan,2021-11-06,21222,Golden Visa,4016582029
+EMP-0105,Jessica Martinez,Information Technology,System Analyst,UK,2021-01-01,45237,Employment Visa,5569092755
+EMP-0106,Billy Taylor,Information Technology,System Analyst,Syria,2021-07-24,24343,Partner Visa,6543102786
+EMP-0107,Autumn Hampton,Procurement,Buyer,UAE,2022-12-29,6559,Golden Visa,7394731217
+EMP-0108,Micheal Osborn,Finance,Accountant,USA,2022-11-25,32021,Employment Visa,5518844225
+EMP-0109,Barbara Harris,Sales & Marketing,Marketing Manager,Pakistan,2020-08-03,37352,Mission Visa,3705895782
+EMP-0110,Angelica Parker,Operations,Specialist,South Africa,2022-01-13,53673,Mission Visa,8669125177
+EMP-0111,Haley Humphrey,Information Technology,Data Scientist,Philippines,2022-05-06,38474,Mission Visa,9226801824
+EMP-0112,Frank Fletcher,Legal,Contract Specialist,Syria,2021-06-21,42875,Mission Visa,8414384249
+EMP-0113,Kathryn Jackson,Quality Assurance,Officer,UK,2022-06-21,62215,Mission Visa,2299590010
+EMP-0114,Patricia Baker,Quality Assurance,Officer,Lebanon,2020-11-23,4220,Mission Visa,9690784473
+EMP-0115,Melinda Evans,Sales & Marketing,Digital Specialist,Lebanon,2020-04-23,45313,Partner Visa,0276773592
+EMP-0116,Nathan Gross,Quality Assurance,Officer,UK,2021-06-20,44435,Partner Visa,6258815371
+EMP-0117,David Davis,Procurement,Procurement Specialist,Canada,2021-03-26,36340,Golden Visa,6963259532
+EMP-0118,Mr. Jonathan Parker Jr.,Human Resources,PRO (Public Relations Officer),Syria,2021-09-02,6415,Golden Visa,8733950047
+EMP-0119,Sarah Chambers,Quality Assurance,Officer,Australia,2021-03-19,48506,Golden Visa,8016245650
+EMP-0120,Kelly Lee,Operations,Specialist,Canada,2022-05-09,34761,Partner Visa,4168784991
+EMP-0121,Brent Brooks,Engineering,Architect,Australia,2021-06-10,10507,Partner Visa,8523986800
+EMP-0122,Micheal Brock,Sales & Marketing,Digital Specialist,France,2022-03-17,10408,Golden Visa,7298259526
+EMP-0123,Nancy Evans MD,Legal,Contract Specialist,UAE,2022-03-02,56860,Partner Visa,8794705516
+EMP-0124,Rebecca Swanson,Engineering,Civil Engineer,Egypt,2022-12-04,16786,Golden Visa,0974993097
+EMP-0125,Mark Harvey,Quality Assurance,Specialist,Syria,2021-08-13,28379,Employment Visa,2309130756
+EMP-0126,Michael Jenkins,Human Resources,HR Manager,South Africa,2022-08-07,23650,Employment Visa,7028385786
+EMP-0127,Christopher Barr,Operations,Manager,Lebanon,2021-06-15,13519,Employment Visa,8549733484
+EMP-0128,William Evans,Project Management Office (PMO),Project Coordinator,Syria,2021-03-24,54934,Employment Visa,3757584419
+EMP-0129,Jamie Baird,Quality Assurance,Manager,Egypt,2021-06-20,62613,Partner Visa,2404157473
+EMP-0130,Joshua Fitzpatrick,Project Management Office (PMO),Project Manager,Canada,2022-12-17,38128,Partner Visa,4219933083
+EMP-0131,Amy Gutierrez,Finance,Payroll Officer,Egypt,2022-01-03,15198,Partner Visa,1208267734
+EMP-0132,Matthew Velez,Human Resources,PRO (Public Relations Officer),South Africa,2020-05-18,46989,Mission Visa,9380262067
+EMP-0133,Paul Brennan,Finance,Accountant,Canada,2021-03-25,19201,Partner Visa,0049915478
+EMP-0134,Stacy Anderson,Finance,Accountant,Philippines,2022-02-22,43451,Mission Visa,7431527420
+EMP-0135,Rachel Bradley,Finance,Payroll Officer,Philippines,2020-10-27,63325,Employment Visa,2966851612
+EMP-0136,Mrs. Taylor Smith,Finance,Payroll Officer,India,2021-08-18,55598,Partner Visa,3745499045
+EMP-0137,Amy Wilson,Procurement,Procurement Specialist,France,2021-04-21,18349,Golden Visa,2684145933
+EMP-0138,Karen Gibson,Quality Assurance,Manager,Pakistan,2022-07-29,43385,Partner Visa,5687833918
+EMP-0139,Michael Miller,Human Resources,PRO (Public Relations Officer),Pakistan,2022-05-26,54348,Partner Visa,1088398225
+EMP-0140,Jessica Frazier,Sales & Marketing,Sales Executive,Germany,2022-06-24,20594,Partner Visa,7187072867
+EMP-0141,Kristin Chambers,Quality Assurance,Officer,UK,2021-04-23,28635,Golden Visa,0640391065
+EMP-0142,Kimberly Brown,Operations,Manager,UK,2020-04-17,47085,Partner Visa,7046226567
+EMP-0143,Susan Bennett,Finance,Financial Analyst,Lebanon,2022-11-26,28352,Golden Visa,8251286823
+EMP-0144,Nicole Good,Project Management Office (PMO),Project Manager,UK,2021-12-20,29353,Golden Visa,8686337524
+EMP-0145,Shaun Cannon,Information Technology,System Analyst,UK,2020-02-20,5566,Golden Visa,6903311907
+EMP-0146,Michele Williams,Procurement,Vendor Manager,Australia,2020-03-09,38153,Employment Visa,6738302843
+EMP-0147,Monique Flores,Human Resources,PRO (Public Relations Officer),Pakistan,2022-07-17,18215,Employment Visa,5342836440
+EMP-0148,Leslie Moss,Legal,Contract Specialist,Syria,2020-09-29,56243,Golden Visa,6870568566
+EMP-0149,James Webster,Operations,Specialist,India,2022-01-05,47715,Golden Visa,3342708668
+EMP-0150,Jasmine Scott,Project Management Office (PMO),Scheduler,India,2021-05-28,19402,Golden Visa,1751830469
+EMP-0151,Shelly Lopez,Procurement,Vendor Manager,Germany,2022-07-01,14700,Golden Visa,8373540331
+EMP-0152,Nicole Rocha,Project Management Office (PMO),Scheduler,UK,2022-12-16,52804,Employment Visa,9363854678
+EMP-0153,Elizabeth Ward,Quality Assurance,Officer,UK,2022-02-11,8874,Mission Visa,7175355609
+EMP-0154,Natalie Smith,Project Management Office (PMO),Program Manager,Jordan,2022-05-09,14666,Employment Visa,9964235369
+EMP-0155,Kathryn Pena,Human Resources,Recruiter,USA,2022-11-29,11951,Golden Visa,5477725228
+EMP-0156,Thomas Weaver DDS,Procurement,Vendor Manager,Australia,2020-04-01,33762,Employment Visa,8010062312
+EMP-0157,Jonathan Brooks,Procurement,Vendor Manager,UAE,2022-08-17,33081,Mission Visa,9770088600
+EMP-0158,Denise Madden,Legal,Legal Counsel,Syria,2020-01-27,32169,Partner Visa,8621182339
+EMP-0159,Robin Adams,Engineering,MEP Engineer,Pakistan,2021-09-08,64126,Golden Visa,1567933410
+EMP-0160,James Tran,Information Technology,Software Developer,Germany,2020-03-28,59088,Golden Visa,0217659180
+EMP-0161,Steven Schwartz,Procurement,Procurement Specialist,Philippines,2022-05-30,52755,Employment Visa,7401489025
+EMP-0162,Daniel Thomas,Finance,Payroll Officer,South Africa,2021-09-10,38695,Mission Visa,1429396856
+EMP-0163,Brenda Hinton,Operations,Specialist,South Africa,2020-05-01,4031,Mission Visa,8501631599
+EMP-0164,Jennifer Ayala,Information Technology,Software Developer,Egypt,2020-02-16,46653,Mission Visa,4773586629
+EMP-0165,Angelica Montgomery,Finance,Accountant,Egypt,2021-01-17,63775,Partner Visa,1142626551
+EMP-0166,Tommy Wallace,Legal,Legal Counsel,Syria,2021-02-23,51674,Mission Visa,1212678886
+EMP-0167,Brandon Spencer,Operations,Manager,UAE,2022-07-16,17324,Mission Visa,9560466183
+EMP-0168,Carolyn James,Human Resources,PRO (Public Relations Officer),France,2020-08-03,19185,Employment Visa,4447212646
+EMP-0169,Richard Ward,Procurement,Vendor Manager,Lebanon,2021-01-18,28122,Employment Visa,7993712406
+EMP-0170,Manuel Brock,Legal,Legal Counsel,Lebanon,2021-05-26,64248,Mission Visa,7569245937
+EMP-0171,Vincent Novak,Human Resources,HR Manager,Pakistan,2021-03-28,25584,Employment Visa,7935646519
+EMP-0172,Zachary White,Human Resources,Recruiter,USA,2022-05-04,15745,Employment Visa,0737416724
+EMP-0173,Matthew Espinoza,Quality Assurance,Officer,Syria,2021-08-08,64229,Mission Visa,1797968868
+EMP-0174,Warren Miles,Sales & Marketing,Marketing Manager,UAE,2022-04-14,5010,Golden Visa,9113529096
+EMP-0175,Erin Hogan,Finance,Payroll Officer,Australia,2020-06-13,18275,Employment Visa,0143888993
+EMP-0176,James Barton,Human Resources,PRO (Public Relations Officer),Egypt,2022-07-03,31741,Partner Visa,8250714611
+EMP-0177,Monica Bailey,Project Management Office (PMO),Scheduler,Germany,2021-06-16,30522,Partner Visa,7387571775
+EMP-0178,Andrew Page,Project Management Office (PMO),Program Manager,Philippines,2020-02-05,33691,Mission Visa,5123828258
+EMP-0179,Joel Salinas,Sales & Marketing,Marketing Manager,France,2022-09-05,4587,Mission Visa,2266093796
+EMP-0180,Michael Harris,Legal,Legal Counsel,Syria,2022-12-29,31227,Partner Visa,1918255371
+EMP-0181,Scott Rose,Sales & Marketing,Sales Executive,Syria,2022-09-19,9680,Employment Visa,5969691557
+EMP-0182,Robin Mccarthy,Human Resources,Recruiter,Philippines,2021-04-07,38618,Partner Visa,9912513412
+EMP-0183,Charles Price,Information Technology,Software Developer,UK,2022-07-15,63888,Golden Visa,2966278282
+EMP-0184,Charles Edwards MD,Project Management Office (PMO),Scheduler,Pakistan,2020-03-24,42734,Employment Visa,5072368876
+EMP-0185,Jennifer Larsen,Quality Assurance,Officer,Australia,2022-01-29,19466,Mission Visa,2190340438
+EMP-0186,Richard Cunningham,Operations,Manager,India,2022-02-08,64015,Golden Visa,8819148580
+EMP-0187,Jessica Robinson,Human Resources,Recruiter,Jordan,2021-10-22,48786,Employment Visa,1340745171
+EMP-0188,Cynthia Cochran,Operations,Manager,Lebanon,2022-07-02,35808,Partner Visa,5962923309
+EMP-0189,Douglas Ryan,Operations,Manager,Philippines,2021-05-17,16764,Partner Visa,4494812604
+EMP-0190,Beth Cline,Finance,Accountant,USA,2021-01-22,62029,Golden Visa,2536729466
+EMP-0191,Mark Beard,Legal,Contract Specialist,Pakistan,2020-05-24,41023,Employment Visa,6845775901
+EMP-0192,Judy Beck,Finance,Financial Analyst,India,2021-07-10,39025,Partner Visa,1863637454
+EMP-0193,Kenneth Knight,Operations,Specialist,Lebanon,2022-01-23,13078,Employment Visa,5001701277
+EMP-0194,Tyler Harris,Operations,Officer,France,2022-12-05,47530,Partner Visa,2424154152
+EMP-0195,Mario Barber,Finance,Accountant,South Africa,2020-12-29,40452,Mission Visa,6110371293
+EMP-0196,Jill Smith,Procurement,Buyer,Jordan,2021-06-17,22722,Partner Visa,1627136111
+EMP-0197,Stanley Taylor,Information Technology,System Analyst,Germany,2020-07-25,48363,Partner Visa,2189092753
+EMP-0198,Brittany Jenkins,Project Management Office (PMO),Program Manager,Australia,2022-12-02,60095,Partner Visa,7311219656
+EMP-0199,Charles Hill,Engineering,Architect,Syria,2020-05-10,12565,Golden Visa,3899940438
+EMP-0200,Chelsea Myers,Legal,Legal Counsel,USA,2022-09-30,23439,Employment Visa,0376137918
+EMP-0201,Alexandria Ward,Project Management Office (PMO),Scheduler,UAE,2021-05-06,47381,Mission Visa,2696582710
+EMP-0202,Alexis Lewis,Sales & Marketing,Marketing Manager,India,2020-04-03,37999,Partner Visa,6848666188
+EMP-0203,Diamond Collins,Quality Assurance,Specialist,Philippines,2022-03-05,63310,Mission Visa,3285691463
+EMP-0204,Brandon Hamilton,Project Management Office (PMO),Project Manager,UAE,2021-12-05,51238,Partner Visa,9904210202
+EMP-0205,Gregory Holmes PhD,Quality Assurance,Specialist,Syria,2021-02-06,35446,Partner Visa,2524105648
+EMP-0206,Michael Ray,Engineering,Civil Engineer,UAE,2020-04-29,15616,Employment Visa,7785079252
+EMP-0207,Brian Berry,Procurement,Buyer,France,2020-06-28,48605,Partner Visa,3800030756
+EMP-0208,Cassidy Horne,Project Management Office (PMO),Project Manager,UK,2020-02-24,20690,Golden Visa,8635365419
+EMP-0209,Jonathan Winters,Operations,Specialist,USA,2020-10-05,53895,Golden Visa,3806174451
+EMP-0210,Aimee Gonzalez,Human Resources,PRO (Public Relations Officer),South Africa,2022-05-25,50127,Golden Visa,4937597383
+EMP-0211,Timothy Johnson,Legal,Contract Specialist,India,2022-04-21,49064,Partner Visa,5050641383
+EMP-0212,Tyrone Kaufman,Quality Assurance,Specialist,Jordan,2020-08-09,22127,Partner Visa,4103865719
+EMP-0213,Casey Wilkins,Human Resources,Recruiter,USA,2020-04-26,52985,Mission Visa,9906234456
+EMP-0214,Nancy Stewart,Engineering,Civil Engineer,Australia,2021-02-26,21892,Golden Visa,3132912127
+EMP-0215,Jason Herrera,Legal,Contract Specialist,France,2020-11-18,18088,Golden Visa,7474112490
+EMP-0216,Scott Hernandez,Engineering,MEP Engineer,UAE,2021-01-20,14200,Mission Visa,5680442067
+EMP-0217,Krista Davis,Operations,Manager,UAE,2020-06-07,25062,Partner Visa,2100323651
+EMP-0218,Deanna Hess,Project Management Office (PMO),Scheduler,Jordan,2020-02-03,20388,Employment Visa,1372151070
+EMP-0219,Kenneth Underwood,Sales & Marketing,Digital Specialist,Egypt,2021-09-05,48946,Mission Visa,7066253244
+EMP-0220,Charles Mendez,Sales & Marketing,Digital Specialist,France,2022-08-16,49543,Mission Visa,3476870146
+EMP-0221,Curtis Wilkerson,Finance,Payroll Officer,Canada,2022-03-27,40361,Mission Visa,3806578759
+EMP-0222,Jasmine White,Quality Assurance,Specialist,France,2021-05-10,26559,Mission Visa,9304078593
+EMP-0223,Ariel Sandoval,Procurement,Buyer,Lebanon,2021-02-18,17629,Employment Visa,8039652239
+EMP-0224,Oscar Howard,Procurement,Vendor Manager,Canada,2022-07-07,56733,Mission Visa,0599293784
+EMP-0225,Andrew Brown,Human Resources,PRO (Public Relations Officer),France,2022-07-23,36135,Employment Visa,3087059325
+EMP-0226,Tamara Richard,Operations,Manager,Lebanon,2021-05-17,64911,Mission Visa,0029218515
+EMP-0227,Mary Willis,Information Technology,Data Scientist,Philippines,2021-06-06,14577,Golden Visa,4522675289
+EMP-0228,Courtney Chapman,Quality Assurance,Officer,UK,2020-09-29,20901,Mission Visa,6442209690
+EMP-0229,Evan Lamb,Project Management Office (PMO),Project Manager,Australia,2022-08-07,46621,Partner Visa,3917251355
+EMP-0230,Stephen Davis,Legal,Legal Counsel,Egypt,2022-11-06,37885,Golden Visa,5704331541
+EMP-0231,Amber Kim,Operations,Manager,Germany,2021-10-13,59514,Golden Visa,2676586179
+EMP-0232,Melissa Martin,Sales & Marketing,Sales Executive,Germany,2020-04-24,25128,Mission Visa,0405411526
+EMP-0233,Benjamin Mcmahon,Project Management Office (PMO),Program Manager,India,2020-05-24,47502,Golden Visa,5997062962
+EMP-0234,Gary Mccann,Procurement,Procurement Specialist,UAE,2021-09-27,59548,Partner Visa,8844431069
+EMP-0235,Katherine Brown,Procurement,Buyer,Australia,2020-01-06,25886,Partner Visa,6149731032
+EMP-0236,Vanessa Wells,Engineering,MEP Engineer,Egypt,2020-06-28,51410,Mission Visa,4677418625
+EMP-0237,Jaclyn Griffin,Quality Assurance,Officer,India,2021-02-13,18820,Partner Visa,7743490211
+EMP-0238,Rhonda Gutierrez,Finance,Accountant,Jordan,2022-07-05,19004,Employment Visa,3806868793
+EMP-0239,Blake Orr,Engineering,Site Engineer,Canada,2020-02-23,7201,Golden Visa,8989921722
+EMP-0240,Rhonda Martinez,Procurement,Buyer,Syria,2021-10-19,18418,Golden Visa,1632945116
+EMP-0241,Kristen Gates,Engineering,Site Engineer,UK,2022-03-18,43643,Employment Visa,7099861622
+EMP-0242,Lauren Hanna,Sales & Marketing,Digital Specialist,Jordan,2020-06-04,34398,Golden Visa,1914856467
+EMP-0243,Kara Jackson,Finance,Financial Analyst,India,2021-09-17,53867,Mission Visa,2996065307
+EMP-0244,Stephanie Smith,Human Resources,PRO (Public Relations Officer),UAE,2021-04-15,24921,Employment Visa,4471324754
+EMP-0245,Lisa Davis,Project Management Office (PMO),Scheduler,Jordan,2021-11-17,59939,Employment Visa,3678508214
+EMP-0246,Jennifer Deleon,Legal,Contract Specialist,Pakistan,2022-03-25,23677,Employment Visa,9023303070
+EMP-0247,Michele Hill,Finance,Payroll Officer,Canada,2021-12-22,45103,Golden Visa,8610357972
+EMP-0248,Karen Arnold,Operations,Specialist,UK,2021-06-18,42357,Employment Visa,2414060293
+EMP-0249,Maria Byrd,Information Technology,Data Scientist,Syria,2021-02-22,48298,Golden Visa,6800722903
+EMP-0250,Robert Torres,Operations,Manager,Philippines,2022-09-25,34556,Employment Visa,4665743748

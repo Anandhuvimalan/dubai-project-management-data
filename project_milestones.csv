@@ -1,0 +1,401 @@
+milestone_id,project_id,milestone_name,planned_start,planned_end,status,sign_off_by
+8c662766,PRJ-001,Initiation & Feasibility,2025-09-14,2025-11-01,Approved,Randy Warren
+4330125c,PRJ-001,Concept Design,2025-11-01,2025-12-19,Approved,Angela Huynh
+3f5560cd,PRJ-001,Detailed Design,2025-12-19,2026-02-05,In Progress,
+a06109db,PRJ-001,Tendering & Procurement,2026-02-05,2026-03-25,Pending,
+d6a919e8,PRJ-001,NOCs & Approvals,2026-03-25,2026-05-12,Pending,
+a9de5b26,PRJ-001,Construction / Implementation,2026-05-12,2026-06-29,Pending,
+534064b0,PRJ-001,Testing & Commissioning,2026-06-29,2026-08-16,Pending,
+f99863f2,PRJ-001,Handover & Closeout,2026-08-16,2026-10-03,Pending,
+45bcf3ba,PRJ-002,Initiation & Feasibility,2023-05-17,2023-06-23,Approved,Brandy Fry
+98fb4727,PRJ-002,Concept Design,2023-06-23,2023-07-30,Approved,Paul Wiley
+a3b81f92,PRJ-002,Detailed Design,2023-07-30,2023-09-05,Approved,Susan Olson
+711dc1dd,PRJ-002,Tendering & Procurement,2023-09-05,2023-10-12,Approved,Jason Moore
+d0bcbad5,PRJ-002,NOCs & Approvals,2023-10-12,2023-11-18,Approved,Brandy Mitchell
+ec0dfc3a,PRJ-002,Construction / Implementation,2023-11-18,2023-12-25,Approved,Pedro Evans DDS
+3b30ee97,PRJ-002,Testing & Commissioning,2023-12-25,2024-01-31,Approved,Kimberly Lopez
+650e78e4,PRJ-002,Handover & Closeout,2024-01-31,2024-03-08,Approved,Miguel Brewer
+4352acea,PRJ-003,Initiation & Feasibility,2023-02-28,2023-03-30,Approved,Mario Black
+cebd3b2b,PRJ-003,Concept Design,2023-03-30,2023-04-29,Approved,Denise Wong
+69b41194,PRJ-003,Detailed Design,2023-04-29,2023-05-29,Approved,Barry Taylor
+9e2383d0,PRJ-003,Tendering & Procurement,2023-05-29,2023-06-28,Approved,Michael Vasquez
+0cb4afe1,PRJ-003,NOCs & Approvals,2023-06-28,2023-07-28,Approved,Alison Compton
+b71714cd,PRJ-003,Construction / Implementation,2023-07-28,2023-08-27,Approved,Adam Davis
+578799d9,PRJ-003,Testing & Commissioning,2023-08-27,2023-09-26,Approved,Richard Jimenez
+ca9acf77,PRJ-003,Handover & Closeout,2023-09-26,2023-10-26,Approved,Bobby Christensen
+c6913069,PRJ-004,Initiation & Feasibility,2024-03-21,2024-05-27,Approved,Joshua White
+d13757e1,PRJ-004,Concept Design,2024-05-27,2024-08-02,Approved,Adam Villegas
+c56f05e6,PRJ-004,Detailed Design,2024-08-02,2024-10-08,Approved,Danielle Vang
+c55ffde8,PRJ-004,Tendering & Procurement,2024-10-08,2024-12-14,Approved,Maxwell Clark
+4fe66636,PRJ-004,NOCs & Approvals,2024-12-14,2025-02-19,Approved,Caitlin Chandler
+855b6c5b,PRJ-004,Construction / Implementation,2025-02-19,2025-04-27,Approved,John Evans
+dd18ab28,PRJ-004,Testing & Commissioning,2025-04-27,2025-07-03,Approved,Valerie Young
+2ad820ca,PRJ-004,Handover & Closeout,2025-07-03,2025-09-08,Approved,Lauren Foster
+0ac013d5,PRJ-005,Initiation & Feasibility,2023-01-17,2023-06-19,Approved,Melissa Barker
+16e827b0,PRJ-005,Concept Design,2023-06-19,2023-11-19,Approved,Jonathan Parks
+ff39a117,PRJ-005,Detailed Design,2023-11-19,2024-04-20,Approved,Amy Kelly
+ca9d8831,PRJ-005,Tendering & Procurement,2024-04-20,2024-09-20,Approved,John Stewart
+c1b6edd4,PRJ-005,NOCs & Approvals,2024-09-20,2025-02-20,Approved,Steven Quinn
+5bb0dd76,PRJ-005,Construction / Implementation,2025-02-20,2025-07-23,Approved,Danielle Williams
+4b726a7c,PRJ-005,Testing & Commissioning,2025-07-23,2025-12-23,Approved,Katherine Knight
+bb7eb979,PRJ-005,Handover & Closeout,2025-12-23,2026-05-25,In Progress,
+d4d353a5,PRJ-006,Initiation & Feasibility,2025-03-04,2025-04-25,Approved,Shannon Martin
+4bb13407,PRJ-006,Concept Design,2025-04-25,2025-06-16,Approved,Kimberly Gibson
+6108ffcc,PRJ-006,Detailed Design,2025-06-16,2025-08-07,Approved,Sonya Harvey
+3d211daf,PRJ-006,Tendering & Procurement,2025-08-07,2025-09-28,Approved,Arthur Coffey
+86296fbe,PRJ-006,NOCs & Approvals,2025-09-28,2025-11-19,Approved,Pamela Moore
+a41247a2,PRJ-006,Construction / Implementation,2025-11-19,2026-01-10,Approved,Brent Hopkins
+2138e2e6,PRJ-006,Testing & Commissioning,2026-01-10,2026-03-03,In Progress,
+33bb7382,PRJ-006,Handover & Closeout,2026-03-03,2026-04-24,Pending,
+1947ea42,PRJ-007,Initiation & Feasibility,2024-07-12,2024-10-17,Approved,Martin Price
+b38950ce,PRJ-007,Concept Design,2024-10-17,2025-01-22,Approved,Amber Walker
+ee224f70,PRJ-007,Detailed Design,2025-01-22,2025-04-29,Approved,Mary Hebert
+cd0fa4a6,PRJ-007,Tendering & Procurement,2025-04-29,2025-08-04,Approved,Heather Paul
+5e7b4866,PRJ-007,NOCs & Approvals,2025-08-04,2025-11-09,Approved,Amy Jensen
+1204f4d6,PRJ-007,Construction / Implementation,2025-11-09,2026-02-14,In Progress,
+f1d188b9,PRJ-007,Testing & Commissioning,2026-02-14,2026-05-22,Pending,
+18dcceb6,PRJ-007,Handover & Closeout,2026-05-22,2026-08-27,Pending,
+881af04f,PRJ-008,Initiation & Feasibility,2024-09-12,2024-11-26,Approved,Corey Sandoval
+2dcc4095,PRJ-008,Concept Design,2024-11-26,2025-02-09,Approved,Kristin Reese
+5ba37cb5,PRJ-008,Detailed Design,2025-02-09,2025-04-25,Approved,Michele Simmons
+2e2e77a4,PRJ-008,Tendering & Procurement,2025-04-25,2025-07-09,Approved,Kathy Sandoval
+71693ed5,PRJ-008,NOCs & Approvals,2025-07-09,2025-09-22,Approved,Stephanie Pierce
+5f290290,PRJ-008,Construction / Implementation,2025-09-22,2025-12-06,Approved,Mark Mckenzie
+902a405c,PRJ-008,Testing & Commissioning,2025-12-06,2026-02-19,In Progress,
+c4057420,PRJ-008,Handover & Closeout,2026-02-19,2026-05-05,Pending,
+410bfc29,PRJ-009,Initiation & Feasibility,2023-01-24,2023-05-16,Approved,Jesse Moyer
+fba3091f,PRJ-009,Concept Design,2023-05-16,2023-09-05,Approved,Alan Taylor
+4ce2afa2,PRJ-009,Detailed Design,2023-09-05,2023-12-26,Approved,Mrs. Emily Ingram
+46a52064,PRJ-009,Tendering & Procurement,2023-12-26,2024-04-16,Approved,Kayla Duncan
+09a9161a,PRJ-009,NOCs & Approvals,2024-04-16,2024-08-06,Approved,Christopher Baker
+3ba58126,PRJ-009,Construction / Implementation,2024-08-06,2024-11-26,Approved,Eric Duncan
+bbf8da91,PRJ-009,Testing & Commissioning,2024-11-26,2025-03-18,Approved,Frederick Olson
+b0894de4,PRJ-009,Handover & Closeout,2025-03-18,2025-07-08,Approved,Sabrina Davis
+bb1502ea,PRJ-010,Initiation & Feasibility,2025-05-18,2025-06-09,Approved,Jane Deleon
+5911f42e,PRJ-010,Concept Design,2025-06-09,2025-07-01,Approved,Jessica Conrad
+3a0a2b59,PRJ-010,Detailed Design,2025-07-01,2025-07-23,Approved,Sarah Mcfarland
+61eaaa65,PRJ-010,Tendering & Procurement,2025-07-23,2025-08-14,Approved,Joseph Flores
+809d6444,PRJ-010,NOCs & Approvals,2025-08-14,2025-09-05,Approved,Brittany Nunez
+7213e7cc,PRJ-010,Construction / Implementation,2025-09-05,2025-09-27,Approved,Laura Davis
+64f2502e,PRJ-010,Testing & Commissioning,2025-09-27,2025-10-19,Approved,George Alvarez
+663166a7,PRJ-010,Handover & Closeout,2025-10-19,2025-11-10,Approved,James Hamilton
+2286e3f8,PRJ-011,Initiation & Feasibility,2023-10-30,2024-03-28,Approved,Mr. James Duncan
+bc54b8c1,PRJ-011,Concept Design,2024-03-28,2024-08-25,Approved,Dana Adams
+ec94503e,PRJ-011,Detailed Design,2024-08-25,2025-01-22,Approved,Ashley Gutierrez
+521be8c2,PRJ-011,Tendering & Procurement,2025-01-22,2025-06-21,Approved,Matthew Carrillo
+9dc0a8b5,PRJ-011,NOCs & Approvals,2025-06-21,2025-11-18,Approved,Rebekah Hanson
+d173b70b,PRJ-011,Construction / Implementation,2025-11-18,2026-04-17,In Progress,
+5fb2b838,PRJ-011,Testing & Commissioning,2026-04-17,2026-09-14,Pending,
+da4ec04c,PRJ-011,Handover & Closeout,2026-09-14,2027-02-11,Pending,
+0df63417,PRJ-012,Initiation & Feasibility,2024-09-24,2025-02-09,Approved,Marc Hernandez
+03840661,PRJ-012,Concept Design,2025-02-09,2025-06-27,Approved,Robert Torres
+3581a632,PRJ-012,Detailed Design,2025-06-27,2025-11-12,Approved,Christy Payne
+7ba79d05,PRJ-012,Tendering & Procurement,2025-11-12,2026-03-30,In Progress,
+242f5829,PRJ-012,NOCs & Approvals,2026-03-30,2026-08-15,Pending,
+04b51c12,PRJ-012,Construction / Implementation,2026-08-15,2026-12-31,Pending,
+a9dcfe52,PRJ-012,Testing & Commissioning,2026-12-31,2027-05-18,Pending,
+2b9a118e,PRJ-012,Handover & Closeout,2027-05-18,2027-10-03,Pending,
+ca0841de,PRJ-013,Initiation & Feasibility,2024-06-12,2024-08-14,Approved,Denise Marshall
+637e3f94,PRJ-013,Concept Design,2024-08-14,2024-10-16,Approved,Mary Durham
+04e25132,PRJ-013,Detailed Design,2024-10-16,2024-12-18,Approved,Stephen Hughes
+fa033d6c,PRJ-013,Tendering & Procurement,2024-12-18,2025-02-19,Approved,Stephanie Washington
+2fb90ccf,PRJ-013,NOCs & Approvals,2025-02-19,2025-04-23,Approved,Walter Castro
+3f551740,PRJ-013,Construction / Implementation,2025-04-23,2025-06-25,Approved,Elizabeth Burns
+58c69158,PRJ-013,Testing & Commissioning,2025-06-25,2025-08-27,Approved,Heather Turner
+80520405,PRJ-013,Handover & Closeout,2025-08-27,2025-10-29,Approved,Antonio Scott
+d09a934b,PRJ-014,Initiation & Feasibility,2024-11-18,2025-05-09,Approved,Terry Avery MD
+a82cae18,PRJ-014,Concept Design,2025-05-09,2025-10-28,Approved,Nicholas Meyer
+a0226155,PRJ-014,Detailed Design,2025-10-28,2026-04-18,In Progress,
+3d884938,PRJ-014,Tendering & Procurement,2026-04-18,2026-10-07,Pending,
+f8751fd4,PRJ-014,NOCs & Approvals,2026-10-07,2027-03-28,Pending,
+544c0132,PRJ-014,Construction / Implementation,2027-03-28,2027-09-16,Pending,
+34ee0b67,PRJ-014,Testing & Commissioning,2027-09-16,2028-03-06,Pending,
+8a962a11,PRJ-014,Handover & Closeout,2028-03-06,2028-08-25,Pending,
+dcd28b97,PRJ-015,Initiation & Feasibility,2024-12-13,2025-03-28,Approved,Michael Roach
+fee543b3,PRJ-015,Concept Design,2025-03-28,2025-07-11,Approved,Patricia Douglas
+51476e86,PRJ-015,Detailed Design,2025-07-11,2025-10-24,Approved,Joseph Ball
+e12ff6cd,PRJ-015,Tendering & Procurement,2025-10-24,2026-02-06,In Progress,
+c3f38c8c,PRJ-015,NOCs & Approvals,2026-02-06,2026-05-22,Pending,
+69fe890f,PRJ-015,Construction / Implementation,2026-05-22,2026-09-04,Pending,
+7168bdec,PRJ-015,Testing & Commissioning,2026-09-04,2026-12-18,Pending,
+e4e5b5b0,PRJ-015,Handover & Closeout,2026-12-18,2027-04-02,Pending,
+46178161,PRJ-016,Initiation & Feasibility,2024-02-05,2024-07-15,Approved,Cole Anderson
+9caad37c,PRJ-016,Concept Design,2024-07-15,2024-12-23,Approved,Lisa Salazar
+aff7ff5d,PRJ-016,Detailed Design,2024-12-23,2025-06-02,Approved,Bobby Chan
+9ace63cc,PRJ-016,Tendering & Procurement,2025-06-02,2025-11-10,Approved,Matthew White
+233408ba,PRJ-016,NOCs & Approvals,2025-11-10,2026-04-20,In Progress,
+08403234,PRJ-016,Construction / Implementation,2026-04-20,2026-09-28,Pending,
+03d7f962,PRJ-016,Testing & Commissioning,2026-09-28,2027-03-08,Pending,
+69bd40d8,PRJ-016,Handover & Closeout,2027-03-08,2027-08-16,Pending,
+fcfd8547,PRJ-017,Initiation & Feasibility,2023-12-24,2024-01-26,Approved,Daniel Thompson
+ddfc2a92,PRJ-017,Concept Design,2024-01-26,2024-02-28,Approved,Melissa Delacruz
+67a55936,PRJ-017,Detailed Design,2024-02-28,2024-04-01,Approved,Lisa Holloway
+9c8b9550,PRJ-017,Tendering & Procurement,2024-04-01,2024-05-04,Approved,Laura Herrera
+c9739495,PRJ-017,NOCs & Approvals,2024-05-04,2024-06-06,Approved,Brian Bryant
+feef21f8,PRJ-017,Construction / Implementation,2024-06-06,2024-07-09,Approved,Joshua Terrell
+8420e0d8,PRJ-017,Testing & Commissioning,2024-07-09,2024-08-11,Approved,Tonya Lee
+4df742ae,PRJ-017,Handover & Closeout,2024-08-11,2024-09-13,Approved,Donna Jackson
+0df6c527,PRJ-018,Initiation & Feasibility,2023-01-16,2023-06-30,Approved,Stephanie Ford
+b8ff615c,PRJ-018,Concept Design,2023-06-30,2023-12-12,Approved,Catherine Richards
+22a37556,PRJ-018,Detailed Design,2023-12-12,2024-05-25,Approved,Frank Johnson
+b66f3507,PRJ-018,Tendering & Procurement,2024-05-25,2024-11-06,Approved,Sonya Davis
+e83bcc84,PRJ-018,NOCs & Approvals,2024-11-06,2025-04-20,Approved,Carly Quinn
+730bc657,PRJ-018,Construction / Implementation,2025-04-20,2025-10-02,Approved,Angela Zimmerman
+82fc9294,PRJ-018,Testing & Commissioning,2025-10-02,2026-03-16,In Progress,
+60f11528,PRJ-018,Handover & Closeout,2026-03-16,2026-08-28,Pending,
+c4acb57d,PRJ-019,Initiation & Feasibility,2025-11-12,2026-02-17,In Progress,
+90c40e45,PRJ-019,Concept Design,2026-02-17,2026-05-25,Pending,
+266c47fb,PRJ-019,Detailed Design,2026-05-25,2026-08-30,Pending,
+2dca365a,PRJ-019,Tendering & Procurement,2026-08-30,2026-12-05,Pending,
+6b69b4ae,PRJ-019,NOCs & Approvals,2026-12-05,2027-03-12,Pending,
+c4c4f69f,PRJ-019,Construction / Implementation,2027-03-12,2027-06-17,Pending,
+a05f36c8,PRJ-019,Testing & Commissioning,2027-06-17,2027-09-22,Pending,
+21aea39b,PRJ-019,Handover & Closeout,2027-09-22,2027-12-28,Pending,
+9f601d17,PRJ-020,Initiation & Feasibility,2024-05-02,2024-05-24,Approved,Alexandria Jimenez
+0178de26,PRJ-020,Concept Design,2024-05-24,2024-06-15,Approved,Katherine Robinson
+68ffae17,PRJ-020,Detailed Design,2024-06-15,2024-07-07,Approved,Kyle Smith
+9ea8fcb1,PRJ-020,Tendering & Procurement,2024-07-07,2024-07-29,Approved,Samantha Clark
+a73d2746,PRJ-020,NOCs & Approvals,2024-07-29,2024-08-20,Approved,Charles Johnson
+4c66aa4d,PRJ-020,Construction / Implementation,2024-08-20,2024-09-11,Approved,Brandon Rodriguez
+ac0e1f71,PRJ-020,Testing & Commissioning,2024-09-11,2024-10-03,Approved,Matthew Graves
+2d6b5953,PRJ-020,Handover & Closeout,2024-10-03,2024-10-25,Approved,Nicole Ward
+4c9e903a,PRJ-021,Initiation & Feasibility,2025-11-27,2026-05-14,In Progress,
+61022b56,PRJ-021,Concept Design,2026-05-14,2026-10-29,Pending,
+6d651847,PRJ-021,Detailed Design,2026-10-29,2027-04-15,Pending,
+4af715b7,PRJ-021,Tendering & Procurement,2027-04-15,2027-09-30,Pending,
+b1d29457,PRJ-021,NOCs & Approvals,2027-09-30,2028-03-16,Pending,
+86eced99,PRJ-021,Construction / Implementation,2028-03-16,2028-08-31,Pending,
+b221e1c5,PRJ-021,Testing & Commissioning,2028-08-31,2029-02-15,Pending,
+1bfb3b3d,PRJ-021,Handover & Closeout,2029-02-15,2029-08-02,Pending,
+a104bdce,PRJ-022,Initiation & Feasibility,2024-01-12,2024-02-26,Approved,Anita Ramsey
+fc7cbe71,PRJ-022,Concept Design,2024-02-26,2024-04-11,Approved,Jessica Abbott
+feb9ea24,PRJ-022,Detailed Design,2024-04-11,2024-05-26,Approved,Tammy Mendez
+a1c16b96,PRJ-022,Tendering & Procurement,2024-05-26,2024-07-10,Approved,Dr. Stephen Hall IV
+0623ffbf,PRJ-022,NOCs & Approvals,2024-07-10,2024-08-24,Approved,Robert Mclaughlin
+ffbd9cdd,PRJ-022,Construction / Implementation,2024-08-24,2024-10-08,Approved,Angel Bailey
+02e460aa,PRJ-022,Testing & Commissioning,2024-10-08,2024-11-22,Approved,Melissa King
+81b66951,PRJ-022,Handover & Closeout,2024-11-22,2025-01-06,Approved,Pamela Wilson
+b9720eec,PRJ-023,Initiation & Feasibility,2025-08-18,2025-11-01,Approved,Toni Collier
+56830783,PRJ-023,Concept Design,2025-11-01,2026-01-15,Approved,Karen Wells
+7b434a72,PRJ-023,Detailed Design,2026-01-15,2026-03-31,In Progress,
+e45def26,PRJ-023,Tendering & Procurement,2026-03-31,2026-06-14,Pending,
+55c9bf0f,PRJ-023,NOCs & Approvals,2026-06-14,2026-08-28,Pending,
+69f8d3e4,PRJ-023,Construction / Implementation,2026-08-28,2026-11-11,Pending,
+d5c97d5d,PRJ-023,Testing & Commissioning,2026-11-11,2027-01-25,Pending,
+b9974024,PRJ-023,Handover & Closeout,2027-01-25,2027-04-10,Pending,
+892fca69,PRJ-024,Initiation & Feasibility,2025-10-27,2025-11-22,Approved,Kenneth Rivera
+5a853cd8,PRJ-024,Concept Design,2025-11-22,2025-12-18,Approved,Chase Pittman
+a06303ca,PRJ-024,Detailed Design,2025-12-18,2026-01-13,Approved,Carol Obrien
+dd56030e,PRJ-024,Tendering & Procurement,2026-01-13,2026-02-08,In Progress,
+b48c531b,PRJ-024,NOCs & Approvals,2026-02-08,2026-03-06,Pending,
+0818c965,PRJ-024,Construction / Implementation,2026-03-06,2026-04-01,Pending,
+7f3ef59b,PRJ-024,Testing & Commissioning,2026-04-01,2026-04-27,Pending,
+73b0220d,PRJ-024,Handover & Closeout,2026-04-27,2026-05-23,Pending,
+3754f16f,PRJ-025,Initiation & Feasibility,2025-08-22,2025-11-27,Approved,Carrie Brooks
+e9d18ec2,PRJ-025,Concept Design,2025-11-27,2026-03-04,In Progress,
+0662200c,PRJ-025,Detailed Design,2026-03-04,2026-06-09,Pending,
+80038f26,PRJ-025,Tendering & Procurement,2026-06-09,2026-09-14,Pending,
+ec737598,PRJ-025,NOCs & Approvals,2026-09-14,2026-12-20,Pending,
+860c7b68,PRJ-025,Construction / Implementation,2026-12-20,2027-03-27,Pending,
+24aefbea,PRJ-025,Testing & Commissioning,2027-03-27,2027-07-02,Pending,
+d277ab64,PRJ-025,Handover & Closeout,2027-07-02,2027-10-07,Pending,
+ad3d581e,PRJ-026,Initiation & Feasibility,2025-03-05,2025-04-22,Approved,Christine Johnson MD
+010d583f,PRJ-026,Concept Design,2025-04-22,2025-06-09,Approved,Andrew Charles
+77852ddb,PRJ-026,Detailed Design,2025-06-09,2025-07-27,Approved,Ashley Miranda
+93daf60d,PRJ-026,Tendering & Procurement,2025-07-27,2025-09-13,Approved,Margaret Clark
+46d28109,PRJ-026,NOCs & Approvals,2025-09-13,2025-10-31,Approved,Patricia Lambert
+460d113d,PRJ-026,Construction / Implementation,2025-10-31,2025-12-18,Approved,Tyler Castro
+59ae7302,PRJ-026,Testing & Commissioning,2025-12-18,2026-02-04,In Progress,
+243d116d,PRJ-026,Handover & Closeout,2026-02-04,2026-03-24,Pending,
+48843b5b,PRJ-027,Initiation & Feasibility,2023-03-26,2023-05-21,Approved,Carolyn Collins
+7192e443,PRJ-027,Concept Design,2023-05-21,2023-07-16,Approved,Allen Berger
+0dc5d42e,PRJ-027,Detailed Design,2023-07-16,2023-09-10,Approved,James Bush
+d60f8680,PRJ-027,Tendering & Procurement,2023-09-10,2023-11-05,Approved,Jill Kelly
+b680873b,PRJ-027,NOCs & Approvals,2023-11-05,2023-12-31,Approved,Rhonda Miller
+7737cfb5,PRJ-027,Construction / Implementation,2023-12-31,2024-02-25,Approved,Anna Lang
+74a12a0d,PRJ-027,Testing & Commissioning,2024-02-25,2024-04-21,Approved,Matthew Miranda
+394a97fd,PRJ-027,Handover & Closeout,2024-04-21,2024-06-16,Approved,Steven Scott
+b319f18d,PRJ-028,Initiation & Feasibility,2024-06-23,2024-09-13,Approved,Erin Valencia
+07bf63ee,PRJ-028,Concept Design,2024-09-13,2024-12-04,Approved,Brian Mendoza
+c497d0a8,PRJ-028,Detailed Design,2024-12-04,2025-02-24,Approved,Kenneth Romero
+cbf85149,PRJ-028,Tendering & Procurement,2025-02-24,2025-05-17,Approved,Justin Jones
+669be896,PRJ-028,NOCs & Approvals,2025-05-17,2025-08-07,Approved,Cynthia Sanchez
+6241cba3,PRJ-028,Construction / Implementation,2025-08-07,2025-10-28,Approved,Daniel Benson
+6f73573b,PRJ-028,Testing & Commissioning,2025-10-28,2026-01-18,Approved,Gloria Benson
+13f0e33f,PRJ-028,Handover & Closeout,2026-01-18,2026-04-10,In Progress,
+92fe00e8,PRJ-029,Initiation & Feasibility,2024-12-15,2025-04-21,Approved,Ashley Carlson
+d2701a52,PRJ-029,Concept Design,2025-04-21,2025-08-26,Approved,Eric Sullivan
+d066ad21,PRJ-029,Detailed Design,2025-08-26,2025-12-31,Approved,Sally Murphy
+172d2bd0,PRJ-029,Tendering & Procurement,2025-12-31,2026-05-07,In Progress,
+e3239264,PRJ-029,NOCs & Approvals,2026-05-07,2026-09-11,Pending,
+a2d999ba,PRJ-029,Construction / Implementation,2026-09-11,2027-01-16,Pending,
+258fcafc,PRJ-029,Testing & Commissioning,2027-01-16,2027-05-23,Pending,
+880061b6,PRJ-029,Handover & Closeout,2027-05-23,2027-09-27,Pending,
+93f3503d,PRJ-030,Initiation & Feasibility,2025-06-21,2025-08-12,Approved,Daniel Rich
+e9c7c13a,PRJ-030,Concept Design,2025-08-12,2025-10-03,Approved,Tamara Zuniga
+5821b9f8,PRJ-030,Detailed Design,2025-10-03,2025-11-24,Approved,Lauren Carr DDS
+4b4fafaf,PRJ-030,Tendering & Procurement,2025-11-24,2026-01-15,Approved,Steven Faulkner
+d21ce315,PRJ-030,NOCs & Approvals,2026-01-15,2026-03-08,In Progress,
+dc7abd16,PRJ-030,Construction / Implementation,2026-03-08,2026-04-29,Pending,
+3c38c3f0,PRJ-030,Testing & Commissioning,2026-04-29,2026-06-20,Pending,
+64eec4c1,PRJ-030,Handover & Closeout,2026-06-20,2026-08-11,Pending,
+61fe800a,PRJ-031,Initiation & Feasibility,2025-05-02,2025-05-24,Approved,Jeffrey Clark
+302fa247,PRJ-031,Concept Design,2025-05-24,2025-06-15,Approved,Sarah Ward
+ff594778,PRJ-031,Detailed Design,2025-06-15,2025-07-07,Approved,Beth Smith
+b8a9b014,PRJ-031,Tendering & Procurement,2025-07-07,2025-07-29,Approved,Mary Proctor
+a46a07c2,PRJ-031,NOCs & Approvals,2025-07-29,2025-08-20,Approved,Shannon English
+6cfaf2dd,PRJ-031,Construction / Implementation,2025-08-20,2025-09-11,Approved,Jordan Coleman
+5af56a23,PRJ-031,Testing & Commissioning,2025-09-11,2025-10-03,Approved,Jeff Smith
+3c9ba542,PRJ-031,Handover & Closeout,2025-10-03,2025-10-25,Approved,Debra House
+fa6d81ee,PRJ-032,Initiation & Feasibility,2024-07-22,2024-12-19,Approved,John Richardson
+b0c46ddc,PRJ-032,Concept Design,2024-12-19,2025-05-18,Approved,Nicholas Fox
+c764032e,PRJ-032,Detailed Design,2025-05-18,2025-10-15,Approved,Jose Mills
+78f2961c,PRJ-032,Tendering & Procurement,2025-10-15,2026-03-14,In Progress,
+f5dd7f92,PRJ-032,NOCs & Approvals,2026-03-14,2026-08-11,Pending,
+a2395ad5,PRJ-032,Construction / Implementation,2026-08-11,2027-01-08,Pending,
+4ffffb59,PRJ-032,Testing & Commissioning,2027-01-08,2027-06-07,Pending,
+57f2a45f,PRJ-032,Handover & Closeout,2027-06-07,2027-11-04,Pending,
+7807c947,PRJ-033,Initiation & Feasibility,2024-08-01,2024-09-18,Approved,Taylor Berry
+f5e8a7e1,PRJ-033,Concept Design,2024-09-18,2024-11-05,Approved,Elizabeth Jackson
+bfda55c9,PRJ-033,Detailed Design,2024-11-05,2024-12-23,Approved,Richard Green
+2b48c6e6,PRJ-033,Tendering & Procurement,2024-12-23,2025-02-09,Approved,Mary Carter
+496cc03a,PRJ-033,NOCs & Approvals,2025-02-09,2025-03-29,Approved,Mr. Billy Bowers
+47edc6dd,PRJ-033,Construction / Implementation,2025-03-29,2025-05-16,Approved,David Figueroa
+977e3f2c,PRJ-033,Testing & Commissioning,2025-05-16,2025-07-03,Approved,Mary Wood
+b365fb7c,PRJ-033,Handover & Closeout,2025-07-03,2025-08-20,Approved,Christopher Rose
+159b558b,PRJ-034,Initiation & Feasibility,2023-07-23,2023-09-06,Approved,Linda Underwood
+fe5b9fc9,PRJ-034,Concept Design,2023-09-06,2023-10-21,Approved,James Guerrero
+35fab528,PRJ-034,Detailed Design,2023-10-21,2023-12-05,Approved,Sarah Brown
+1db1ce86,PRJ-034,Tendering & Procurement,2023-12-05,2024-01-19,Approved,John Alvarez
+c09f1c91,PRJ-034,NOCs & Approvals,2024-01-19,2024-03-04,Approved,Cynthia Vega
+25288a1b,PRJ-034,Construction / Implementation,2024-03-04,2024-04-18,Approved,Jessica Roberts
+adb1be7a,PRJ-034,Testing & Commissioning,2024-04-18,2024-06-02,Approved,Joseph Blanchard
+a32e3ab5,PRJ-034,Handover & Closeout,2024-06-02,2024-07-17,Approved,Ryan Bishop
+55c06c8e,PRJ-035,Initiation & Feasibility,2024-01-02,2024-04-12,Approved,Robert Scott
+c5ed3982,PRJ-035,Concept Design,2024-04-12,2024-07-22,Approved,Dana Powers
+56604762,PRJ-035,Detailed Design,2024-07-22,2024-10-31,Approved,Wendy Edwards
+d4e99a65,PRJ-035,Tendering & Procurement,2024-10-31,2025-02-09,Approved,Jason Fox
+382bab11,PRJ-035,NOCs & Approvals,2025-02-09,2025-05-21,Approved,Darlene Johnson
+f041e4f7,PRJ-035,Construction / Implementation,2025-05-21,2025-08-30,Approved,Stephanie Robinson
+b54468e4,PRJ-035,Testing & Commissioning,2025-08-30,2025-12-09,Approved,Angelica Jacobs
+e65fa9fa,PRJ-035,Handover & Closeout,2025-12-09,2026-03-20,In Progress,
+f79828a2,PRJ-036,Initiation & Feasibility,2023-08-21,2023-09-12,Approved,Brian Lopez
+efa9a0a3,PRJ-036,Concept Design,2023-09-12,2023-10-04,Approved,Jesse Carney
+e744aa30,PRJ-036,Detailed Design,2023-10-04,2023-10-26,Approved,Patricia Scott
+c6f06a71,PRJ-036,Tendering & Procurement,2023-10-26,2023-11-17,Approved,James Ferrell
+43c1136c,PRJ-036,NOCs & Approvals,2023-11-17,2023-12-09,Approved,Benjamin Krause
+2dae62c0,PRJ-036,Construction / Implementation,2023-12-09,2023-12-31,Approved,Ashley Fernandez
+a4b1cf6a,PRJ-036,Testing & Commissioning,2023-12-31,2024-01-22,Approved,Jeremy Green
+9243a301,PRJ-036,Handover & Closeout,2024-01-22,2024-02-13,Approved,Paula Smith
+a3ed033a,PRJ-037,Initiation & Feasibility,2025-09-06,2025-11-27,Approved,Andrew Myers
+e79503fb,PRJ-037,Concept Design,2025-11-27,2026-02-17,In Progress,
+83f023fd,PRJ-037,Detailed Design,2026-02-17,2026-05-10,Pending,
+7d9d2b3b,PRJ-037,Tendering & Procurement,2026-05-10,2026-07-31,Pending,
+d8139af7,PRJ-037,NOCs & Approvals,2026-07-31,2026-10-21,Pending,
+c90ec689,PRJ-037,Construction / Implementation,2026-10-21,2027-01-11,Pending,
+00d8c046,PRJ-037,Testing & Commissioning,2027-01-11,2027-04-03,Pending,
+d166eb08,PRJ-037,Handover & Closeout,2027-04-03,2027-06-24,Pending,
+9136e530,PRJ-038,Initiation & Feasibility,2025-06-01,2025-09-25,Approved,Wendy Cook
+a1dc9cab,PRJ-038,Concept Design,2025-09-25,2026-01-19,Approved,Maria Diaz DVM
+75aaecb0,PRJ-038,Detailed Design,2026-01-19,2026-05-15,In Progress,
+a5d5bbf9,PRJ-038,Tendering & Procurement,2026-05-15,2026-09-08,Pending,
+0a119bac,PRJ-038,NOCs & Approvals,2026-09-08,2027-01-02,Pending,
+30e59543,PRJ-038,Construction / Implementation,2027-01-02,2027-04-28,Pending,
+e57e72d3,PRJ-038,Testing & Commissioning,2027-04-28,2027-08-22,Pending,
+5bf88967,PRJ-038,Handover & Closeout,2027-08-22,2027-12-16,Pending,
+a1fe9bc6,PRJ-039,Initiation & Feasibility,2023-12-01,2024-05-10,Approved,Collin Johnson
+97cb4585,PRJ-039,Concept Design,2024-05-10,2024-10-18,Approved,James Sparks
+88b04b77,PRJ-039,Detailed Design,2024-10-18,2025-03-28,Approved,Robin Levy
+0e5995aa,PRJ-039,Tendering & Procurement,2025-03-28,2025-09-05,Approved,Nathan Sullivan
+aad53fb8,PRJ-039,NOCs & Approvals,2025-09-05,2026-02-13,In Progress,
+ad968213,PRJ-039,Construction / Implementation,2026-02-13,2026-07-24,Pending,
+2621d32d,PRJ-039,Testing & Commissioning,2026-07-24,2027-01-01,Pending,
+ecc0baa6,PRJ-039,Handover & Closeout,2027-01-01,2027-06-11,Pending,
+243f45fe,PRJ-040,Initiation & Feasibility,2024-06-03,2024-09-23,Approved,Alec Meadows DDS
+216aebcf,PRJ-040,Concept Design,2024-09-23,2025-01-13,Approved,Mark Conway
+74c88361,PRJ-040,Detailed Design,2025-01-13,2025-05-05,Approved,Sara Brown
+7f44cbca,PRJ-040,Tendering & Procurement,2025-05-05,2025-08-25,Approved,Lisa Brown
+cfbfd796,PRJ-040,NOCs & Approvals,2025-08-25,2025-12-15,Approved,Nancy Morales
+937292e6,PRJ-040,Construction / Implementation,2025-12-15,2026-04-06,In Progress,
+d62015f0,PRJ-040,Testing & Commissioning,2026-04-06,2026-07-27,Pending,
+c3a4704f,PRJ-040,Handover & Closeout,2026-07-27,2026-11-16,Pending,
+55e39295,PRJ-041,Initiation & Feasibility,2024-02-05,2024-07-22,Approved,Donald Todd
+8dac210d,PRJ-041,Concept Design,2024-07-22,2025-01-06,Approved,David Perkins
+d8ed0649,PRJ-041,Detailed Design,2025-01-06,2025-06-23,Approved,Jamie Moore
+01a02047,PRJ-041,Tendering & Procurement,2025-06-23,2025-12-08,Approved,Timothy Mann
+6a8d8a70,PRJ-041,NOCs & Approvals,2025-12-08,2026-05-25,In Progress,
+c5c6ab7d,PRJ-041,Construction / Implementation,2026-05-25,2026-11-09,Pending,
+34c6ea9b,PRJ-041,Testing & Commissioning,2026-11-09,2027-04-26,Pending,
+85e9054f,PRJ-041,Handover & Closeout,2027-04-26,2027-10-11,Pending,
+f026a418,PRJ-042,Initiation & Feasibility,2025-07-29,2025-12-11,Approved,Michael Carlson
+f346bbe7,PRJ-042,Concept Design,2025-12-11,2026-04-25,In Progress,
+c8575c8a,PRJ-042,Detailed Design,2026-04-25,2026-09-07,Pending,
+012b809e,PRJ-042,Tendering & Procurement,2026-09-07,2027-01-20,Pending,
+1e14fe04,PRJ-042,NOCs & Approvals,2027-01-20,2027-06-04,Pending,
+187ebca4,PRJ-042,Construction / Implementation,2027-06-04,2027-10-17,Pending,
+c2d94cc9,PRJ-042,Testing & Commissioning,2027-10-17,2028-02-29,Pending,
+38227b0d,PRJ-042,Handover & Closeout,2028-02-29,2028-07-13,Pending,
+a8c9aa31,PRJ-043,Initiation & Feasibility,2025-03-03,2025-08-15,Approved,Anthony Rodriguez
+f7f47477,PRJ-043,Concept Design,2025-08-15,2026-01-27,Pending,
+2d238ed1,PRJ-043,Detailed Design,2026-01-27,2026-07-11,Pending,
+0b099fcc,PRJ-043,Tendering & Procurement,2026-07-11,2026-12-23,Pending,
+48f9fd0d,PRJ-043,NOCs & Approvals,2026-12-23,2027-06-06,Pending,
+5594552b,PRJ-043,Construction / Implementation,2027-06-06,2027-11-18,Pending,
+c2270738,PRJ-043,Testing & Commissioning,2027-11-18,2028-05-01,Pending,
+bd8bf603,PRJ-043,Handover & Closeout,2028-05-01,2028-10-13,Pending,
+2d06f862,PRJ-044,Initiation & Feasibility,2024-12-21,2025-05-27,Approved,Allen Robertson
+b8addf54,PRJ-044,Concept Design,2025-05-27,2025-10-31,Approved,Kevin Barnes
+536016e7,PRJ-044,Detailed Design,2025-10-31,2026-04-06,In Progress,
+537d66c6,PRJ-044,Tendering & Procurement,2026-04-06,2026-09-10,Pending,
+bcdd0b48,PRJ-044,NOCs & Approvals,2026-09-10,2027-02-14,Pending,
+6022e3ff,PRJ-044,Construction / Implementation,2027-02-14,2027-07-21,Pending,
+7892d145,PRJ-044,Testing & Commissioning,2027-07-21,2027-12-25,Pending,
+e3f713a7,PRJ-044,Handover & Closeout,2027-12-25,2028-05-30,Pending,
+ed8a028c,PRJ-045,Initiation & Feasibility,2025-09-07,2025-09-29,Approved,Cassandra Brooks
+a1cc22d8,PRJ-045,Concept Design,2025-09-29,2025-10-21,Approved,Derrick Rogers
+0f4555da,PRJ-045,Detailed Design,2025-10-21,2025-11-12,Approved,Brian Owens
+57f498e0,PRJ-045,Tendering & Procurement,2025-11-12,2025-12-04,Approved,Edward Moore
+9c8d1ade,PRJ-045,NOCs & Approvals,2025-12-04,2025-12-26,Approved,Laura Tran
+db62a1f7,PRJ-045,Construction / Implementation,2025-12-26,2026-01-17,Approved,Shannon Robinson
+4777be21,PRJ-045,Testing & Commissioning,2026-01-17,2026-02-08,In Progress,
+bc7637a0,PRJ-045,Handover & Closeout,2026-02-08,2026-03-02,Pending,
+53c9aacb,PRJ-046,Initiation & Feasibility,2023-12-21,2024-02-07,Approved,Daniel Pennington
+92de0df8,PRJ-046,Concept Design,2024-02-07,2024-03-26,Approved,Jennifer Williams
+c4c36368,PRJ-046,Detailed Design,2024-03-26,2024-05-13,Approved,Jessica Foster
+d24025ea,PRJ-046,Tendering & Procurement,2024-05-13,2024-06-30,Approved,Jon Miller
+bb56588b,PRJ-046,NOCs & Approvals,2024-06-30,2024-08-17,Approved,Daniel Howard
+173a0c96,PRJ-046,Construction / Implementation,2024-08-17,2024-10-04,Approved,Michael Martin
+bf4e2e46,PRJ-046,Testing & Commissioning,2024-10-04,2024-11-21,Approved,Vanessa Ford
+67c5b29b,PRJ-046,Handover & Closeout,2024-11-21,2025-01-08,Approved,Seth Sims
+dc420980,PRJ-047,Initiation & Feasibility,2025-07-29,2025-09-15,Approved,Janice Vazquez
+6d07ee0b,PRJ-047,Concept Design,2025-09-15,2025-11-02,Approved,Melissa Salazar
+c9a62c37,PRJ-047,Detailed Design,2025-11-02,2025-12-20,Approved,Lisa Rogers
+f200a32c,PRJ-047,Tendering & Procurement,2025-12-20,2026-02-06,In Progress,
+e3528539,PRJ-047,NOCs & Approvals,2026-02-06,2026-03-26,Pending,
+5d975cdc,PRJ-047,Construction / Implementation,2026-03-26,2026-05-13,Pending,
+5d96120d,PRJ-047,Testing & Commissioning,2026-05-13,2026-06-30,Pending,
+8f0ce422,PRJ-047,Handover & Closeout,2026-06-30,2026-08-17,Pending,
+b5971e43,PRJ-048,Initiation & Feasibility,2025-06-30,2025-11-08,Approved,Brenda Rogers
+7a7e8c31,PRJ-048,Concept Design,2025-11-08,2026-03-19,In Progress,
+9482b42f,PRJ-048,Detailed Design,2026-03-19,2026-07-28,Pending,
+35b50ec5,PRJ-048,Tendering & Procurement,2026-07-28,2026-12-06,Pending,
+39b6410e,PRJ-048,NOCs & Approvals,2026-12-06,2027-04-16,Pending,
+44719067,PRJ-048,Construction / Implementation,2027-04-16,2027-08-25,Pending,
+46f2ff38,PRJ-048,Testing & Commissioning,2027-08-25,2028-01-03,Pending,
+5860c4f4,PRJ-048,Handover & Closeout,2028-01-03,2028-05-13,Pending,
+86d4aba8,PRJ-049,Initiation & Feasibility,2023-07-14,2023-12-07,Approved,Julie Patel
+4ad1d634,PRJ-049,Concept Design,2023-12-07,2024-05-01,Approved,Jacob Nunez
+f0dd3de0,PRJ-049,Detailed Design,2024-05-01,2024-09-24,Approved,Chelsea Henson
+e5dfc7af,PRJ-049,Tendering & Procurement,2024-09-24,2025-02-17,Approved,Tyler Jones
+b273f93c,PRJ-049,NOCs & Approvals,2025-02-17,2025-07-13,Approved,Chris Harris
+4b0d2716,PRJ-049,Construction / Implementation,2025-07-13,2025-12-06,Approved,Michael Huynh
+71a0cff8,PRJ-049,Testing & Commissioning,2025-12-06,2026-05-01,In Progress,
+4aa0d842,PRJ-049,Handover & Closeout,2026-05-01,2026-09-24,Pending,
+df2ddf20,PRJ-050,Initiation & Feasibility,2023-05-05,2023-10-17,Approved,Sandy Stone
+57c13f7e,PRJ-050,Concept Design,2023-10-17,2024-03-30,Approved,Rachel Tucker
+d787463d,PRJ-050,Detailed Design,2024-03-30,2024-09-11,Approved,Judith Bradley
+2bf6f6c4,PRJ-050,Tendering & Procurement,2024-09-11,2025-02-23,Approved,Cristina Watson
+0c1d180e,PRJ-050,NOCs & Approvals,2025-02-23,2025-08-07,Approved,Duane Huber
+b639529e,PRJ-050,Construction / Implementation,2025-08-07,2026-01-19,Approved,Catherine Thompson
+aa964dfb,PRJ-050,Testing & Commissioning,2026-01-19,2026-07-03,In Progress,
+3ce75d1e,PRJ-050,Handover & Closeout,2026-07-03,2026-12-15,Pending,
