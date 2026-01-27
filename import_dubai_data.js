@@ -14,7 +14,7 @@
 // ============================================================
 var CONFIG = {
     GITHUB_USER: 'Anandhuvimalan',
-    REPO: 'dubai-pm-data-v2',
+    REPO: 'dubai-project-management-data',
     BRANCH: 'main',
     BATCH_SIZE: 5000,
 
