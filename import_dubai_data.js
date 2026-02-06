@@ -61,6 +61,10 @@ function importAllData() {
 
     ss.toast('Starting Dubai PM Data Import...', '🏗️ Dubai PM', -1);
 
+    // Clean up old sheets before importing
+    deleteOldSheets(ss);
+    ss.toast('Old sheets removed. Importing fresh data...', '🏗️ Dubai PM', -1);
+
     for (var i = 0; i < CONFIG.FILES.length; i++) {
         var file = CONFIG.FILES[i];
         ss.toast('Importing ' + file.sheet + '...', '🏗️ Import', -1);
@@ -80,6 +84,14 @@ function importAllData() {
 
     var duration = Math.round((new Date() - startTime) / 1000 / 60);
     createSummarySheet(ss, results, totalRows, duration);
+
+    // Remove temporary sheet if it exists
+    var tempSheet = ss.getSheetByName('Temp');
+    if (tempSheet) {
+        ss.deleteSheet(tempSheet);
+        Logger.log('Removed temporary sheet.');
+    }
+
     ss.toast('✅ COMPLETE! ' + totalRows + ' rows imported.', 'Done', 5);
 }
 
@@ -154,6 +166,33 @@ function formatSheet(sheet, numCols) {
         sheet.getRange(1, 1, 1, numCols).setFontWeight('bold').setBackground('#2c3e50').setFontColor('white');
         sheet.setRowHeight(1, 30);
     } catch (e) { }
+}
+
+function deleteOldSheets(ss) {
+    var sheets = ss.getSheets();
+
+    Logger.log('Removing all existing sheets to ensure clean import...');
+
+    // Delete all sheets (iterate backwards to avoid index issues)
+    for (var i = sheets.length - 1; i >= 0; i--) {
+        var sheetName = sheets[i].getName();
+
+        try {
+            Logger.log('Deleting sheet: ' + sheetName);
+            ss.deleteSheet(sheets[i]);
+        } catch (e) {
+            // If we can't delete (e.g., last sheet), just clear it
+            Logger.log('Could not delete sheet: ' + sheetName + ' - ' + e.message);
+            sheets[i].clear();
+        }
+    }
+
+    // Ensure at least one sheet exists (Google Sheets requirement)
+    if (ss.getSheets().length === 0) {
+        ss.insertSheet('Temp');
+    }
+
+    Logger.log('All old sheets removed. Ready for fresh import.');
 }
 
 function createSummarySheet(ss, results, totalRows, duration) {
