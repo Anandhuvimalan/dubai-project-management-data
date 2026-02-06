@@ -118,7 +118,7 @@ function importFullCSV(ss, url, sheetName) {
         writeInBatches(sheet, csvData, CONFIG.BATCH_SIZE);
     }
 
-    formatSheet(sheet, numCols);
+    formatSheet(sheet, numCols, totalRows);
     return totalRows;
 }
 
@@ -160,11 +160,16 @@ function fetchWithRetry(url, maxRetries) {
     return null;
 }
 
-function formatSheet(sheet, numCols) {
+function formatSheet(sheet, numCols, totalRows) {
     try {
         sheet.setFrozenRows(1);
         sheet.getRange(1, 1, 1, numCols).setFontWeight('bold').setBackground('#2c3e50').setFontColor('white');
         sheet.setRowHeight(1, 30);
+
+        // Only auto-resize for smaller sheets to avoid timeout
+        if (totalRows < 5000) {
+            sheet.autoResizeColumns(1, numCols);
+        }
     } catch (e) { }
 }
 
