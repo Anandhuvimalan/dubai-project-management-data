@@ -200,11 +200,11 @@ function createSummarySheet(ss, results, totalRows, duration) {
     if (!sheet) { sheet = ss.insertSheet('Import_Summary', 0); } else { sheet.clear(); }
 
     var data = [
-        ['Dubai Project Management - Import Summary'],
-        ['Import Date:', new Date().toLocaleString()],
-        ['Total Rows:', totalRows],
-        ['Duration (min):', duration],
-        [''],
+        ['Dubai Project Management - Import Summary', '', ''],
+        ['Import Date:', new Date().toLocaleString(), ''],
+        ['Total Rows:', totalRows, ''],
+        ['Duration (min):', duration, ''],
+        ['', '', ''],
         ['Table', 'Rows', 'Status']
     ];
     results.forEach(function (r) { data.push([r.file, r.rows, r.status]); });
