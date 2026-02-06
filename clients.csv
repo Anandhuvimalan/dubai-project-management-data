@@ -1,26 +1,51 @@
-client_id,client_name,industry,contact_person,email,phone,location,payment_terms,is_vip
-CL-001,Gulf Purpose Investments,Government Authority,Patrick Sanchez,jillrhodes@miller.com,+971-55-7089236,City Walk,Net 60,False
-CL-002,Middle East Early Holdings,Real Estate Developer,Alyssa Gonzalez,lrobinson@pacheco-smith.com,+971-52-8873090,Dubai Marina,Net 30,False
-CL-003,Dubai Save Solutions,Logistics Firm,Donald Lewis,curtis61@abbott-munoz.com,+971-50-1505406,City Walk,Net 30,True
-CL-004,Gulf Show Solutions,Logistics Firm,Calvin Nielsen,arnoldmaria@mcclure.com,+971-54-2552818,Dubai Hills Estate,Net 90,False
-CL-005,Arabian Answer Enterprises,Real Estate Developer,Patricia Galloway,michellejames@reid-diaz.com,+971-59-4854648,Dubai Creek Harbour,Net 60,False
-CL-006,Desert Hear Development,Hospitality Group,Derek Zuniga,lynchgeorge@sanchez.net,+971-53-9609069,Meydan,Net 30,False
-CL-007,Al Discuss Group,Logistics Firm,Sarah Parsons,lydiatrujillo@adams-clark.org,+971-53-1623157,Meydan,Net 90,False
-CL-008,Middle East Under Solutions,Retail Giant,Christy Porter,ithomas@mcgee.com,+971-57-3933457,Deira,Net 60,True
-CL-009,Royal Skin Investments,Multinational Corp,Stephanie Ross,wendytaylor@davis-williams.com,+971-52-5639247,Bur Dubai,Net 30,False
-CL-010,Middle East Claim Holdings,Logistics Firm,Rebecca Henderson,cruzcaitlin@rice-maddox.com,+971-53-8717196,Jumeirah Lake Towers (JLT),Net 60,False
-CL-011,Dubai Response Investments,Government Authority,Melanie Herrera,kayla51@graham-chavez.com,+971-55-1087338,Bur Dubai,Net 30,False
-CL-012,Dubai Month Group,Logistics Firm,Katie Rodriguez,meagan89@hernandez.net,+971-55-3249962,Palm Jumeirah,Net 60,False
-CL-013,Al Start Investments,Real Estate Developer,Tamara George,xsmith@allen-allen.org,+971-53-9072881,Deira,Net 90,False
-CL-014,Desert Your Enterprises,Logistics Firm,Nicholas Cabrera,davidalvarez@martin.com,+971-54-5382043,Dubai Marina,Net 90,True
-CL-015,Desert Woman Enterprises,Multinational Corp,Monica Harris,raymond57@hayes.com,+971-56-6830046,Jebel Ali Free Zone (JAFZA),Net 30,False
-CL-016,Royal Per Investments,Hospitality Group,Leah Smith,perezrebecca@jones-young.info,+971-56-4109919,Dubai Marina,Net 90,True
-CL-017,Middle East Difficult Properties,Logistics Firm,Miranda Khan,esanchez@lee-davis.biz,+971-50-4943601,Dubai Silicon Oasis,Net 60,False
-CL-018,Royal Health Group,Hospitality Group,John Daniel,brownjessica@wright.net,+971-55-2976009,Business Bay,Net 30,True
-CL-019,Gulf List Authority,Hospitality Group,Clifford Ford,ramosmichelle@garcia.com,+971-50-2489829,Business Bay,Net 30,False
-CL-020,Middle East Better Properties,Real Estate Developer,Sarah Martin,zolson@martin.biz,+971-57-7228596,City Walk,Net 60,True
-CL-021,Al Evidence Investments,Logistics Firm,Rachel Mitchell,smoore@novak.net,+971-55-4545965,Palm Jumeirah,Net 30,True
-CL-022,Middle East Ask Development,Retail Giant,Amy Silva,brianromero@jones.com,+971-58-5124932,Dubai Marina,Net 30,True
-CL-023,Gulf International Development,Logistics Firm,Steve Sanchez,harveyrobert@cunningham.com,+971-53-5519927,Dubai Silicon Oasis,Net 60,False
-CL-024,Al Edge Authority,Retail Giant,Carlos Brewer,wstewart@smith.org,+971-55-1127192,Dubai Silicon Oasis,Net 60,True
-CL-025,Royal Black Properties,Logistics Firm,Daniel Baker,nicole35@moore-bass.com,+971-51-3126815,Expo City Dubai,Net 30,False
+client_id,client_name,client_type,trade_license,trn,contact_person,designation,email,phone,address,payment_terms,credit_limit_aed
+CL-001,Emaar Properties,Government,126225,100896233790,Danielle Johnson,Contracts Manager,danielle.johnson@emaarproperties.ae,+971-52-4744854,"JLT, Dubai, UAE",Net 30,10000000
+CL-002,DAMAC Properties,Government,719176,100553035110,Joshua Walker,Project Director,joshua.walker@damacproperties.ae,+971-50-2571945,"Dubai Hills Estate, Dubai, UAE",Net 45,10000000
+CL-003,Nakheel,Government,688508,100313500298,Jill Rhodes,Procurement Manager,jill.rhodes@nakheel.ae,+971-56-8038374,"Meydan, Dubai, UAE",Net 90,10000000
+CL-004,Dubai Holding,Private Developer,948749,100106977991,Patricia Miller,Project Director,patricia.miller@dubaiholding.ae,+971-55-6708456,"Dubai Creek Harbour, Dubai, UAE",Net 45,1000000
+CL-005,Meraas,Private Developer,207175,100199585092,Robert Johnson,Contracts Manager,robert.johnson@meraas.ae,+971-50-7022674,"Al Quoz Industrial, Dubai, UAE",Net 60,500000
+CL-006,Azizi Developments,Contractor,662275,100234031070,Jeffery Wagner,Contracts Manager,jeffery.wagner@azizidevelopments.ae,+971-50-5918715,"Al Quoz Industrial, Dubai, UAE",Net 45,500000
+CL-007,Sobha Realty,Government,793384,100344703907,Anthony Gonzalez,Contracts Manager,anthony.gonzalez@sobharealty.ae,+971-50-4905582,"DIFC, Dubai, UAE",Net 90,2000000
+CL-008,Al Futtaim Group,Contractor,766563,100995619255,Debra Gardner,Contracts Manager,debra.gardner@alfuttaimgroup.ae,+971-52-7210606,"Al Quoz Industrial, Dubai, UAE",Net 45,2000000
+CL-009,Majid Al Futtaim,Government,738720,100781802744,Jeffrey Lawrence,Project Director,jeffrey.lawrence@majidalfuttaim.ae,+971-56-5107245,"Palm Jumeirah, Dubai, UAE",Net 90,5000000
+CL-010,Dubai RTA,Private Developer,771088,100838908273,Lisa Smith,Procurement Manager,lisa.smith@dubairta.ae,+971-52-6440561,"Downtown Dubai, Dubai, UAE",Net 45,500000
+CL-011,Dubai Municipality,Private Developer,520651,100387484583,Linda Wolfe,Project Director,linda.wolfe@dubaimunicipality.ae,+971-52-6279418,"Dubai Hills Estate, Dubai, UAE",Net 90,5000000
+CL-012,DEWA,Contractor,249811,100384412919,Matthew Moore,Project Director,matthew.moore@dewa.ae,+971-52-5408072,"Sheikh Zayed Road, Dubai, UAE",Net 90,10000000
+CL-013,Expo 2020 LLC,Contractor,479580,100335493870,Susan Rogers,Project Director,susan.rogers@expo2020llc.ae,+971-56-9279821,"Dubai Marina, Dubai, UAE",Net 30,500000
+CL-014,DP World,Semi-Government,757924,100271779360,Christopher Davis,Procurement Manager,christopher.davis@dpworld.ae,+971-55-2065818,"DIP, Dubai, UAE",Net 90,10000000
+CL-015,JAFZA,Contractor,654816,100369953851,Melanie Munoz,Procurement Manager,melanie.munoz@jafza.ae,+971-50-2921859,"Bur Dubai, Dubai, UAE",Net 60,2000000
+CL-016,Dubai South,Government,407757,100566825638,Lindsay Blair,Project Director,lindsay.blair@dubaisouth.ae,+971-55-1054447,"Dubai Creek Harbour, Dubai, UAE",Net 45,10000000
+CL-017,Etihad Rail,Government,755674,100420452650,Amanda Dudley,Procurement Manager,amanda.dudley@etihadrail.ae,+971-56-4337174,"JLT, Dubai, UAE",Net 60,1000000
+CL-018,Aldar Properties,Government,728038,100448059918,Nicholas Arnold,Contracts Manager,nicholas.arnold@aldarproperties.ae,+971-50-2876828,"Al Quoz Industrial, Dubai, UAE",Net 60,1000000
+CL-019,Mubadala,Government,352572,100709194872,Maria Montgomery,Project Director,maria.montgomery@mubadala.ae,+971-50-9153566,"Dubai Marina, Dubai, UAE",Net 45,1000000
+CL-020,Abu Dhabi Ports,Contractor,676510,100277303722,Michelle Ray,Contracts Manager,michelle.ray@abudhabiports.ae,+971-56-8099076,"Dubai Hills Estate, Dubai, UAE",Net 45,2000000
+CL-021,Bloom Holding,Contractor,804314,100797801251,Janet Williams,Contracts Manager,janet.williams@bloomholding.ae,+971-55-9683481,"JVC, Dubai, UAE",Net 30,1000000
+CL-022,Eagle Hills,Semi-Government,167136,100463016614,Jeremy Roberts,Project Director,jeremy.roberts@eaglehills.ae,+971-56-4860684,"Sheikh Zayed Road, Dubai, UAE",Net 45,500000
+CL-023,Select Group,Government,842225,100777641645,Christopher Hall,Project Director,christopher.hall@selectgroup.ae,+971-52-2130789,"Downtown Dubai, Dubai, UAE",Net 60,500000
+CL-024,Danube Properties,Semi-Government,392004,100818309417,Craig Ramirez,Contracts Manager,craig.ramirez@danubeproperties.ae,+971-52-3219824,"Sheikh Zayed Road, Dubai, UAE",Net 90,1000000
+CL-025,Binghatti Developers,Contractor,946721,100537077308,Cynthia Diaz,Project Director,cynthia.diaz@binghattidevelopers.ae,+971-50-2626229,"Expo City, Dubai, UAE",Net 60,5000000
+CL-026,Omniyat,Contractor,589710,100882839238,Mitchell Clark,Project Director,mitchell.clark@omniyat.ae,+971-50-2016911,"DIP, Dubai, UAE",Net 60,500000
+CL-027,Al Wasl Properties,Semi-Government,300896,100304235259,Joseph Zuniga,Procurement Manager,joseph.zuniga@alwaslproperties.ae,+971-55-3351868,"Expo City, Dubai, UAE",Net 45,2000000
+CL-028,Dubai Properties,Contractor,361941,100180943908,Deborah Lynch,Contracts Manager,deborah.lynch@dubaiproperties.ae,+971-56-2642635,"Downtown Dubai, Dubai, UAE",Net 30,500000
+CL-029,Deyaar Development,Semi-Government,274389,100536383774,George Daniel,Contracts Manager,george.daniel@deyaardevelopment.ae,+971-55-4586084,"DIP, Dubai, UAE",Net 30,1000000
+CL-030,Union Properties,Contractor,102260,100519212169,Frank Gray,Contracts Manager,frank.gray@unionproperties.ae,+971-55-5785687,"Expo City, Dubai, UAE",Net 90,1000000
+CL-031,Tilal Properties,Semi-Government,411120,100333754555,Veronica Bowman,Project Director,veronica.bowman@tilalproperties.ae,+971-56-2022698,"JAFZA, Dubai, UAE",Net 30,500000
+CL-032,Al Habtoor Group,Contractor,627276,100670292350,Angela Cohen,Project Director,angela.cohen@alhabtoorgroup.ae,+971-50-9519948,"Dubai Marina, Dubai, UAE",Net 45,500000
+CL-033,Jumeirah Group,Government,808011,100352548261,Megan Parsons,Contracts Manager,megan.parsons@jumeirahgroup.ae,+971-50-5130808,"Sheikh Zayed Road, Dubai, UAE",Net 30,10000000
+CL-034,Arabtec Construction,Government,539589,100805849060,Jeremy Johnson,Procurement Manager,jeremy.johnson@arabtecconstruction.ae,+971-56-9770838,"JAFZA, Dubai, UAE",Net 60,1000000
+CL-035,Drake & Scull,Private Developer,350280,100385201412,Leslie Adams,Contracts Manager,leslie.adams@drakescull.ae,+971-52-6033115,"JVC, Dubai, UAE",Net 60,500000
+CL-036,Al Ghurair Properties,Government,580547,100766964667,Jason Hahn,Procurement Manager,jason.hahn@alghurairproperties.ae,+971-50-2229110,"Bur Dubai, Dubai, UAE",Net 45,10000000
+CL-037,Limitless,Private Developer,238890,100474745382,Nancy Edwards,Project Director,nancy.edwards@limitless.ae,+971-52-7199635,"Dubai South, Dubai, UAE",Net 45,5000000
+CL-038,Tabreed,Private Developer,741390,100966616964,Diana Foster,Procurement Manager,diana.foster@tabreed.ae,+971-56-1131249,"Bur Dubai, Dubai, UAE",Net 60,500000
+CL-039,Enoc,Semi-Government,377312,100223940587,Robin Ellis,Project Director,robin.ellis@enoc.ae,+971-56-3607983,"Dubai Creek Harbour, Dubai, UAE",Net 60,10000000
+CL-040,Emirates NBD Properties,Semi-Government,852470,100468164906,Joseph Wright,Project Director,joseph.wright@emiratesnbdproperties.ae,+971-54-9479356,"Al Barsha, Dubai, UAE",Net 60,500000
+CL-041,FAB Properties,Government,765095,100554811020,Anna Baker,Contracts Manager,anna.baker@fabproperties.ae,+971-50-1059486,"JAFZA, Dubai, UAE",Net 45,2000000
+CL-042,RAK Properties,Semi-Government,877236,100574417266,Brenda Hurst,Procurement Manager,brenda.hurst@rakproperties.ae,+971-55-1162230,"DIFC, Dubai, UAE",Net 30,1000000
+CL-043,Sharjah Holding,Government,975136,100496442646,Reginald Robinson,Procurement Manager,reginald.robinson@sharjahholding.ae,+971-56-3484601,"Expo City, Dubai, UAE",Net 45,500000
+CL-044,Al Ain Properties,Private Developer,482364,100954829815,Whitney Hicks,Project Director,whitney.hicks@alainproperties.ae,+971-54-4524499,"Meydan, Dubai, UAE",Net 30,2000000
+CL-045,Fujairah Development,Contractor,750810,100904745462,Christopher Williams,Project Director,christopher.williams@fujairahdevelopment.ae,+971-52-3726327,"Palm Jumeirah, Dubai, UAE",Net 90,500000
+CL-046,Ajman Properties,Semi-Government,872343,100456681425,Daniel Burton,Contracts Manager,daniel.burton@ajmanproperties.ae,+971-52-5476257,"Palm Jumeirah, Dubai, UAE",Net 30,5000000
+CL-047,Palma Holding,Government,593554,100338836384,Laura Henderson,Project Director,laura.henderson@palmaholding.ae,+971-55-6866294,"Dubai South, Dubai, UAE",Net 45,1000000
+CL-048,Reportage Properties,Government,792094,100307371533,Bryan James,Contracts Manager,bryan.james@reportageproperties.ae,+971-54-5674183,"Dubai Marina, Dubai, UAE",Net 60,2000000
+CL-049,Mag Property Development,Contractor,812526,100675757257,Wendy Rice,Contracts Manager,wendy.rice@magpropertydevelopment.ae,+971-50-2935113,"Dubai Creek Harbour, Dubai, UAE",Net 45,10000000
+CL-050,Ellington Properties,Private Developer,140115,100216396351,Tasha Valencia,Procurement Manager,tasha.valencia@ellingtonproperties.ae,+971-55-6799667,"JAFZA, Dubai, UAE",Net 90,10000000

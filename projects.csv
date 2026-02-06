@@ -1,51 +1,101 @@
-project_id,project_name,type,client_id,manager_id,start_date,end_date,status,budget_aed,location,priority,completion_percentage,description
-PRJ-001,Implement E-Business Eyeballs,Logistics - Warehouse Automation,CL-003,EMP-0152,2025-09-14,2026-10-09,In Progress,18388576,Jebel Ali Free Zone (JAFZA),Medium,92,Phased radical Internet solution
-PRJ-002,Optimize Back-End E-Services,Infrastructure - Road Network,CL-019,EMP-0056,2023-05-17,2024-03-12,Completed,22371116,City Walk,High,100,Multi-layered attitude-oriented portal
-PRJ-003,Drive Integrated Interfaces,Marketing - Tourism Campaign,CL-005,EMP-0201,2023-02-28,2023-10-26,Completed,54382215,Sheikh Zayed Road,Low,100,Seamless solution-oriented model
-PRJ-004,Unleash Leading-Edge Roi,Healthcare - Hospital Wing Expansion,CL-020,EMP-0074,2024-03-21,2025-09-12,Completed,32544647,Expo City Dubai,Low,100,Sharable modular intranet
-PRJ-005,Aggregate Front-End Solutions,Infrastructure - Road Network,CL-010,EMP-0218,2023-01-17,2026-05-31,Delayed,85823196,Sheikh Zayed Road,Medium,46,Automated zero tolerance policy
-PRJ-006,Mesh Bleeding-Edge E-Business,Construction - Commercial Mall,CL-020,EMP-0184,2025-03-04,2026-04-28,In Progress,107763216,Bur Dubai,High,80,Down-sized systematic alliance
-PRJ-007,Incentivize Clicks-And-Mortar Communities,Consulting - Strategic Vision 2030,CL-025,EMP-0245,2024-07-12,2026-08-31,In Progress,18036856,Dubai Silicon Oasis,Critical,56,Cross-group even-keeled time-frame
-PRJ-008,Seize Impactful Interfaces,Logistics - Warehouse Automation,CL-018,EMP-0150,2024-09-12,2026-05-05,Delayed,8047029,Dubai Creek Harbour,Medium,19,Reverse-engineered dedicated model
-PRJ-009,Extend Innovative Infrastructures,Marketing - Tourism Campaign,CL-012,EMP-0128,2023-01-24,2025-07-12,Completed,91573812,DIFC,Critical,100,Reactive executive success
-PRJ-010,Redefine Cross-Media Convergence,Infrastructure - Road Network,CL-023,EMP-0014,2025-05-18,2025-11-14,Completed,72111774,Sheikh Zayed Road,Critical,100,Grass-roots directional portal
-PRJ-011,Target Wireless Networks,Marketing - Tourism Campaign,CL-011,EMP-0014,2023-10-30,2027-02-11,Delayed,149015581,City Walk,Critical,57,Adaptive empowering conglomeration
-PRJ-012,Deliver Sticky Schemas,Consulting - Strategic Vision 2030,CL-004,EMP-0154,2024-09-24,2027-10-09,In Progress,95004117,Jebel Ali Free Zone (JAFZA),Medium,91,Compatible motivating frame
-PRJ-013,Embrace Dot-Com Users,Construction - Residential Tower,CL-005,EMP-0218,2024-06-12,2025-11-04,Completed,51988141,Al Barsha,Critical,100,Re-engineered eco-centric solution
-PRJ-014,Synergize Compelling Action-Items,IT - Government Smart Services Portal,CL-013,EMP-0014,2024-11-18,2028-08-29,On Hold,73252392,City Walk,High,91,Versatile global time-frame
-PRJ-015,Innovate Ubiquitous Applications,Consulting - Strategic Vision 2030,CL-002,EMP-0130,2024-12-13,2027-04-02,In Progress,46929356,Expo City Dubai,Critical,58,Assimilated mission-critical budgetary management
-PRJ-016,Optimize Enterprise Functionalities,Logistics - Warehouse Automation,CL-023,EMP-0080,2024-02-05,2027-08-18,Delayed,44849653,Bur Dubai,Medium,65,Face-to-face systematic standardization
-PRJ-017,Exploit Turn-Key E-Markets,Energy - Solar Park Installation,CL-013,EMP-0198,2023-12-24,2024-09-19,Completed,115429317,DIFC,Critical,100,Multi-channeled multi-state monitoring
-PRJ-018,Scale Back-End Action-Items,IT - Government Smart Services Portal,CL-022,EMP-0041,2023-01-16,2026-08-28,Delayed,148021205,Meydan,High,85,Horizontal background initiative
-PRJ-019,Extend Cross-Platform Partnerships,IT - ERP Implementation,CL-007,EMP-0046,2025-11-12,2028-01-01,In Progress,78588599,Meydan,Low,89,Reactive context-sensitive leverage
-PRJ-020,Seize Killer Networks,Construction - Residential Tower,CL-015,EMP-0184,2024-05-02,2024-10-29,Completed,19386517,Dubai Marina,Low,100,Future-proofed contextually-based synergy
-PRJ-021,Re-Contextualize Dynamic Models,Consulting - Strategic Vision 2030,CL-018,EMP-0150,2025-11-27,2029-08-08,In Progress,50896234,City Walk,Medium,34,User-centric dedicated encoding
-PRJ-022,Cultivate Back-End E-Tailers,IT - Government Smart Services Portal,CL-005,EMP-0081,2024-01-12,2025-01-06,Completed,148682072,Dubai Hills Estate,Medium,100,Focused dedicated encryption
-PRJ-023,Seize B2C Platforms,Marketing - Tourism Campaign,CL-004,EMP-0245,2025-08-18,2027-04-10,In Progress,71591035,Dubai Marina,Medium,12,Decentralized attitude-oriented service-desk
-PRJ-024,Synthesize Clicks-And-Mortar Users,Infrastructure - Road Network,CL-015,EMP-0080,2025-10-27,2026-05-25,In Progress,80770374,Dubai Creek Harbour,Low,41,Balanced mission-critical hub
-PRJ-025,Harness Rich Networks,Events - Global Conference Setup,CL-012,EMP-0184,2025-08-22,2027-10-11,In Progress,16527322,Dubai Creek Harbour,High,87,Grass-roots mobile contingency
-PRJ-026,Empower Impactful E-Services,Events - Global Conference Setup,CL-003,EMP-0178,2025-03-05,2026-03-30,On Hold,4524789,Palm Jumeirah,Low,14,Versatile object-oriented capacity
-PRJ-027,Mesh Cutting-Edge Info-Mediaries,Healthcare - Hospital Wing Expansion,CL-013,EMP-0130,2023-03-26,2024-06-18,Completed,56146816,Expo City Dubai,Low,100,Quality-focused 5thgeneration middleware
-PRJ-028,Strategize Virtual Bandwidth,Consulting - Strategic Vision 2030,CL-016,EMP-0056,2024-06-23,2026-04-14,In Progress,5861032,Bur Dubai,Low,55,Decentralized tangible model
-PRJ-029,Harness Value-Added Synergies,Energy - Solar Park Installation,CL-008,EMP-0204,2024-12-15,2027-10-01,In Progress,48873021,Palm Jumeirah,Medium,15,Synergistic demand-driven implementation
-PRJ-030,Transform World-Class Relationships,IT - Government Smart Services Portal,CL-024,EMP-0245,2025-06-21,2026-08-15,In Progress,125854887,Downtown Dubai,Critical,12,Seamless empowering contingency
-PRJ-031,Morph Web-Enabled Niches,Construction - Commercial Mall,CL-011,EMP-0046,2025-05-02,2025-10-29,Completed,134330666,Expo City Dubai,Low,100,Phased reciprocal Graphical User Interface
-PRJ-032,Reinvent Rich E-Commerce,Energy - Solar Park Installation,CL-013,EMP-0184,2024-07-22,2027-11-04,Delayed,62777703,Deira,High,40,Expanded intangible standardization
-PRJ-033,Disintermediate Wireless Niches,IT - ERP Implementation,CL-024,EMP-0081,2024-08-01,2025-08-26,Completed,57725405,Dubai Creek Harbour,High,100,Organized contextually-based orchestration
-PRJ-034,Maximize Bleeding-Edge Platforms,IT - Government Smart Services Portal,CL-007,EMP-0046,2023-07-23,2024-07-17,Completed,111920042,City Walk,Critical,100,Up-sized encompassing website
-PRJ-035,Engage User-Centric Architectures,Construction - Commercial Mall,CL-014,EMP-0150,2024-01-02,2026-03-22,In Progress,130468489,Jebel Ali Free Zone (JAFZA),Medium,48,Exclusive client-server website
-PRJ-036,Syndicate Value-Added Roi,Construction - Commercial Mall,CL-015,EMP-0056,2023-08-21,2024-02-17,Completed,121154477,Dubai Hills Estate,Low,100,Operative modular challenge
-PRJ-037,Mesh Turn-Key Models,Marketing - Tourism Campaign,CL-015,EMP-0036,2025-09-06,2027-06-28,In Progress,6865422,Dubai Silicon Oasis,High,73,Innovative eco-centric open architecture
-PRJ-038,Streamline Impactful Platforms,Construction - Residential Tower,CL-004,EMP-0177,2025-06-01,2027-12-18,In Progress,76822312,Dubai Silicon Oasis,Critical,69,Team-oriented cohesive approach
-PRJ-039,Transition Dot-Com Info-Mediaries,Logistics - Warehouse Automation,CL-014,EMP-0056,2023-12-01,2027-06-13,Delayed,89348871,Dubai Hills Estate,Medium,44,Self-enabling bandwidth-monitored knowledge user
-PRJ-040,Morph Bricks-And-Clicks Relationships,IT - Government Smart Services Portal,CL-017,EMP-0036,2024-06-03,2026-11-20,Delayed,83543592,Dubai Marina,Medium,51,Realigned next generation workforce
-PRJ-041,Seize Vertical E-Markets,Construction - Commercial Mall,CL-019,EMP-0074,2024-02-05,2027-10-17,In Progress,140262795,Dubai Silicon Oasis,Medium,74,Decentralized grid-enabled service-desk
-PRJ-042,Aggregate Virtual Technologies,Healthcare - Hospital Wing Expansion,CL-017,EMP-0233,2025-07-29,2028-07-13,On Hold,6271054,Downtown Dubai,Critical,39,Multi-channeled fresh-thinking service-desk
-PRJ-043,Synthesize Customized Infrastructures,IT - Government Smart Services Portal,CL-025,EMP-0056,2025-03-03,2028-10-13,On Hold,96912155,Expo City Dubai,High,40,Multi-tiered reciprocal forecast
-PRJ-044,Whiteboard B2B Communities,Consulting - Strategic Vision 2030,CL-003,EMP-0094,2024-12-21,2028-06-03,In Progress,9203471,Downtown Dubai,Low,18,Sharable global instruction set
-PRJ-045,Re-Intermediate Wireless Partnerships,Logistics - Warehouse Automation,CL-012,EMP-0150,2025-09-07,2026-03-06,In Progress,139310938,Jebel Ali Free Zone (JAFZA),Low,82,Configurable cohesive Graphical User Interface
-PRJ-046,Harness Turn-Key Experiences,Events - Global Conference Setup,CL-002,EMP-0027,2023-12-21,2025-01-14,Completed,131382080,DIFC,High,100,Implemented tertiary flexibility
-PRJ-047,Visualize Impactful Niches,Events - Global Conference Setup,CL-008,EMP-0154,2025-07-29,2026-08-23,On Hold,130786169,Bur Dubai,Medium,47,Organic zero-defect hierarchy
-PRJ-048,Mesh Customized E-Markets,Energy - Solar Park Installation,CL-005,EMP-0094,2025-06-30,2028-05-15,In Progress,34467330,Business Bay,Critical,28,Down-sized contextually-based adapter
-PRJ-049,Drive Web-Enabled Web Services,IT - ERP Implementation,CL-021,EMP-0017,2023-07-14,2026-09-26,In Progress,75193821,Dubai Silicon Oasis,Critical,10,Function-based value-added standardization
-PRJ-050,Architect Frictionless Interfaces,IT - ERP Implementation,CL-014,EMP-0017,2023-05-05,2026-12-15,In Progress,745045,Al Quoz Industrial Area,Low,87,Customer-focused bandwidth-monitored architecture
+project_id,project_name,project_type,client_id,project_manager_id,location,plot_number,dm_permit_no,contract_value_aed,start_date,end_date,status,completion_pct,gfa_sqm,floors,description
+PRJ-001,Al Khail Heights Tower,Infrastructure - Bridges,CL-014,EMP-0043,Dubai Creek Harbour,Plot 386-58,DM-2022-255851,97775164,2022-05-04,2025-07-17,Completed,100,14083,79,Marine & Coastal Works project in Meydan
+PRJ-002,Business Bay Plaza,Industrial Warehouse,CL-036,EMP-0067,Downtown Dubai,Plot 189-36,DM-2022-501620,272840394,2022-05-19,2024-11-04,Completed,100,40975,4,Utility Infrastructure project in Deira
+PRJ-003,Marina Residences Phase 2,Retail Mall,CL-002,EMP-0060,Al Quoz Industrial,Plot 591-70,DM-2023-919394,343633682,2023-10-17,2026-01-04,Completed,100,132055,10,Retail Mall project in JAFZA
+PRJ-004,Downtown Commercial Tower,Mixed-Use Development,CL-002,EMP-0054,Meydan,Plot 130-36,DM-2021-161437,150189055,2021-04-06,2024-03-21,Completed,100,128649,68,Infrastructure - Bridges project in Sheikh Zayed Road
+PRJ-005,Palm Beach Villas,Commercial Office Building,CL-016,EMP-0093,Meydan,Plot 372-69,DM-2020-955937,90697919,2020-04-17,2022-06-06,Completed,100,198215,29,Marine & Coastal Works project in DIP
+PRJ-006,Creek Harbour Mixed-Use,Villa Development,CL-038,EMP-0054,Al Quoz Industrial,Plot 705-4,DM-2025-837623,455554015,2025-03-22,2028-01-06,In Progress,32,188647,10,Marine & Coastal Works project in JLT
+PRJ-007,Dubai South Logistics Hub,Infrastructure - Roads,CL-012,EMP-0067,Downtown Dubai,Plot 192-8,DM-2025-343923,106057178,2025-04-07,2029-03-17,On Hold,79,162722,1,Retail Mall project in Al Barsha
+PRJ-008,JVC Community Center,Mixed-Use Development,CL-022,EMP-0096,Palm Jumeirah,Plot 921-42,DM-2025-162448,183098329,2025-03-31,2026-03-26,Delayed,35,10744,10,School/Educational project in JLT
+PRJ-009,DIFC Office Tower,Retail Mall,CL-024,EMP-0005,Al Quoz Industrial,Plot 821-85,DM-2022-514812,459450966,2022-02-02,2023-08-26,Completed,100,158620,13,Infrastructure - Bridges project in Dubai South
+PRJ-010,Meydan One Mall Extension,Mixed-Use Development,CL-047,EMP-0065,Al Barsha,Plot 764-41,DM-2022-282664,78256928,2022-07-05,2025-02-19,Completed,100,190383,10,Infrastructure - Bridges project in Meydan
+PRJ-011,Expo City Pavilion,Mixed-Use Development,CL-012,EMP-0097,Business Bay,Plot 818-74,DM-2024-510623,208143422,2024-03-30,2026-02-18,In Progress,47,153762,24,Marine & Coastal Works project in JAFZA
+PRJ-012,Al Quoz Warehouse Complex,Marine & Coastal Works,CL-007,EMP-0067,JLT,Plot 439-96,DM-2023-181586,348407744,2023-07-04,2025-08-22,Completed,100,67389,6,Mixed-Use Development project in Dubai Marina
+PRJ-013,JLT Office Renovation,Villa Development,CL-016,EMP-0096,Dubai Marina,Plot 458-33,DM-2024-925250,244782620,2024-09-06,2027-05-24,In Progress,43,33320,1,High-Rise Residential Tower project in DIP
+PRJ-014,Dubai Hills Villa Cluster,Industrial Warehouse,CL-032,EMP-0060,Al Quoz Industrial,Plot 659-49,DM-2024-206355,398303304,2024-01-28,2027-05-12,On Hold,31,130695,4,Mixed-Use Development project in JVC
+PRJ-015,Deira Waterfront,High-Rise Residential Tower,CL-019,EMP-0001,JAFZA,Plot 367-14,DM-2020-177804,434064315,2020-07-08,2021-10-31,Completed,100,94602,7,Mixed-Use Development project in Dubai Marina
+PRJ-016,Bur Dubai Heritage Hotel,Commercial Office Building,CL-022,EMP-0084,Al Barsha,Plot 821-4,DM-2020-552275,487176741,2020-09-29,2024-08-09,Completed,100,176346,10,Industrial Warehouse project in Palm Jumeirah
+PRJ-017,Festival City Expansion,Infrastructure - Bridges,CL-014,EMP-0046,Expo City,Plot 813-71,DM-2022-857111,59362373,2022-05-19,2023-08-12,Completed,100,196358,5,Utility Infrastructure project in Dubai South
+PRJ-018,Silicon Oasis Tech Park,Commercial Office Building,CL-004,EMP-0060,Sheikh Zayed Road,Plot 662-63,DM-2023-261050,132532765,2023-04-04,2025-10-20,Completed,100,19288,1,Industrial Warehouse project in Dubai Marina
+PRJ-019,Sports City Stadium,Utility Infrastructure,CL-041,EMP-0084,Al Barsha,Plot 304-13,DM-2021-126985,447326499,2021-03-02,2023-08-19,Completed,100,59251,5,Commercial Office Building project in Al Barsha
+PRJ-020,Motor City Showroom,Industrial Warehouse,CL-031,EMP-0067,Dubai Creek Harbour,Plot 193-83,DM-2023-670557,170545968,2023-07-26,2025-02-15,Completed,100,106587,6,Industrial Warehouse project in Al Quoz Industrial
+PRJ-021,Green Community Villas,High-Rise Residential Tower,CL-017,EMP-0066,JVC,Plot 369-29,DM-2021-977740,244323779,2021-09-11,2023-08-02,Completed,100,75401,1,Mixed-Use Development project in DIFC
+PRJ-022,Academic City Campus,Infrastructure - Bridges,CL-035,EMP-0065,Sheikh Zayed Road,Plot 332-71,DM-2024-163946,363705560,2024-06-21,2025-11-13,Completed,100,106477,7,Retail Mall project in Al Barsha
+PRJ-023,Healthcare City Hospital Wing,Villa Development,CL-031,EMP-0052,Dubai Marina,Plot 504-92,DM-2022-136415,478334318,2022-02-13,2026-01-23,Completed,100,136622,9,Marine & Coastal Works project in JLT
+PRJ-024,Media City Studios,Mixed-Use Development,CL-014,EMP-0046,JLT,Plot 143-55,DM-2025-182175,411512617,2025-05-13,2026-12-04,On Hold,32,184077,4,Utility Infrastructure project in JLT
+PRJ-025,Internet City Office Block,Industrial Warehouse,CL-036,EMP-0060,Bur Dubai,Plot 433-36,DM-2024-644932,176664198,2024-08-16,2026-12-04,In Progress,21,125103,80,Marine & Coastal Works project in Deira
+PRJ-026,Knowledge Park College,Industrial Warehouse,CL-010,EMP-0012,Sheikh Zayed Road,Plot 702-75,DM-2020-895216,65408093,2020-03-01,2023-04-15,Completed,100,31267,10,Commercial Office Building project in Dubai South
+PRJ-027,Investment Park Factory,Infrastructure - Roads,CL-025,EMP-0090,Al Barsha,Plot 685-78,DM-2023-596025,477519300,2023-04-03,2027-01-12,In Progress,62,14821,5,Industrial Warehouse project in JLT
+PRJ-028,Logistics City Distribution Center,Industrial Warehouse,CL-022,EMP-0096,Meydan,Plot 150-96,DM-2023-598302,25821214,2023-01-20,2026-02-03,Completed,100,75407,1,Infrastructure - Bridges project in Dubai South
+PRJ-029,Maritime City Terminal,Villa Development,CL-009,EMP-0052,JVC,Plot 892-42,DM-2024-382507,155509962,2024-01-30,2026-08-17,On Hold,22,196050,10,Utility Infrastructure project in Dubai Marina
+PRJ-030,Textile City Warehouse,School/Educational,CL-032,EMP-0075,Al Quoz Industrial,Plot 940-8,DM-2024-640299,242144795,2024-08-18,2026-08-08,In Progress,62,46673,5,School/Educational project in Deira
+PRJ-031,Gold Souk Extension,High-Rise Residential Tower,CL-012,EMP-0046,Dubai Hills Estate,Plot 957-8,DM-2024-361609,77826441,2024-02-14,2027-02-28,Delayed,82,13669,1,Infrastructure - Bridges project in Dubai Hills Estate
+PRJ-032,Spice Souk Renovation,Hotel & Hospitality,CL-033,EMP-0060,DIFC,Plot 797-4,DM-2022-353690,202757434,2022-12-04,2025-04-22,Completed,100,102639,10,Hotel & Hospitality project in Palm Jumeirah
+PRJ-033,Fish Market Redevelopment,Infrastructure - Bridges,CL-011,EMP-0048,Dubai Marina,Plot 391-4,DM-2024-505343,320078935,2024-10-23,2028-04-05,Delayed,54,18015,10,Villa Development project in Meydan
+PRJ-034,Metro Route 2020 Station,Utility Infrastructure,CL-027,EMP-0075,Business Bay,Plot 985-99,DM-2024-815338,368834864,2024-04-09,2026-05-29,In Progress,44,7332,3,Utility Infrastructure project in Palm Jumeirah
+PRJ-035,Tram Extension Phase 2,Infrastructure - Roads,CL-039,EMP-0052,Dubai Creek Harbour,Plot 533-49,DM-2022-992952,125135620,2022-09-26,2023-09-21,Completed,100,96412,5,Villa Development project in JVC
+PRJ-036,Bus Depot Facility,Retail Mall,CL-040,EMP-0060,Sheikh Zayed Road,Plot 204-1,DM-2023-636361,368566916,2023-04-21,2025-11-06,Completed,100,178632,9,Utility Infrastructure project in Dubai South
+PRJ-037,Water Treatment Plant,Commercial Office Building,CL-031,EMP-0005,JAFZA,Plot 383-82,DM-2022-440930,372441505,2022-04-20,2024-11-05,Completed,100,77583,5,Villa Development project in JLT
+PRJ-038,Sewage Pumping Station,Villa Development,CL-004,EMP-0084,DIP,Plot 776-41,DM-2021-813824,415960934,2021-07-12,2025-03-23,Completed,100,41681,1,Utility Infrastructure project in Al Barsha
+PRJ-039,Power Substation,Industrial Warehouse,CL-026,EMP-0060,Downtown Dubai,Plot 697-91,DM-2020-699829,144278417,2020-03-21,2022-09-07,Completed,100,54785,4,Utility Infrastructure project in Bur Dubai
+PRJ-040,Beach Access Infrastructure,Infrastructure - Roads,CL-011,EMP-0093,Bur Dubai,Plot 285-38,DM-2022-202344,491687710,2022-09-17,2026-02-28,In Progress,74,128412,5,School/Educational project in Bur Dubai
+PRJ-041,Cycling Track Network,Commercial Office Building,CL-015,EMP-0057,Meydan,Plot 862-40,DM-2025-540897,369917796,2025-01-29,2026-12-20,In Progress,93,91852,5,Marine & Coastal Works project in Dubai South
+PRJ-042,Public Park Development,Commercial Office Building,CL-031,EMP-0003,Sheikh Zayed Road,Plot 694-80,DM-2021-174675,461991979,2021-11-11,2025-03-25,Completed,100,128789,9,Commercial Office Building project in DIP
+PRJ-043,School Building Complex,Industrial Warehouse,CL-004,EMP-0012,JLT,Plot 305-44,DM-2020-529068,165178525,2020-04-01,2023-12-12,Completed,100,154265,3,Infrastructure - Bridges project in Palm Jumeirah
+PRJ-044,Mosque Construction,Infrastructure - Bridges,CL-041,EMP-0043,JAFZA,Plot 749-8,DM-2022-104942,266767973,2022-05-22,2023-10-14,Completed,100,123503,4,Mixed-Use Development project in Sheikh Zayed Road
+PRJ-045,Community Hall,Commercial Office Building,CL-009,EMP-0084,Expo City,Plot 748-55,DM-2020-522988,267839696,2020-07-01,2022-04-22,Completed,100,117466,7,High-Rise Residential Tower project in Downtown Dubai
+PRJ-046,Emirates Towers Phase 2,Infrastructure - Bridges,CL-049,EMP-0075,Dubai Hills Estate,Plot 118-87,DM-2024-104324,112059710,2024-01-05,2027-10-16,In Progress,11,169282,32,Villa Development project in Al Quoz Industrial
+PRJ-047,World Trade Center Annex,Retail Mall,CL-038,EMP-0052,Palm Jumeirah,Plot 166-6,DM-2024-412687,74219199,2024-07-02,2027-01-18,In Progress,59,81238,9,Marine & Coastal Works project in Deira
+PRJ-048,Frame District Mall,Utility Infrastructure,CL-009,EMP-0054,Al Barsha,Plot 467-97,DM-2023-297579,237822246,2023-01-15,2025-10-01,Completed,100,48223,1,Villa Development project in Meydan
+PRJ-049,La Mer Commercial Hub,Retail Mall,CL-011,EMP-0011,Al Quoz Industrial,Plot 828-84,DM-2024-930605,118381891,2024-12-19,2026-08-11,In Progress,85,14794,5,Retail Mall project in Downtown Dubai
+PRJ-050,Bluewaters Office Tower,Commercial Office Building,CL-042,EMP-0001,Downtown Dubai,Plot 806-15,DM-2021-537020,360392393,2021-12-24,2023-03-19,Completed,100,121474,49,Commercial Office Building project in Bur Dubai
+PRJ-051,City Walk Extension,School/Educational,CL-010,EMP-0046,Business Bay,Plot 408-54,DM-2021-793805,259689592,2021-05-10,2023-08-28,Completed,100,31471,9,Infrastructure - Roads project in JLT
+PRJ-052,Al Seef Heritage Hotel,Commercial Office Building,CL-033,EMP-0097,DIFC,Plot 389-15,DM-2020-922880,450953283,2020-11-07,2023-12-22,Completed,100,32856,4,Marine & Coastal Works project in Dubai Hills Estate
+PRJ-053,Ras Al Khor Industrial,Retail Mall,CL-013,EMP-0057,Expo City,Plot 402-21,DM-2022-141319,451407530,2022-02-09,2024-05-29,Completed,100,148691,4,School/Educational project in Al Barsha
+PRJ-054,DIP Logistics Warehouse,High-Rise Residential Tower,CL-001,EMP-0093,Dubai Marina,Plot 213-74,DM-2022-801520,130899058,2022-01-19,2024-10-05,Completed,100,134526,2,Retail Mall project in Dubai Marina
+PRJ-055,Mudon Villa Community,Infrastructure - Roads,CL-042,EMP-0047,JVC,Plot 403-34,DM-2022-586830,490749735,2022-04-08,2023-09-30,Completed,100,18128,3,High-Rise Residential Tower project in Dubai South
+PRJ-056,Arabian Ranches Phase 3,School/Educational,CL-008,EMP-0011,Downtown Dubai,Plot 109-18,DM-2024-795578,435353629,2024-07-16,2027-06-01,In Progress,64,174659,6,Infrastructure - Bridges project in JVC
+PRJ-057,Damac Hills Clubhouse,School/Educational,CL-006,EMP-0057,JAFZA,Plot 287-15,DM-2020-520245,476627961,2020-06-22,2022-11-09,Completed,100,109923,5,Industrial Warehouse project in Al Barsha
+PRJ-058,JBR Promenade Extension,Mixed-Use Development,CL-008,EMP-0012,Downtown Dubai,Plot 964-21,DM-2021-208751,353346801,2021-11-12,2024-12-26,Completed,100,114059,8,Marine & Coastal Works project in JVC
+PRJ-059,The Walk at JBR Phase 2,Marine & Coastal Works,CL-002,EMP-0093,JLT,Plot 594-63,DM-2024-218423,333201620,2024-11-23,2026-10-14,On Hold,55,112815,1,Commercial Office Building project in Dubai Creek Harbour
+PRJ-060,Burj Area Boulevard,School/Educational,CL-044,EMP-0075,Sheikh Zayed Road,Plot 841-73,DM-2023-334865,11635836,2023-04-21,2025-12-06,Completed,100,180595,9,Retail Mall project in DIFC
+PRJ-061,Opera District Residences,Infrastructure - Bridges,CL-043,EMP-0093,DIP,Plot 252-72,DM-2023-742686,360254603,2023-01-07,2026-03-22,In Progress,71,19304,21,Retail Mall project in Al Barsha
+PRJ-062,Address Hotel Expansion,Mixed-Use Development,CL-005,EMP-0067,JAFZA,Plot 346-43,DM-2021-391668,471763965,2021-06-23,2025-01-03,Completed,100,18199,4,Retail Mall project in DIP
+PRJ-063,Vida Creek Tower,Villa Development,CL-006,EMP-0066,JVC,Plot 920-74,DM-2021-569865,443678997,2021-07-01,2024-07-15,Completed,100,28073,64,Hotel & Hospitality project in JAFZA
+PRJ-064,Rove City Walk Hotel,School/Educational,CL-042,EMP-0001,DIFC,Plot 513-53,DM-2022-137572,272025281,2022-01-04,2023-07-28,Completed,100,151048,1,Commercial Office Building project in Dubai South
+PRJ-065,SE7EN Residences Palm,Utility Infrastructure,CL-030,EMP-0054,Al Quoz Industrial,Plot 945-7,DM-2025-956255,306900000,2025-01-14,2028-08-26,In Progress,93,63436,6,Retail Mall project in Al Barsha
+PRJ-066,One Za'abeel Tower B,Hotel & Hospitality,CL-008,EMP-0011,Meydan,Plot 102-44,DM-2022-472390,389353134,2022-09-15,2025-07-31,Completed,100,171110,38,Retail Mall project in Deira
+PRJ-067,ICD Brookfield Tower 2,Commercial Office Building,CL-003,EMP-0043,Al Barsha,Plot 243-92,DM-2023-878579,381934949,2023-01-19,2025-12-04,Completed,100,194152,53,Commercial Office Building project in Dubai Creek Harbour
+PRJ-068,Festival Plaza Extension,Villa Development,CL-030,EMP-0046,JAFZA,Plot 210-97,DM-2025-534603,105686598,2025-01-11,2027-01-01,In Progress,60,17189,10,Commercial Office Building project in JVC
+PRJ-069,Dragon Mall Phase 2,Marine & Coastal Works,CL-033,EMP-0012,Al Barsha,Plot 104-68,DM-2020-871976,358506246,2020-03-28,2023-08-10,Completed,100,17732,7,Marine & Coastal Works project in Al Barsha
+PRJ-070,Ibn Battuta Mall Annex,Mixed-Use Development,CL-047,EMP-0012,DIFC,Plot 496-85,DM-2022-729718,424339935,2022-12-28,2026-08-09,In Progress,84,163901,9,Industrial Warehouse project in Expo City
+PRJ-071,Mall of Emirates Wing,Infrastructure - Roads,CL-029,EMP-0012,JLT,Plot 522-78,DM-2024-834018,151885668,2024-10-29,2027-01-17,On Hold,53,139294,9,Infrastructure - Bridges project in Bur Dubai
+PRJ-072,Dubai Mall Extension,School/Educational,CL-019,EMP-0093,Al Quoz Industrial,Plot 788-17,DM-2024-844904,112851504,2024-10-17,2026-11-06,In Progress,89,175416,9,Retail Mall project in JAFZA
+PRJ-073,Outlet Village Phase 2,Infrastructure - Bridges,CL-036,EMP-0067,Sheikh Zayed Road,Plot 684-86,DM-2021-844618,413437983,2021-03-17,2022-10-08,Completed,100,114439,9,Infrastructure - Roads project in Expo City
+PRJ-074,Citizens School Campus,Commercial Office Building,CL-002,EMP-0060,JLT,Plot 154-86,DM-2024-159354,285638525,2024-10-15,2025-10-10,Completed,100,57403,3,Infrastructure - Roads project in Dubai Creek Harbour
+PRJ-075,GEMS Academy Building,High-Rise Residential Tower,CL-045,EMP-0052,Dubai Hills Estate,Plot 871-70,DM-2021-133875,455639680,2021-08-07,2023-04-29,Completed,100,99026,2,Marine & Coastal Works project in Bur Dubai
+PRJ-076,Dubai Medical College,Villa Development,CL-033,EMP-0096,Dubai South,Plot 809-86,DM-2024-149261,403579803,2024-03-09,2026-04-28,Delayed,59,105029,7,Utility Infrastructure project in JAFZA
+PRJ-077,Dubai Science Park HQ,Villa Development,CL-040,EMP-0066,Meydan,Plot 748-91,DM-2024-844012,33884832,2024-08-11,2028-06-21,In Progress,42,174772,10,Retail Mall project in Dubai Hills Estate
+PRJ-078,Techno Hub Office,Hotel & Hospitality,CL-012,EMP-0093,Dubai Marina,Plot 291-23,DM-2022-870786,162935461,2022-08-18,2024-08-07,Completed,100,139701,7,High-Rise Residential Tower project in Expo City
+PRJ-079,Smart City Data Center,Infrastructure - Roads,CL-009,EMP-0043,Sheikh Zayed Road,Plot 966-33,DM-2021-105919,303821611,2021-06-29,2023-11-16,Completed,100,91655,3,High-Rise Residential Tower project in JLT
+PRJ-080,Solar Park Operations Center,Marine & Coastal Works,CL-043,EMP-0052,Al Barsha,Plot 908-74,DM-2024-676884,325447690,2024-03-03,2026-10-19,In Progress,90,98869,6,Retail Mall project in Meydan
+PRJ-081,Wind Tower Research Lab,Commercial Office Building,CL-033,EMP-0043,Expo City,Plot 656-69,DM-2020-523013,284498372,2020-04-27,2022-03-18,Completed,100,29102,45,Villa Development project in Dubai Hills Estate
+PRJ-082,Al Maktoum Airport Cargo,Infrastructure - Bridges,CL-019,EMP-0046,Deira,Plot 586-72,DM-2020-963699,182739992,2020-10-07,2023-06-24,Completed,100,175210,15,Utility Infrastructure project in Al Quoz Industrial
+PRJ-083,Airport Tunnel Project,Utility Infrastructure,CL-040,EMP-0084,Meydan,Plot 140-88,DM-2020-436526,134035782,2020-06-23,2023-10-06,Completed,100,104974,7,Infrastructure - Roads project in Bur Dubai
+PRJ-084,Sheikh Mohammed Bridge,Retail Mall,CL-050,EMP-0057,Deira,Plot 922-66,DM-2021-567200,18263784,2021-12-23,2024-06-10,Completed,100,132612,38,Utility Infrastructure project in Dubai Hills Estate
+PRJ-085,Business Bay Canal Walk,Mixed-Use Development,CL-050,EMP-0076,Bur Dubai,Plot 107-81,DM-2025-168652,280895116,2025-02-12,2027-09-30,In Progress,22,60255,4,Utility Infrastructure project in Expo City
+PRJ-086,Dubai Water Canal Phase 2,Retail Mall,CL-045,EMP-0097,Expo City,Plot 762-10,DM-2021-883171,115369690,2021-11-10,2023-05-04,Completed,100,184842,1,Hotel & Hospitality project in JAFZA
+PRJ-087,Al Shindagha Bridge,Commercial Office Building,CL-004,EMP-0043,Dubai Creek Harbour,Plot 671-10,DM-2020-702891,51987427,2020-03-02,2021-04-26,Completed,100,64675,7,Industrial Warehouse project in JVC
+PRJ-088,Floating Bridge Expansion,Industrial Warehouse,CL-044,EMP-0011,Bur Dubai,Plot 106-83,DM-2024-855274,237478545,2024-06-23,2027-07-08,In Progress,12,167096,10,High-Rise Residential Tower project in Dubai Marina
+PRJ-089,Infinity Bridge South,Utility Infrastructure,CL-020,EMP-0084,Dubai Marina,Plot 388-98,DM-2024-558936,274958534,2024-01-25,2026-11-10,In Progress,47,104985,1,Hotel & Hospitality project in Palm Jumeirah
+PRJ-090,Tolerance Bridge Link,Mixed-Use Development,CL-048,EMP-0060,Bur Dubai,Plot 402-82,DM-2020-251074,123039513,2020-01-03,2023-10-14,Completed,100,83133,6,High-Rise Residential Tower project in Bur Dubai
+PRJ-091,RTA Bus Station Hub,High-Rise Residential Tower,CL-037,EMP-0084,DIP,Plot 650-71,DM-2022-189261,80899519,2022-10-27,2026-09-06,In Progress,15,84872,6,Villa Development project in Expo City
+PRJ-092,Dubai Metro Red Line Extension,Villa Development,CL-040,EMP-0048,Dubai Hills Estate,Plot 217-24,DM-2025-803571,81480008,2025-03-23,2028-11-02,In Progress,33,153712,71,Hotel & Hospitality project in Bur Dubai
+PRJ-093,Green Line Station,Utility Infrastructure,CL-005,EMP-0048,DIFC,Plot 302-93,DM-2021-708798,161042963,2021-09-17,2023-01-10,Completed,100,132714,6,Mixed-Use Development project in Meydan
+PRJ-094,Palm Monorail Extension,Marine & Coastal Works,CL-005,EMP-0046,JAFZA,Plot 597-58,DM-2021-444295,158081837,2021-02-09,2022-08-03,Completed,100,166570,5,School/Educational project in Sheikh Zayed Road
+PRJ-095,Cable Car Terminal,Marine & Coastal Works,CL-024,EMP-0054,Expo City,Plot 272-1,DM-2022-428429,308628420,2022-11-24,2024-08-15,Completed,100,69533,7,Infrastructure - Roads project in Al Quoz Industrial
+PRJ-096,Water Taxi Station,School/Educational,CL-022,EMP-0067,JVC,Plot 556-46,DM-2021-912402,369846828,2021-07-05,2023-02-25,Completed,100,85077,9,Commercial Office Building project in Palm Jumeirah
+PRJ-097,District 2020 Office Block,Infrastructure - Roads,CL-009,EMP-0076,Dubai Hills Estate,Plot 369-94,DM-2022-757057,456934173,2022-10-02,2024-02-24,Completed,100,25044,2,High-Rise Residential Tower project in Deira
+PRJ-098,Dubai Future Labs,Marine & Coastal Works,CL-038,EMP-0060,Sheikh Zayed Road,Plot 317-5,DM-2020-678388,441284064,2020-07-04,2021-07-29,Completed,100,73319,9,Hotel & Hospitality project in JLT
+PRJ-099,Al Quoz Creative Hub,Villa Development,CL-050,EMP-0081,Dubai South,Plot 237-60,DM-2020-625465,215720946,2020-03-09,2023-01-23,Completed,100,138801,7,Infrastructure - Bridges project in Deira
+PRJ-100,Design District Phase 2,Villa Development,CL-040,EMP-0093,Palm Jumeirah,Plot 875-66,DM-2021-247189,360772804,2021-04-03,2022-03-29,Completed,100,121974,3,Marine & Coastal Works project in Sheikh Zayed Road

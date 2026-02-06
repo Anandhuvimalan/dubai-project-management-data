@@ -1,0 +1,81 @@
+supplier_id,company_name,category,trade_license,trn,contact_person,email,phone,address,lead_time_days,payment_terms,approved
+SUP-001,"Jenkins, Maldonado and White",Steel Reinforcement,551860,100243811545,Gregory Lynch,gregory.lynch@jenkinstrading.ae,+971-54-7136730,"Dubai, UAE",14,Cash,False
+SUP-002,Harvey-Allen,Ready-Mix Concrete,697983,100703246271,Roberta Thomas,roberta.thomas@harvey-allentrading.ae,+971-52-7082139,"Abu Dhabi, UAE",12,Cash,False
+SUP-003,Little-Stevens,Safety Equipment,572230,100920772671,Elizabeth Nolan,elizabeth.nolan@little-stevenstrading.ae,+971-56-5692934,"Abu Dhabi, UAE",24,Cash,True
+SUP-004,Santana-Byrd,Steel Reinforcement,513037,100500718660,Eric Alexander,eric.alexander@santana-byrdtrading.ae,+971-54-7133857,"Ajman, UAE",9,Net 60,True
+SUP-005,Huerta-Evans,Ready-Mix Concrete,140804,100247141682,Suzanne Vaughn,suzanne.vaughn@huerta-evanstrading.ae,+971-54-8948107,"Abu Dhabi, UAE",17,Net 30,True
+SUP-006,Bruce-Gonzalez,MEP Materials,742848,100442019016,Paul Webb,paul.webb@bruce-gonzaleztrading.ae,+971-52-7592683,"Abu Dhabi, UAE",26,Net 45,True
+SUP-007,James LLC,Safety Equipment,968524,100647301347,Bailey Haney,bailey.haney@jamestrading.ae,+971-56-9218263,"Abu Dhabi, UAE",12,Net 60,True
+SUP-008,Johnson-Greer,MEP Materials,447329,100823494111,Randy Smith,randy.smith@johnson-greertrading.ae,+971-50-7988386,"Abu Dhabi, UAE",12,Cash,False
+SUP-009,"Osborne, Beltran and Lozano",Formwork & Scaffolding,787436,100940636753,Julie Wall,julie.wall@osbornetrading.ae,+971-56-4817541,"Sharjah, UAE",21,Net 60,True
+SUP-010,Parsons-Hall,Safety Equipment,759580,100874364174,Laurie Robinson,laurie.robinson@parsons-halltrading.ae,+971-56-7378535,"Ajman, UAE",29,Net 30,True
+SUP-011,Oliver Ltd,Construction Chemicals,834549,100217999418,Karla Saunders,karla.saunders@olivertrading.ae,+971-52-1317716,"Dubai, UAE",13,Net 60,True
+SUP-012,"Massey, Fuller and Berger",Facade Materials,824042,100318927025,Debbie Parker,debbie.parker@masseytrading.ae,+971-55-9419134,"Abu Dhabi, UAE",18,Cash,True
+SUP-013,Johnson-Diaz,Safety Equipment,317413,100702247585,David Browning,david.browning@johnson-diaztrading.ae,+971-54-9025733,"Abu Dhabi, UAE",15,Net 45,True
+SUP-014,Burgess-Thompson,Finishing Materials,659024,100467570835,David Ryan,david.ryan@burgess-thompsontrading.ae,+971-56-6943949,"RAK, UAE",22,Net 60,True
+SUP-015,Schmidt-Mcintyre,Cement & Aggregates,392559,100699240979,Maria Scott,maria.scott@schmidt-mcintyretrading.ae,+971-54-4772642,"RAK, UAE",27,Net 45,True
+SUP-016,Coffey-Phillips,Finishing Materials,432441,100615185000,Monica Brock,monica.brock@coffey-phillipstrading.ae,+971-54-5587856,"RAK, UAE",6,Net 60,False
+SUP-017,Mccarty-Taylor,MEP Materials,910616,100963949678,Tammy Dalton,tammy.dalton@mccarty-taylortrading.ae,+971-52-5872986,"Sharjah, UAE",12,Cash,True
+SUP-018,"Craig, Sanders and Singleton",Finishing Materials,787836,100375354619,Angela Davis,angela.davis@craigtrading.ae,+971-55-4590102,"Ajman, UAE",29,Net 45,True
+SUP-019,Smith-Herrera,Structural Steel,214532,100761078179,Shawn Chambers,shawn.chambers@smith-herreratrading.ae,+971-56-5014486,"Ajman, UAE",4,Net 30,True
+SUP-020,"Baker, James and Little",Ready-Mix Concrete,205065,100543778963,Nathan Leonard,nathan.leonard@bakertrading.ae,+971-54-8925622,"Sharjah, UAE",24,Net 30,True
+SUP-021,Johnson-Henson,Safety Equipment,265613,100536913550,Anna Herman,anna.herman@johnson-hensontrading.ae,+971-55-9010256,"Ajman, UAE",27,Net 45,True
+SUP-022,Holland Ltd,Formwork & Scaffolding,777273,100163525343,Madison Blankenship,madison.blankenship@hollandtrading.ae,+971-50-4896008,"Abu Dhabi, UAE",26,Cash,True
+SUP-023,Banks-Wilson,Facade Materials,978292,100288751681,Brandon Johnson,brandon.johnson@banks-wilsontrading.ae,+971-50-7660463,"Dubai, UAE",8,Net 45,True
+SUP-024,Wilson-Young,Ready-Mix Concrete,412886,100709844411,Amanda Price,amanda.price@wilson-youngtrading.ae,+971-56-2800206,"RAK, UAE",12,Net 60,False
+SUP-025,Santiago-Paul,Structural Steel,992400,100641394238,Sonya Barnes,sonya.barnes@santiago-paultrading.ae,+971-55-5577446,"Ajman, UAE",28,Cash,True
+SUP-026,"Barber, Mcclure and Pena",Structural Steel,866634,100592755658,Martha Gilbert,martha.gilbert@barbertrading.ae,+971-54-4123902,"Sharjah, UAE",26,Net 45,True
+SUP-027,Johnson-Wood,Construction Chemicals,807160,100913126162,Scott Sampson,scott.sampson@johnson-woodtrading.ae,+971-52-3944316,"Abu Dhabi, UAE",30,Net 60,False
+SUP-028,Garcia-Jennings,Safety Equipment,443856,100193133974,Amy Levine,amy.levine@garcia-jenningstrading.ae,+971-55-2600296,"Ajman, UAE",7,Net 60,True
+SUP-029,Brown-Hill,Cement & Aggregates,107161,100380016058,Tammy Rush,tammy.rush@brown-hilltrading.ae,+971-55-4951390,"Dubai, UAE",27,Net 45,True
+SUP-030,Davis-Lewis,Formwork & Scaffolding,710754,100876189202,Danielle Maddox,danielle.maddox@davis-lewistrading.ae,+971-56-1191859,"RAK, UAE",23,Net 45,True
+SUP-031,Buchanan and Sons,Ready-Mix Concrete,800224,100226942964,Vanessa Buchanan,vanessa.buchanan@buchanantrading.ae,+971-55-6147356,"Ajman, UAE",15,Net 45,True
+SUP-032,Jones PLC,Formwork & Scaffolding,485397,100759949050,Jamie Robinson,jamie.robinson@jonestrading.ae,+971-52-4676367,"Ajman, UAE",18,Net 30,False
+SUP-033,Murphy and Sons,Construction Chemicals,491774,100546510829,Kristina Carlson,kristina.carlson@murphytrading.ae,+971-56-8899184,"Abu Dhabi, UAE",28,Net 30,True
+SUP-034,Garrison-Thomas,Construction Chemicals,925618,100187907572,David King,david.king@garrison-thomastrading.ae,+971-56-8495187,"Abu Dhabi, UAE",25,Net 45,True
+SUP-035,Rodriguez Inc,Construction Chemicals,217659,100166312199,David Howard,david.howard@rodrigueztrading.ae,+971-56-9480665,"Ajman, UAE",21,Net 30,True
+SUP-036,Chapman Inc,MEP Materials,995993,100658712474,Grant Williams,grant.williams@chapmantrading.ae,+971-55-2950183,"Ajman, UAE",25,Net 60,True
+SUP-037,"Fisher, Wilson and Brown",Safety Equipment,567122,100968326513,Shane Cox,shane.cox@fishertrading.ae,+971-50-8607331,"Ajman, UAE",19,Net 60,False
+SUP-038,"Rodriguez, Gordon and Dougherty",Construction Chemicals,160541,100700003920,Bradley Logan,bradley.logan@rodrigueztrading.ae,+971-55-6170227,"Sharjah, UAE",15,Net 45,True
+SUP-039,"Boyd, Ellis and Maynard",Cement & Aggregates,706403,100178414859,Bruce Mendoza,bruce.mendoza@boydtrading.ae,+971-50-8108462,"RAK, UAE",25,Cash,True
+SUP-040,Simmons-Rodriguez,Steel Reinforcement,595002,100134075063,Jennifer Wallace,jennifer.wallace@simmons-rodrigueztrading.ae,+971-54-7859648,"Ajman, UAE",27,Net 30,False
+SUP-041,Morris and Sons,MEP Materials,501058,100581613078,Cameron Hill,cameron.hill@morristrading.ae,+971-55-7302286,"Sharjah, UAE",24,Net 30,True
+SUP-042,"Richards, Joseph and James",Steel Reinforcement,287143,100676876906,Carla Phillips,carla.phillips@richardstrading.ae,+971-55-9872505,"Ajman, UAE",26,Net 30,True
+SUP-043,"Jacobs, Garcia and Miles",Ready-Mix Concrete,412856,100597146648,Melissa Curtis,melissa.curtis@jacobstrading.ae,+971-56-8115687,"Abu Dhabi, UAE",15,Net 30,True
+SUP-044,"Le, Lewis and Hayes",Finishing Materials,462974,100266560311,Jeremy Morgan,jeremy.morgan@letrading.ae,+971-54-4162177,"Sharjah, UAE",4,Net 60,True
+SUP-045,Ross-Blair,Cement & Aggregates,316092,100172253060,Larry Edwards,larry.edwards@ross-blairtrading.ae,+971-50-1563316,"Dubai, UAE",22,Cash,True
+SUP-046,Brooks-Hernandez,Ready-Mix Concrete,521805,100571332733,Sandra Jones,sandra.jones@brooks-hernandeztrading.ae,+971-52-4645172,"Sharjah, UAE",7,Net 45,True
+SUP-047,Davis Inc,Construction Chemicals,434394,100720058859,Julie Watson,julie.watson@davistrading.ae,+971-56-6379867,"Ajman, UAE",12,Net 30,True
+SUP-048,Hawkins PLC,Facade Materials,415098,100395444277,Sue Hoffman,sue.hoffman@hawkinstrading.ae,+971-50-3938247,"Dubai, UAE",20,Net 60,True
+SUP-049,"Martinez, Gomez and Ortega",MEP Materials,774565,100820848547,Karen Parrish,karen.parrish@martineztrading.ae,+971-55-9799030,"RAK, UAE",25,Net 60,False
+SUP-050,"Williams, Roberts and Edwards",Structural Steel,414455,100504221050,Dale Romero,dale.romero@williamstrading.ae,+971-52-8944327,"Ajman, UAE",30,Net 30,True
+SUP-051,Douglas and Sons,Structural Steel,944917,100597169479,Melanie Bell,melanie.bell@douglastrading.ae,+971-50-7923579,"Dubai, UAE",20,Net 30,False
+SUP-052,"Richardson, Farmer and Andrews",Cement & Aggregates,367382,100318331154,Lindsay Bruce,lindsay.bruce@richardsontrading.ae,+971-54-2326581,"Dubai, UAE",30,Net 45,True
+SUP-053,"Austin, Day and Johnson",Safety Equipment,859782,100990568217,Sarah Gallegos,sarah.gallegos@austintrading.ae,+971-52-1864641,"RAK, UAE",15,Cash,True
+SUP-054,Johnson-Nelson,Cement & Aggregates,943737,100917865301,Kathryn Dorsey,kathryn.dorsey@johnson-nelsontrading.ae,+971-56-4640933,"Dubai, UAE",9,Net 45,True
+SUP-055,Smith-Kane,Ready-Mix Concrete,322096,100304036387,Ashley Morales,ashley.morales@smith-kanetrading.ae,+971-50-9034958,"Ajman, UAE",25,Net 30,False
+SUP-056,Figueroa Inc,Cement & Aggregates,678897,100445331485,Christopher Moreno,christopher.moreno@figueroatrading.ae,+971-54-7386444,"Dubai, UAE",20,Net 45,True
+SUP-057,Barnes-Peterson,Formwork & Scaffolding,477114,100650632566,Mitchell Griffith,mitchell.griffith@barnes-petersontrading.ae,+971-55-8818250,"Sharjah, UAE",28,Net 60,True
+SUP-058,"Carlson, Ware and Moore",Cement & Aggregates,488712,100435997460,Karen Williams,karen.williams@carlsontrading.ae,+971-55-1766977,"Abu Dhabi, UAE",30,Net 30,True
+SUP-059,Nelson Ltd,Ready-Mix Concrete,373441,100694113766,Roger Lawson,roger.lawson@nelsontrading.ae,+971-56-8005797,"RAK, UAE",7,Net 30,True
+SUP-060,Nelson-Fischer,Cement & Aggregates,498290,100711806831,Daniel Jordan,daniel.jordan@nelson-fischertrading.ae,+971-52-9376888,"Abu Dhabi, UAE",23,Net 45,True
+SUP-061,Gregory-Watkins,Finishing Materials,858705,100789014168,Alison Parker,alison.parker@gregory-watkinstrading.ae,+971-55-8731427,"Ajman, UAE",26,Net 45,True
+SUP-062,Foster PLC,Structural Steel,855303,100686849648,Brian Harris,brian.harris@fostertrading.ae,+971-55-4087809,"Abu Dhabi, UAE",23,Cash,True
+SUP-063,Saunders LLC,Steel Reinforcement,957730,100817490982,Keith Wilson,keith.wilson@saunderstrading.ae,+971-50-1107102,"Dubai, UAE",7,Net 30,True
+SUP-064,Burgess-Thompson,Structural Steel,109585,100334848459,Omar Padilla,omar.padilla@burgess-thompsontrading.ae,+971-56-8650572,"RAK, UAE",4,Net 60,False
+SUP-065,"Hansen, Barnett and Gomez",Ready-Mix Concrete,106933,100671458801,Randy Harmon,randy.harmon@hansentrading.ae,+971-56-7901115,"Sharjah, UAE",3,Net 45,True
+SUP-066,Smith-Morse,Ready-Mix Concrete,626611,100973120912,Michelle Johnston,michelle.johnston@smith-morsetrading.ae,+971-55-4007598,"Sharjah, UAE",6,Net 30,True
+SUP-067,"Sullivan, Bowman and Roberts",Cement & Aggregates,749887,100665277813,Richard Burch,richard.burch@sullivantrading.ae,+971-54-6946534,"RAK, UAE",28,Net 60,True
+SUP-068,Solis PLC,MEP Materials,525750,100592845076,Steve Norris,steve.norris@solistrading.ae,+971-56-5080351,"Ajman, UAE",12,Cash,True
+SUP-069,Davis-Richard,Steel Reinforcement,524965,100507231644,John Chapman,john.chapman@davis-richardtrading.ae,+971-55-8986040,"Sharjah, UAE",23,Cash,True
+SUP-070,"Miller, Harrell and Reese",Steel Reinforcement,624139,100565906941,Jeffrey Maxwell,jeffrey.maxwell@millertrading.ae,+971-54-2599906,"Abu Dhabi, UAE",4,Net 30,True
+SUP-071,Dixon Inc,Construction Chemicals,598598,100391086098,Alyssa Lee,alyssa.lee@dixontrading.ae,+971-50-2247353,"RAK, UAE",20,Cash,True
+SUP-072,Bell-Mullen,MEP Materials,116418,100322434334,Debbie Hernandez,debbie.hernandez@bell-mullentrading.ae,+971-56-3419132,"Dubai, UAE",5,Net 45,True
+SUP-073,Thomas and Sons,Construction Chemicals,352153,100708485104,Glenn Hernandez,glenn.hernandez@thomastrading.ae,+971-55-6565503,"Dubai, UAE",27,Net 30,True
+SUP-074,"Jones, Bean and Burton",Safety Equipment,881667,100471363809,Steven Elliott,steven.elliott@jonestrading.ae,+971-50-2638895,"Dubai, UAE",10,Cash,True
+SUP-075,"Cole, Glass and Cunningham",Construction Chemicals,906360,100759132774,Cynthia Weber,cynthia.weber@coletrading.ae,+971-56-7655572,"RAK, UAE",3,Net 45,False
+SUP-076,"Stewart, Gonzales and Harrison",Finishing Materials,339220,100482049366,Crystal Hogan,crystal.hogan@stewarttrading.ae,+971-56-7298619,"Dubai, UAE",8,Net 60,True
+SUP-077,"Brown, Romero and Collins",Construction Chemicals,409727,100956905222,Shannon Brown,shannon.brown@browntrading.ae,+971-52-2233237,"Sharjah, UAE",11,Net 30,False
+SUP-078,Jones-Lin,Structural Steel,875584,100518353415,Melissa Gilbert,melissa.gilbert@jones-lintrading.ae,+971-54-7051545,"Sharjah, UAE",5,Cash,True
+SUP-079,"Cruz, Carpenter and Best",Finishing Materials,477400,100917489574,Joanne Williams,joanne.williams@cruztrading.ae,+971-54-2715158,"Ajman, UAE",5,Net 30,False
+SUP-080,"Pearson, Morris and Alvarez",Finishing Materials,684041,100695647539,Edward Brown,edward.brown@pearsontrading.ae,+971-56-7845845,"Sharjah, UAE",3,Cash,True

@@ -1,0 +1,101 @@
+contractor_id,company_name,specialty,trade_license,cicpa_registration,trn,contact_person,email,phone,address,rating,prequalified
+CON-001,"Bentley, Mclaughlin and Gonzalez",MEP Works,476395,CICPA-85341,100417690559,Ryan Rush,ryan.rush@bentleycontracting.ae,+971-54-1368085,"Ras Al Khor, UAE",B,True
+CON-002,Hanson-Alvarado Fire Fighting,Fire Fighting,916118,CICPA-16428,100751124015,David Mccullough,david.mccullough@hanson-alvaradocontracting.ae,+971-55-5801541,"DIP, UAE",B,True
+CON-003,"Parker, Ortiz and Powell MEP Works",MEP Works,751051,CICPA-42850,100827744047,Kenneth Martinez,kenneth.martinez@parkercontracting.ae,+971-52-2630140,"Al Quoz, UAE",B,False
+CON-004,Ortega-Gray Piling & Foundations,Piling & Foundations,867934,CICPA-27224,100196779973,Kaitlin Thompson,kaitlin.thompson@ortega-graycontracting.ae,+971-54-6481437,"Ras Al Khor, UAE",A,True
+CON-005,"Turner, Kelley and Smith Concrete Works",Concrete Works,483629,CICPA-79579,100638798023,Justin Jordan,justin.jordan@turnercontracting.ae,+971-54-3760597,"JAFZA, UAE",B,True
+CON-006,"Lawson, Morris and Ramos Road Works",Road Works,943298,CICPA-25095,100602866993,Emma Dixon,emma.dixon@lawsoncontracting.ae,+971-50-3361510,"DIP, UAE",C,False
+CON-007,"Jackson, Miller and Robertson Fit-Out",Fit-Out,483542,CICPA-21836,100948988297,Cynthia Rogers,cynthia.rogers@jacksoncontracting.ae,+971-55-1233516,"JAFZA, UAE",B,True
+CON-008,Chambers and Sons,Electrical,885395,CICPA-98125,100381493671,Lindsay Hernandez,lindsay.hernandez@chamberscontracting.ae,+971-56-7392547,"JAFZA, UAE",A,True
+CON-009,Sanchez Group,Electrical,688678,CICPA-52992,100755070775,Cheryl Mack,cheryl.mack@sanchezcontracting.ae,+971-52-2060605,"Ras Al Khor, UAE",C,True
+CON-010,Perry-Soto,Landscaping,246566,CICPA-15943,100139956218,James Horton,james.horton@perry-sotocontracting.ae,+971-54-9264869,"Al Quoz, UAE",A,True
+CON-011,Ross-Hernandez,Plumbing,575679,CICPA-58629,100819929088,Grace Stafford,grace.stafford@ross-hernandezcontracting.ae,+971-56-8031780,"Sharjah Industrial, UAE",C,True
+CON-012,Osborne and Sons HVAC,HVAC,974190,CICPA-74139,100761051532,Gregory Rubio,gregory.rubio@osbornecontracting.ae,+971-55-5693260,"Al Quoz, UAE",C,True
+CON-013,"Marshall, Grant and Lowery",MEP Works,347582,CICPA-57537,100206681214,David Anderson,david.anderson@marshallcontracting.ae,+971-54-7017548,"Al Quoz, UAE",B,True
+CON-014,Contreras-Travis MEP Works,MEP Works,989227,CICPA-69600,100198433586,Caitlin Dodson,caitlin.dodson@contreras-traviscontracting.ae,+971-52-1358318,"Al Quoz, UAE",B,True
+CON-015,Salazar-Ball Concrete Works,Concrete Works,315173,CICPA-18992,100991010113,William Rivas,william.rivas@salazar-ballcontracting.ae,+971-56-4475523,"Sharjah Industrial, UAE",A,True
+CON-016,"Griffin, Moore and Hensley Waterproofing",Waterproofing,926952,CICPA-88116,100103044648,Shannon Walton,shannon.walton@griffincontracting.ae,+971-54-3427461,"DIP, UAE",B,True
+CON-017,"Ramirez, Strickland and Washington",Demolition,793169,CICPA-13379,100241522640,John Gonzales,john.gonzales@ramirezcontracting.ae,+971-50-7010308,"DIP, UAE",B,True
+CON-018,"Mitchell, Nelson and Flores",Piling & Foundations,154944,CICPA-26614,100896413702,Amber Taylor,amber.taylor@mitchellcontracting.ae,+971-55-9826250,"Al Quoz, UAE",C,True
+CON-019,Reyes and Sons,Electrical,479625,CICPA-77271,100737444033,Jasmine Brown,jasmine.brown@reyescontracting.ae,+971-50-8583392,"Sharjah Industrial, UAE",A,True
+CON-020,Rivera-Owens Road Works,Road Works,790909,CICPA-78347,100423873102,Bryan Wall,bryan.wall@rivera-owenscontracting.ae,+971-55-1522621,"Al Quoz, UAE",B,False
+CON-021,Stein-Silva HVAC,HVAC,614084,CICPA-68138,100178910051,Heather Gates,heather.gates@stein-silvacontracting.ae,+971-50-6404139,"Sharjah Industrial, UAE",A,True
+CON-022,"James, Smith and Bell",Concrete Works,763829,CICPA-86724,100688793237,Karen Castaneda,karen.castaneda@jamescontracting.ae,+971-54-7390515,"Sharjah Industrial, UAE",B,True
+CON-023,Medina-Navarro Electrical,Electrical,551096,CICPA-22999,100951580447,Lauren Hurst,lauren.hurst@medina-navarrocontracting.ae,+971-50-4607488,"Ras Al Khor, UAE",B,True
+CON-024,Robinson-Graham,HVAC,575528,CICPA-62262,100546665485,Anthony Rogers,anthony.rogers@robinson-grahamcontracting.ae,+971-50-6243691,"Ras Al Khor, UAE",B,True
+CON-025,"Yates, Ramsey and Pittman Waterproofing",Waterproofing,820184,CICPA-72163,100172083844,Samantha Hooper,samantha.hooper@yatescontracting.ae,+971-50-2432176,"Al Quoz, UAE",B,True
+CON-026,"Johnson, Long and Elliott Road Works",Road Works,951201,CICPA-27054,100697398528,Anthony Day,anthony.day@johnsoncontracting.ae,+971-50-6530541,"Al Quoz, UAE",B,True
+CON-027,Camacho and Sons Fit-Out,Fit-Out,886730,CICPA-65435,100874233009,Brent Gray,brent.gray@camachocontracting.ae,+971-50-5825620,"Sharjah Industrial, UAE",B,True
+CON-028,Gibson LLC Structural Steel,Structural Steel,323072,CICPA-30280,100805165232,Kathleen Gray,kathleen.gray@gibsoncontracting.ae,+971-55-4762204,"Al Quoz, UAE",B,True
+CON-029,King-Miller Structural Steel,Structural Steel,701987,CICPA-39643,100966747347,Andrew Ryan,andrew.ryan@king-millercontracting.ae,+971-55-1440466,"Sharjah Industrial, UAE",C,True
+CON-030,Walker-Jones,Piling & Foundations,836833,CICPA-50499,100464883950,Susan Williams,susan.williams@walker-jonescontracting.ae,+971-54-1102438,"DIP, UAE",A,False
+CON-031,Herring and Sons,Structural Steel,763928,CICPA-14018,100198524063,Mary Howell,mary.howell@herringcontracting.ae,+971-56-4609330,"Ras Al Khor, UAE",B,False
+CON-032,Martinez Ltd,Waterproofing,426775,CICPA-52517,100934120892,Danny Gould,danny.gould@martinezcontracting.ae,+971-56-2425342,"Al Quoz, UAE",A,True
+CON-033,Lyons-Wang Demolition,Demolition,806707,CICPA-20693,100392168202,Gary Lawson,gary.lawson@lyons-wangcontracting.ae,+971-55-8113787,"Ras Al Khor, UAE",B,False
+CON-034,"Higgins, Strickland and Martin",HVAC,891615,CICPA-77154,100222210617,Larry Lane,larry.lane@higginscontracting.ae,+971-54-8212753,"Al Quoz, UAE",B,False
+CON-035,Johnston-Odonnell Plumbing,Plumbing,147623,CICPA-38903,100524410834,Nicholas David,nicholas.david@johnston-odonnellcontracting.ae,+971-56-1919088,"Al Quoz, UAE",A,True
+CON-036,Jones Ltd MEP Works,MEP Works,901280,CICPA-43491,100410791488,Maria Sanchez,maria.sanchez@jonescontracting.ae,+971-54-3013003,"Al Quoz, UAE",B,False
+CON-037,"Barton, Jefferson and Burke",Concrete Works,658453,CICPA-40161,100637152602,David Riggs,david.riggs@bartoncontracting.ae,+971-56-6941939,"Al Quoz, UAE",B,True
+CON-038,Reed Group,HVAC,181644,CICPA-51033,100718216692,Doris Jones,doris.jones@reedcontracting.ae,+971-55-7785090,"Ras Al Khor, UAE",B,True
+CON-039,"Peterson, Atkinson and Short",HVAC,440544,CICPA-32527,100960413104,Daniel Yu,daniel.yu@petersoncontracting.ae,+971-56-8719145,"JAFZA, UAE",A,False
+CON-040,"Snow, Stevens and Hernandez",Fit-Out,556839,CICPA-87184,100529979713,Gregory Boyd,gregory.boyd@snowcontracting.ae,+971-56-2319479,"Ras Al Khor, UAE",B,True
+CON-041,"Nelson, Morton and Medina",MEP Works,276299,CICPA-20011,100648127255,Timothy Graham,timothy.graham@nelsoncontracting.ae,+971-50-9902071,"Sharjah Industrial, UAE",A,True
+CON-042,"Vargas, Morris and Sanchez Waterproofing",Waterproofing,958729,CICPA-94599,100975139327,Sarah Ramirez,sarah.ramirez@vargascontracting.ae,+971-52-4963933,"Al Quoz, UAE",A,True
+CON-043,Sanchez-Marshall,MEP Works,260295,CICPA-95918,100180909963,Cheryl Gray,cheryl.gray@sanchez-marshallcontracting.ae,+971-52-9289908,"Ras Al Khor, UAE",B,False
+CON-044,Snyder LLC Landscaping,Landscaping,691912,CICPA-94278,100782146375,Hunter Lewis,hunter.lewis@snydercontracting.ae,+971-56-6422534,"JAFZA, UAE",A,False
+CON-045,Peterson-Beard,Structural Steel,762055,CICPA-49691,100955052486,Jacqueline Hill,jacqueline.hill@peterson-beardcontracting.ae,+971-54-1942411,"JAFZA, UAE",B,True
+CON-046,Black and Sons,Facade & Cladding,139434,CICPA-17456,100495928981,Christopher Cortez,christopher.cortez@blackcontracting.ae,+971-54-2287332,"Al Quoz, UAE",B,False
+CON-047,Peters-Allen Electrical,Electrical,930281,CICPA-15376,100582897882,Thomas Joseph,thomas.joseph@peters-allencontracting.ae,+971-56-4158134,"JAFZA, UAE",B,False
+CON-048,Mcguire-Davis,Plumbing,164879,CICPA-69050,100211134294,Jeffrey Holt,jeffrey.holt@mcguire-daviscontracting.ae,+971-54-2414808,"Sharjah Industrial, UAE",C,True
+CON-049,Beck-Wood,Piling & Foundations,559022,CICPA-67595,100662714327,Angela Cooper,angela.cooper@beck-woodcontracting.ae,+971-56-3663319,"JAFZA, UAE",B,True
+CON-050,"Pierce, Bell and Chavez",HVAC,454803,CICPA-98984,100741975062,Kristopher Hall,kristopher.hall@piercecontracting.ae,+971-50-6614484,"Al Quoz, UAE",B,True
+CON-051,"Lee, Wilson and Herrera Plumbing",Plumbing,397949,CICPA-43029,100877103091,Kathleen Lopez,kathleen.lopez@leecontracting.ae,+971-56-3522845,"JAFZA, UAE",A,True
+CON-052,Rodgers LLC,Waterproofing,787923,CICPA-96787,100520861681,Jenny Bray,jenny.bray@rodgerscontracting.ae,+971-52-2421349,"JAFZA, UAE",B,False
+CON-053,"Carlson, Hooper and Wall Landscaping",Landscaping,952686,CICPA-26750,100819532005,Kenneth Ward,kenneth.ward@carlsoncontracting.ae,+971-56-2567880,"Ras Al Khor, UAE",B,True
+CON-054,Smith-Ferguson,Piling & Foundations,289019,CICPA-38074,100466932310,Joshua Mccann,joshua.mccann@smith-fergusoncontracting.ae,+971-55-4221313,"DIP, UAE",A,True
+CON-055,"Carter, Raymond and Little",Structural Steel,926403,CICPA-23256,100645127678,Karen Garcia,karen.garcia@cartercontracting.ae,+971-56-9833734,"Al Quoz, UAE",C,True
+CON-056,Andrews Group Demolition,Demolition,726258,CICPA-59377,100265627642,Timothy Peterson,timothy.peterson@andrewscontracting.ae,+971-52-4034091,"Sharjah Industrial, UAE",A,False
+CON-057,King Group,Piling & Foundations,809217,CICPA-41133,100576954730,Danny Jones,danny.jones@kingcontracting.ae,+971-56-5780297,"Ras Al Khor, UAE",A,True
+CON-058,Jones-Soto Facade & Cladding,Facade & Cladding,922471,CICPA-71474,100996696177,Brian Hernandez,brian.hernandez@jones-sotocontracting.ae,+971-52-7171347,"Sharjah Industrial, UAE",B,False
+CON-059,"Avery, Miller and Wright",Demolition,500422,CICPA-75916,100666355637,Angela Butler,angela.butler@averycontracting.ae,+971-55-3718884,"DIP, UAE",B,True
+CON-060,"Gibbs, Perez and Mills",Fit-Out,772324,CICPA-72991,100498585961,Shannon Ramos,shannon.ramos@gibbscontracting.ae,+971-56-2721170,"Sharjah Industrial, UAE",A,True
+CON-061,"Branch, Torres and Oliver Structural Steel",Structural Steel,386042,CICPA-68893,100651208305,Chelsea Singh,chelsea.singh@branchcontracting.ae,+971-52-8339571,"Al Quoz, UAE",A,False
+CON-062,Garrett LLC Waterproofing,Waterproofing,535050,CICPA-16980,100525689202,Donna Moore,donna.moore@garrettcontracting.ae,+971-56-7274032,"DIP, UAE",B,True
+CON-063,Arnold and Sons,Waterproofing,434165,CICPA-22987,100867407868,Aaron Hayes,aaron.hayes@arnoldcontracting.ae,+971-54-3450300,"DIP, UAE",A,True
+CON-064,"Harrison, Johnson and Roberts",Fit-Out,971482,CICPA-28191,100914799481,Justin Heath,justin.heath@harrisoncontracting.ae,+971-55-8526283,"Sharjah Industrial, UAE",A,True
+CON-065,Mcdaniel LLC,Piling & Foundations,975522,CICPA-29597,100689274064,Kristin Weber,kristin.weber@mcdanielcontracting.ae,+971-56-9854536,"Ras Al Khor, UAE",A,True
+CON-066,"Lara, Gonzalez and Wilson",MEP Works,150068,CICPA-41252,100550784243,Jeffrey Hernandez,jeffrey.hernandez@laracontracting.ae,+971-56-8669093,"Al Quoz, UAE",A,False
+CON-067,Serrano-Jones Fire Fighting,Fire Fighting,762652,CICPA-77551,100717452511,Gabriel Parker,gabriel.parker@serrano-jonescontracting.ae,+971-52-3408819,"JAFZA, UAE",B,True
+CON-068,"Holloway, Morse and Gonzales",Fire Fighting,698384,CICPA-64600,100301126777,Taylor Torres,taylor.torres@hollowaycontracting.ae,+971-50-9782613,"JAFZA, UAE",A,True
+CON-069,Bender-Mason HVAC,HVAC,145649,CICPA-93318,100515410649,Troy Miller,troy.miller@bender-masoncontracting.ae,+971-54-5255545,"Al Quoz, UAE",B,True
+CON-070,Preston Ltd,Waterproofing,789023,CICPA-92346,100211308231,Marcus Wright,marcus.wright@prestoncontracting.ae,+971-56-6578736,"DIP, UAE",A,True
+CON-071,Perez Ltd,Plumbing,774020,CICPA-32949,100991617660,Mary Johnston,mary.johnston@perezcontracting.ae,+971-55-9028420,"DIP, UAE",A,True
+CON-072,Key Ltd Road Works,Road Works,579911,CICPA-14847,100415081566,Lori Johnston,lori.johnston@keycontracting.ae,+971-52-1734947,"DIP, UAE",A,True
+CON-073,Ruiz Ltd Facade & Cladding,Facade & Cladding,955015,CICPA-81176,100608309128,Scott Ramirez,scott.ramirez@ruizcontracting.ae,+971-54-1614394,"DIP, UAE",B,True
+CON-074,"Graham, Olsen and Costa Fit-Out",Fit-Out,787584,CICPA-53506,100393364102,Theodore Ortiz,theodore.ortiz@grahamcontracting.ae,+971-50-7174337,"Ras Al Khor, UAE",B,False
+CON-075,Santiago-Hodge,HVAC,295892,CICPA-75038,100843102880,Mark Steele,mark.steele@santiago-hodgecontracting.ae,+971-55-7163058,"Sharjah Industrial, UAE",B,True
+CON-076,Bates-Morales,Road Works,551524,CICPA-88964,100982982227,Kathleen Johnson,kathleen.johnson@bates-moralescontracting.ae,+971-52-5928582,"JAFZA, UAE",A,True
+CON-077,Edwards LLC Waterproofing,Waterproofing,421384,CICPA-68447,100747060047,Darrell Barton,darrell.barton@edwardscontracting.ae,+971-55-3795835,"Ras Al Khor, UAE",B,False
+CON-078,"Bryan, Smith and Booth Piling & Foundations",Piling & Foundations,469685,CICPA-90589,100567013808,Steven Brown,steven.brown@bryancontracting.ae,+971-54-1962308,"Al Quoz, UAE",C,False
+CON-079,"Cox, Avila and Garrett Waterproofing",Waterproofing,886325,CICPA-99051,100271784435,Kathleen Harris,kathleen.harris@coxcontracting.ae,+971-50-3395441,"Sharjah Industrial, UAE",C,False
+CON-080,"Anderson, Roberts and Gilmore",Piling & Foundations,347459,CICPA-94562,100493342201,Todd Johnson,todd.johnson@andersoncontracting.ae,+971-54-7423230,"Sharjah Industrial, UAE",A,True
+CON-081,"Lynch, Allen and Moore",Landscaping,488984,CICPA-58760,100576676179,Andrea Tran,andrea.tran@lynchcontracting.ae,+971-50-3310140,"Sharjah Industrial, UAE",B,False
+CON-082,Walker Inc Waterproofing,Waterproofing,361736,CICPA-24869,100127824235,Steven Wilson,steven.wilson@walkercontracting.ae,+971-52-9372568,"Sharjah Industrial, UAE",B,True
+CON-083,Jimenez Ltd Facade & Cladding,Facade & Cladding,838237,CICPA-68493,100330393232,Kelly Thornton,kelly.thornton@jimenezcontracting.ae,+971-56-5791184,"Ras Al Khor, UAE",A,True
+CON-084,Davenport-Baird Concrete Works,Concrete Works,574001,CICPA-32630,100865975088,John Arnold,john.arnold@davenport-bairdcontracting.ae,+971-55-2472884,"JAFZA, UAE",C,True
+CON-085,Lee-Greene,Road Works,668507,CICPA-48058,100422076028,Julie Taylor,julie.taylor@lee-greenecontracting.ae,+971-52-3920762,"JAFZA, UAE",B,True
+CON-086,Hill Group Structural Steel,Structural Steel,930541,CICPA-28202,100354193540,Matthew French,matthew.french@hillcontracting.ae,+971-55-1440972,"JAFZA, UAE",B,True
+CON-087,Hoover-Campbell Electrical,Electrical,678443,CICPA-27009,100757074545,Kenneth Matthews,kenneth.matthews@hoover-campbellcontracting.ae,+971-50-2103070,"JAFZA, UAE",B,False
+CON-088,"Burns, Hernandez and Ryan",Plumbing,529322,CICPA-85353,100179189225,Michael Arnold,michael.arnold@burnscontracting.ae,+971-52-6318841,"Al Quoz, UAE",B,False
+CON-089,"Bennett, Cantu and Kane Landscaping",Landscaping,234568,CICPA-82260,100786973497,Tina Allen,tina.allen@bennettcontracting.ae,+971-56-4052834,"DIP, UAE",B,True
+CON-090,Hall-Rowe,Fit-Out,260448,CICPA-49862,100276799196,Bradley Garner,bradley.garner@hall-rowecontracting.ae,+971-52-6413349,"DIP, UAE",B,True
+CON-091,"Mcintyre, James and Mcneil",Fit-Out,305837,CICPA-93238,100691461470,Laura Pearson,laura.pearson@mcintyrecontracting.ae,+971-54-3100009,"JAFZA, UAE",B,True
+CON-092,Simpson Inc Plumbing,Plumbing,720556,CICPA-86106,100265564833,David Sanford,david.sanford@simpsoncontracting.ae,+971-52-6664316,"Sharjah Industrial, UAE",A,True
+CON-093,Kane-Sawyer,Structural Steel,772612,CICPA-85598,100384172112,Scott Fox,scott.fox@kane-sawyercontracting.ae,+971-52-7989166,"Sharjah Industrial, UAE",C,True
+CON-094,Smith-Thomas Electrical,Electrical,672079,CICPA-47967,100789242701,Monica Booker,monica.booker@smith-thomascontracting.ae,+971-54-9102469,"DIP, UAE",C,False
+CON-095,Harrison LLC,Facade & Cladding,822063,CICPA-17852,100269737590,Matthew Schwartz,matthew.schwartz@harrisoncontracting.ae,+971-55-7972975,"Ras Al Khor, UAE",B,True
+CON-096,"Miller, Murphy and Craig Waterproofing",Waterproofing,427766,CICPA-51853,100888340979,Amanda Finley,amanda.finley@millercontracting.ae,+971-54-7689354,"DIP, UAE",B,True
+CON-097,"Higgins, Malone and Brennan",Waterproofing,228473,CICPA-45058,100582750043,Barry Jones,barry.jones@higginscontracting.ae,+971-52-3363534,"Al Quoz, UAE",A,True
+CON-098,"Cohen, Mitchell and Perez HVAC",HVAC,538446,CICPA-42541,100271476207,Christopher Good,christopher.good@cohencontracting.ae,+971-54-6246485,"DIP, UAE",A,False
+CON-099,"Padilla, Garcia and Jackson",Plumbing,423528,CICPA-75191,100124885365,Kevin Johnson,kevin.johnson@padillacontracting.ae,+971-50-7597509,"Sharjah Industrial, UAE",B,True
+CON-100,Flynn-Carter MEP Works,MEP Works,151021,CICPA-16624,100402104065,Nicholas Thomas,nicholas.thomas@flynn-cartercontracting.ae,+971-55-8895137,"JAFZA, UAE",B,True

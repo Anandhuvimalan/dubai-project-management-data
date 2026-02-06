@@ -18,20 +18,34 @@ var CONFIG = {
     BRANCH: 'main',
     BATCH_SIZE: 5000,
 
-    // Files ordered by dependency/importance
+    // Files ordered by dependency/importance (17 Civil Engineering Tables)
     FILES: [
-        { name: 'clients.csv', sheet: 'Clients', expectedRows: 25 },
-        { name: 'employees.csv', sheet: 'Employees', expectedRows: 250 },
-        { name: 'vendors.csv', sheet: 'Vendors', expectedRows: 40 },
-        { name: 'projects.csv', sheet: 'Projects', expectedRows: 50 },
-        { name: 'project_milestones.csv', sheet: 'Milestones', expectedRows: 400 },
-        { name: 'tasks.csv', sheet: 'Tasks', expectedRows: 1000 },
-        { name: 'assignments.csv', sheet: 'Assignments', expectedRows: 1500 },
-        { name: 'timesheets.csv', sheet: 'Timesheets', expectedRows: 500 },
-        { name: 'project_documents.csv', sheet: 'Documents', expectedRows: 600 },
-        { name: 'purchase_orders.csv', sheet: 'Purchase_Orders', expectedRows: 300 },
-        { name: 'expenses.csv', sheet: 'Expenses', expectedRows: 800 },
-        { name: 'risks.csv', sheet: 'Risks', expectedRows: 200 }
+        // Core Master Tables
+        { name: 'clients.csv', sheet: 'Clients', expectedRows: 51 },
+        { name: 'employees.csv', sheet: 'Employees', expectedRows: 401 },
+        { name: 'contractors.csv', sheet: 'Contractors', expectedRows: 101 },
+        { name: 'suppliers.csv', sheet: 'Suppliers', expectedRows: 81 },
+        { name: 'equipment.csv', sheet: 'Equipment', expectedRows: 151 },
+
+        // Project & Contract Management
+        { name: 'projects.csv', sheet: 'Projects', expectedRows: 101 },
+        { name: 'contracts.csv', sheet: 'Contracts', expectedRows: 701 },
+        { name: 'project_phases.csv', sheet: 'Project_Phases', expectedRows: 1001 },
+        { name: 'work_packages.csv', sheet: 'Work_Packages', expectedRows: 1169 },
+
+        // Compliance & Approvals
+        { name: 'permits_approvals.csv', sheet: 'Permits_Approvals', expectedRows: 601 },
+        { name: 'inspections.csv', sheet: 'Inspections', expectedRows: 4001 },
+        { name: 'safety_incidents.csv', sheet: 'Safety_Incidents', expectedRows: 701 },
+
+        // Financial Management
+        { name: 'payment_applications.csv', sheet: 'Payment_Applications', expectedRows: 901 },
+        { name: 'variation_orders.csv', sheet: 'Variation_Orders', expectedRows: 551 },
+        { name: 'purchase_orders.csv', sheet: 'Purchase_Orders', expectedRows: 2501 },
+
+        // Resource & Documentation
+        { name: 'daily_site_reports.csv', sheet: 'Daily_Site_Reports', expectedRows: 2501 },
+        { name: 'project_documents.csv', sheet: 'Project_Documents', expectedRows: 14001 }
     ]
 };
 

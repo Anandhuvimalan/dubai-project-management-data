@@ -1,0 +1,151 @@
+equipment_id,equipment_type,model,serial_number,ownership,daily_rate_aed,status,current_project,last_service_date,operator_required
+EQ-0001,Compactor,CAT GP-151,SN-20377889,Rented,497,Available,,2024-05-03,True
+EQ-0002,Concrete Pump,Volvo yA-554,SN-59051518,Owned,2242,In Use,,2025-06-10,True
+EQ-0003,Generator,JCB UQ-644,SN-92519254,Owned,394,Available,,2025-05-24,True
+EQ-0004,Backhoe Loader,Liebherr Tf-629,SN-48652816,Rented,752,Available,,2025-01-29,True
+EQ-0005,Excavator,Volvo tl-505,SN-35733221,Rented,1231,In Use,,2024-08-17,True
+EQ-0006,Scaffolding Set,CAT VH-188,SN-05929622,Rented,132,Available,,2024-05-20,False
+EQ-0007,Forklift,Volvo cA-927,SN-53794738,Owned,367,Available,,2024-07-04,True
+EQ-0008,Backhoe Loader,CAT xR-473,SN-97746886,Leased,670,In Use,,2024-05-05,True
+EQ-0009,Scaffolding Set,Hitachi qd-392,SN-75818141,Rented,156,In Use,,2025-08-15,True
+EQ-0010,Welding Machine,Hitachi Gj-247,SN-61375060,Owned,88,In Use,,2024-11-03,False
+EQ-0011,Boom Lift,Komatsu yf-853,SN-53051522,Leased,560,Available,,2024-01-30,True
+EQ-0012,Dump Truck,Liebherr WT-472,SN-77901043,Leased,694,Available,,2025-10-10,True
+EQ-0013,Concrete Pump,Liebherr HB-289,SN-14341036,Leased,1873,Available,,2025-05-11,False
+EQ-0014,Wheel Loader,JCB hF-971,SN-98089324,Owned,1163,Available,,2024-11-29,False
+EQ-0015,Batching Plant,Potain pK-095,SN-62185188,Owned,2897,In Use,,2025-01-29,False
+EQ-0016,Mobile Crane,Hitachi yE-880,SN-06540515,Leased,3378,In Use,,2024-07-06,True
+EQ-0017,Forklift,Liebherr ic-195,SN-58527722,Owned,314,Under Maintenance,,2024-02-19,True
+EQ-0018,Boom Lift,Volvo mc-704,SN-30548687,Leased,437,In Use,,2024-07-15,False
+EQ-0019,Batching Plant,JCB wX-034,SN-05415667,Leased,3094,In Use,,2025-11-25,False
+EQ-0020,Concrete Pump,JCB FS-652,SN-75841616,Owned,2309,In Use,,2025-04-12,False
+EQ-0021,Scaffolding Set,JCB ug-284,SN-15447962,Owned,113,Available,,2025-06-19,False
+EQ-0022,Forklift,Liebherr cU-757,SN-59640165,Owned,415,In Use,,2025-02-02,True
+EQ-0023,Generator,Potain MR-202,SN-70213556,Leased,369,In Use,,2025-03-16,True
+EQ-0024,Tower Crane,CAT RC-092,SN-55719285,Rented,3954,In Use,,2024-11-05,False
+EQ-0025,Compactor,JCB hb-543,SN-27868144,Owned,528,In Use,,2025-06-30,True
+EQ-0026,Batching Plant,Hitachi sS-739,SN-73121727,Owned,2706,Available,,2024-03-09,True
+EQ-0027,Mobile Crane,Liebherr JI-551,SN-44225831,Leased,3885,Available,,2024-06-05,True
+EQ-0028,Welding Machine,Potain bx-237,SN-89578291,Owned,94,In Use,,2024-02-21,True
+EQ-0029,Batching Plant,Hitachi HA-467,SN-69125177,Owned,3067,In Use,,2025-06-12,True
+EQ-0030,Batching Plant,CAT XJ-852,SN-92268018,Leased,3478,Under Maintenance,,2024-04-28,True
+EQ-0031,Dump Truck,CAT uT-422,SN-35841438,Rented,422,Under Maintenance,,2024-08-01,True
+EQ-0032,Tower Crane,Hitachi If-249,SN-82992299,Rented,4827,Available,,2024-09-19,False
+EQ-0033,Scaffolding Set,Komatsu fc-900,SN-94396907,Owned,166,Available,,2025-11-21,False
+EQ-0034,Excavator,Liebherr Ep-844,SN-64710276,Leased,1273,Available,,2025-01-11,True
+EQ-0035,Forklift,Komatsu Mj-735,SN-55562588,Owned,413,Under Maintenance,,2024-03-23,True
+EQ-0036,Concrete Pump,CAT hr-537,SN-73210469,Owned,1960,In Use,,2024-11-20,True
+EQ-0037,Concrete Pump,CAT KU-325,SN-53278774,Owned,1710,In Use,,2025-01-21,False
+EQ-0038,Scaffolding Set,Hitachi GD-016,SN-33950047,Owned,173,Available,,2025-04-09,False
+EQ-0039,Excavator,Liebherr ag-748,SN-62456506,Rented,1001,In Use,,2024-02-09,True
+EQ-0040,Backhoe Loader,Potain xJ-983,SN-41687849,Leased,770,Under Maintenance,,2025-06-12,True
+EQ-0041,Generator,Volvo gz-912,SN-55852398,Leased,500,Available,,2024-11-07,True
+EQ-0042,Dump Truck,Hitachi ci-800,SN-57872982,Leased,488,Under Maintenance,,2024-09-11,False
+EQ-0043,Scaffolding Set,Liebherr zN-952,SN-49588879,Owned,186,Available,,2024-08-20,True
+EQ-0044,Mobile Crane,Komatsu vR-705,SN-16940974,Rented,2239,Available,,2025-05-24,True
+EQ-0045,Boom Lift,Komatsu Ud-993,SN-97289623,Leased,614,In Use,,2024-01-25,True
+EQ-0046,Generator,Volvo bC-913,SN-56263689,Leased,295,In Use,,2025-01-01,False
+EQ-0047,Compactor,Potain nJ-028,SN-57865278,Owned,584,Available,,2024-09-22,True
+EQ-0048,Backhoe Loader,Komatsu NE-854,SN-33484344,Owned,661,In Use,,2025-07-01,False
+EQ-0049,Tower Crane,Hitachi Ew-375,SN-84419866,Rented,5449,Available,,2025-09-27,True
+EQ-0050,Excavator,Komatsu cs-524,SN-15747338,Leased,1375,In Use,,2024-07-29,False
+EQ-0051,Batching Plant,Volvo gN-842,SN-93308330,Leased,2851,Under Maintenance,,2024-03-18,True
+EQ-0052,Batching Plant,Komatsu gR-657,SN-20826773,Owned,3157,Available,,2025-08-10,True
+EQ-0053,Backhoe Loader,CAT Pd-454,SN-19380262,Rented,615,In Use,,2024-01-29,True
+EQ-0054,Excavator,Hitachi Vs-672,SN-00499154,Leased,1379,Under Maintenance,,2024-12-18,True
+EQ-0055,Compactor,JCB iG-887,SN-74315274,Owned,593,Available,,2025-07-12,True
+EQ-0056,Scaffolding Set,JCB Ys-205,SN-93296685,Rented,169,Available,,2024-03-08,False
+EQ-0057,Batching Plant,JCB iE-612,SN-53046374,Owned,2870,Available,,2024-09-13,False
+EQ-0058,Welding Machine,Potain aq-499,SN-53017426,Owned,88,Available,,2025-06-16,True
+EQ-0059,Backhoe Loader,Liebherr Os-841,SN-59332727,Owned,724,Available,,2025-08-03,True
+EQ-0060,Wheel Loader,Hitachi SJ-956,SN-78339187,Rented,1038,Available,,2025-02-14,False
+EQ-0061,Excavator,Hitachi hd-519,SN-88398225,Owned,1011,Available,,2025-10-25,False
+EQ-0062,Dump Truck,JCB Rn-871,SN-97187072,Rented,675,Available,,2025-02-02,True
+EQ-0063,Boom Lift,Liebherr dJ-679,SN-74064039,Rented,693,In Use,,2024-02-26,False
+EQ-0064,Forklift,Hitachi Se-065,SN-80170462,Owned,284,In Use,,2025-08-20,True
+EQ-0065,Backhoe Loader,Hitachi yC-265,SN-66182512,Owned,859,Available,,2025-02-21,True
+EQ-0066,Excavator,Potain Uo-682,SN-00478686,Rented,1053,Under Maintenance,,2025-10-01,True
+EQ-0067,Batching Plant,Komatsu wj-337,SN-43106903,Rented,3285,In Use,,2024-06-09,True
+EQ-0068,Batching Plant,CAT cC-119,SN-90306738,Owned,2825,In Use,,2024-06-17,False
+EQ-0069,Backhoe Loader,Potain so-028,SN-95995342,Rented,732,In Use,,2025-05-27,True
+EQ-0070,Generator,CAT tr-836,SN-08926870,Owned,434,Under Maintenance,,2024-09-24,False
+EQ-0071,Boom Lift,Liebherr SA-685,SN-62462873,Owned,673,In Use,,2025-10-21,True
+EQ-0072,Concrete Pump,Hitachi ZD-342,SN-08668826,Owned,2006,In Use,,2024-07-07,True
+EQ-0073,Welding Machine,Liebherr Pf-435,SN-75183046,Rented,120,In Use,,2025-06-07,True
+EQ-0074,Generator,Hitachi em-990,SN-98373540,Leased,375,Under Maintenance,,2024-06-13,True
+EQ-0075,Tower Crane,CAT pS-317,SN-93638546,Leased,3533,Available,,2024-12-28,True
+EQ-0076,Batching Plant,Volvo qx-854,SN-87717535,Owned,2876,Available,,2024-08-31,False
+EQ-0077,Excavator,Potain oV-609,SN-20489964,Rented,962,In Use,,2024-04-28,True
+EQ-0078,Forklift,Liebherr yK-353,SN-37854777,Rented,271,In Use,,2024-05-10,False
+EQ-0079,Forklift,Komatsu UI-522,SN-72808010,Owned,351,Under Maintenance,,2025-08-16,True
+EQ-0080,Boom Lift,Potain Oo-062,SN-12038750,Owned,619,Under Maintenance,,2025-04-24,True
+EQ-0081,Boom Lift,CAT ba-977,SN-88600848,Owned,509,In Use,,2024-08-10,True
+EQ-0082,Excavator,JCB Zl-086,SN-11823398,Owned,1331,Under Maintenance,,2024-07-15,True
+EQ-0083,Tower Crane,CAT fx-546,SN-67933410,Rented,5173,Available,,2024-03-13,True
+EQ-0084,Boom Lift,Komatsu JE-666,SN-00217659,Leased,436,Available,,2025-10-28,True
+EQ-0085,Mobile Crane,Potain on-180,SN-97401489,Owned,2211,In Use,,2025-05-26,True
+EQ-0086,Backhoe Loader,Komatsu bn-025,SN-92614293,Leased,896,Available,,2025-03-16,False
+EQ-0087,Forklift,Komatsu yW-685,SN-21850163,Owned,385,In Use,,2025-10-13,True
+EQ-0088,Generator,Potain XN-159,SN-96504773,Owned,425,In Use,,2024-10-03,False
+EQ-0089,Wheel Loader,Potain lR-866,SN-96194311,Owned,1021,In Use,,2024-07-27,False
+EQ-0090,Batching Plant,Hitachi Vy-262,SN-55110475,Owned,2177,Available,,2025-08-14,True
+EQ-0091,Scaffolding Set,CAT fl-412,SN-67888610,Leased,144,In Use,,2024-03-10,True
+EQ-0092,Scaffolding Set,Komatsu MM-581,SN-56046618,Owned,135,Under Maintenance,,2024-07-07,True
+EQ-0093,Wheel Loader,JCB Ry-982,SN-22444721,Rented,627,Under Maintenance,,2024-05-09,True
+EQ-0094,Wheel Loader,JCB tE-646,SN-15437993,Owned,1001,In Use,,2024-12-21,False
+EQ-0095,Tower Crane,Hitachi az-124,SN-59657569,Owned,4513,In Use,,2024-04-15,True
+EQ-0096,Wheel Loader,Volvo Sm-459,SN-75265479,Owned,1140,Available,,2025-08-30,True
+EQ-0097,Dump Truck,Komatsu rY-356,SN-65193982,Leased,691,In Use,,2025-06-13,True
+EQ-0098,Compactor,Potain Tn-807,SN-74167243,Owned,541,Available,,2024-07-15,True
+EQ-0099,Generator,CAT eC-266,SN-97968868,Owned,334,Available,,2024-01-29,True
+EQ-0100,Tower Crane,Hitachi Of-589,SN-13529096,Leased,4537,In Use,,2025-08-07,False
+EQ-0101,Boom Lift,JCB ag-561,SN-43888993,Leased,616,Under Maintenance,,2024-12-12,True
+EQ-0102,Mobile Crane,Potain XR-567,SN-98250714,Owned,2568,Available,,2024-11-19,True
+EQ-0103,Mobile Crane,JCB wt-112,SN-57387571,Owned,3995,Available,,2024-12-06,False
+EQ-0104,Dump Truck,Volvo tc-751,SN-10512382,Owned,558,Under Maintenance,,2025-03-04,True
+EQ-0105,Boom Lift,Hitachi BD-258,SN-36226609,Owned,429,Available,,2025-11-16,True
+EQ-0106,Concrete Pump,CAT By-379,SN-03341918,Leased,2126,In Use,,2024-05-25,True
+EQ-0107,Backhoe Loader,Potain Dh-553,SN-47859696,Owned,561,Available,,2025-03-31,False
+EQ-0108,Excavator,Potain DN-155,SN-24991251,Owned,967,In Use,,2024-07-04,True
+EQ-0109,Compactor,JCB xS-412,SN-28669296,Rented,385,In Use,,2024-11-24,True
+EQ-0110,Boom Lift,Hitachi SP-278,SN-28274225,Rented,775,Available,,2025-10-15,True
+EQ-0111,Dump Truck,Hitachi wa-790,SN-72368876,Leased,539,In Use,,2025-06-15,True
+EQ-0112,Backhoe Loader,Potain Fk-767,SN-19034043,Owned,754,In Use,,2025-02-21,False
+EQ-0113,Dump Truck,CAT KV-427,SN-78819148,Leased,690,Available,,2025-10-01,True
+EQ-0114,Excavator,Liebherr WU-580,SN-78361340,Owned,1387,Under Maintenance,,2024-12-15,False
+EQ-0115,Mobile Crane,Komatsu Ch-451,SN-33959629,Owned,2090,Available,,2024-04-18,True
+EQ-0116,Tower Crane,Volvo Kw-330,SN-84982544,Rented,4284,Available,,2025-03-20,True
+EQ-0117,Welding Machine,CAT iW-481,SN-60422325,Leased,78,In Use,,2025-10-05,True
+EQ-0118,Concrete Pump,Potain jK-367,SN-46671168,Rented,1777,Available,,2025-08-05,False
+EQ-0119,Dump Truck,CAT Fu-457,SN-90175186,Owned,491,Available,,2024-06-18,False
+EQ-0120,Tower Crane,Volvo ru-637,SN-45892975,Owned,5296,In Use,,2025-11-25,True
+EQ-0121,Scaffolding Set,Hitachi OY-001,SN-70127706,Rented,141,Available,,2024-06-06,False
+EQ-0122,Batching Plant,CAT rf-242,SN-54152064,Rented,2410,In Use,,2025-07-17,False
+EQ-0123,Scaffolding Set,Liebherr Tg-361,SN-03712938,Owned,159,In Use,,2025-06-12,False
+EQ-0124,Batching Plant,Hitachi Sv-700,SN-16271361,Owned,3500,In Use,,2025-07-21,True
+EQ-0125,Excavator,CAT xt-115,SN-26221890,Leased,824,Available,,2025-04-19,False
+EQ-0126,Dump Truck,Potain Un-275,SN-26973112,Owned,571,Available,,2025-08-07,False
+EQ-0127,Concrete Pump,Hitachi wB-196,SN-52341389,Rented,1606,Available,,2025-04-11,False
+EQ-0128,Wheel Loader,Volvo Qt-940,SN-38983640,Leased,661,Available,,2025-08-31,False
+EQ-0129,Backhoe Loader,CAT hp-376,SN-79180552,Owned,618,In Use,,2024-10-27,True
+EQ-0130,Boom Lift,Liebherr IR-965,SN-27109104,Leased,782,Available,,2024-06-16,False
+EQ-0131,Mobile Crane,JCB Gs-006,SN-86661889,Owned,3305,In Use,,2024-04-28,True
+EQ-0132,Generator,JCB fG-414,SN-32856914,Owned,422,Under Maintenance,,2025-06-26,True
+EQ-0133,Wheel Loader,Liebherr pf-630,SN-61799042,Rented,922,In Use,,2024-04-02,False
+EQ-0134,Welding Machine,Potain kF-020,SN-58842524,Rented,90,In Use,,2025-07-23,True
+EQ-0135,Wheel Loader,CAT ZB-105,SN-48149177,Owned,739,In Use,,2025-01-31,True
+EQ-0136,Excavator,CAT Kk-507,SN-52419138,Owned,1260,In Use,,2024-01-02,True
+EQ-0137,Concrete Pump,CAT cE-003,SN-56220863,Rented,2487,Available,,2024-09-06,True
+EQ-0138,Backhoe Loader,Volvo re-365,SN-95180238,Rented,561,Available,,2024-02-05,True
+EQ-0139,Scaffolding Set,Potain sX-617,SN-45187053,Rented,190,Under Maintenance,,2024-08-14,False
+EQ-0140,Tower Crane,Komatsu pD-949,SN-59738320,Rented,3803,Available,,2024-11-14,False
+EQ-0141,Wheel Loader,Liebherr wO-038,SN-05064138,Leased,1125,Available,,2024-07-03,False
+EQ-0142,Backhoe Loader,Liebherr jT-670,SN-41038657,Owned,515,In Use,,2025-08-03,True
+EQ-0143,Compactor,Potain Gi-191,SN-61990623,Owned,348,In Use,,2024-08-14,True
+EQ-0144,Scaffolding Set,Hitachi SV-456,SN-55743132,Owned,115,Available,,2025-08-28,True
+EQ-0145,Welding Machine,Hitachi gk-912,SN-77561853,Owned,66,Available,,2024-12-17,True
+EQ-0146,Dump Truck,Potain hf-474,SN-24903521,Owned,698,In Use,,2025-07-06,True
+EQ-0147,Welding Machine,CAT Gd-356,SN-44206788,Owned,58,Available,,2024-07-13,False
+EQ-0148,Batching Plant,Hitachi ZY-171,SN-21003236,Owned,2188,In Use,,2024-10-16,True
+EQ-0149,Tower Crane,Volvo qe-199,SN-01372151,Owned,3844,In Use,,2024-02-03,True
+EQ-0150,Welding Machine,Potain KB-702,SN-67066253,Leased,113,Available,,2024-05-25,True
