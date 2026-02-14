@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dubai ERP — Operations Command Center — Features Report</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #1e293b;
+      background: #fff;
+      line-height: 1.6;
+      padding: 40px 50px;
+      max-width: 900px;
+      margin: 0 auto;
+      font-size: 12.5px;
+    }
+
+    @media print {
+      body {
+        padding: 20px 30px;
+      }
+
+      @page {
+        size: A4;
+        margin: 18mm 14mm;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      border-bottom: 3px solid #6366f1;
+    }
+
+    .header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #1e1b4b;
+      letter-spacing: -0.5px;
+    }
+
+    .header .subtitle {
+      font-size: 13px;
+      color: #6366f1;
+      font-weight: 600;
+      margin-top: 4px;
+    }
+
+    .header .meta {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: 6px;
+    }
+
+    /* Explanation box */
+    .explain {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+      font-size: 12px;
+      color: #475569;
+      line-height: 1.7;
+    }
+
+    .explain strong {
+      color: #1e1b4b;
+    }
+
+    /* Overview box */
+    .overview {
+      background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 22px;
+      border-left: 4px solid #6366f1;
+    }
+
+    .overview p {
+      font-size: 12.5px;
+      color: #334155;
+    }
+
+    .overview strong {
+      color: #1e1b4b;
+    }
+
+    /* Section headers */
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1e1b4b;
+      margin: 20px 0 10px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 .badge {
+      background: #6366f1;
+      color: #fff;
+      font-size: 9px;
+      padding: 2px 7px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #475569;
+      margin: 12px 0 6px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 14px;
+      font-size: 11.5px;
+    }
+
+    th {
+      background: #1e1b4b;
+      color: #fff;
+      padding: 6px 8px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    td {
+      padding: 5px 8px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8fafc;
+    }
+
+    td:first-child {
+      font-weight: 600;
+      color: #6366f1;
+      white-space: nowrap;
+    }
+
+    /* Feature number */
+    .fn {
+      display: inline-block;
+      background: #6366f1;
+      color: #fff;
+      font-size: 9px;
+      font-weight: 700;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 4px;
+    }
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 9px;
+      font-weight: 600;
+      margin-left: 3px;
+    }
+
+    .tag-green {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .tag-blue {
+      background: #dbeafe;
+      color: #1e40af;
+    }
+
+    .tag-red {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .tag-yellow {
+      background: #fef9c3;
+      color: #854d0e;
+    }
+
+    .tag-purple {
+      background: #f3e8ff;
+      color: #6b21a8;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 24px;
+      padding-top: 14px;
+      border-top: 2px solid #e2e8f0;
+      text-align: center;
+      font-size: 10px;
+      color: #94a3b8;
+    }
+
+    /* Summary stats */
+    .stats {
+      display: flex;
+      gap: 10px;
+      margin: 14px 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      flex: 1;
+      min-width: 100px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .stat .num {
+      font-size: 22px;
+      font-weight: 800;
+      color: #6366f1;
+    }
+
+    .stat .label {
+      font-size: 9px;
+      color: #64748b;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Why box */
+    .why {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 10px 0 14px;
+      font-size: 11.5px;
+      color: #78350f;
+    }
+
+    .why strong {
+      color: #92400e;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Operations Command Center</h1>
+    <div class="subtitle">Dubai ERP — Dashboard Features & Capabilities Report</div>
+    <div class="meta">100 Projects · 17 Data Modules · February 2026</div>
+  </div>
+
+  <div class="explain">
+    <strong>What is this?</strong> We built a fully automated operational dashboard inside Google Sheets that gives
+    real-time visibility into our entire Dubai project portfolio. Instead of manually checking multiple spreadsheets and
+    cross-referencing data, this dashboard <strong>automatically pulls data from all 17 project data modules</strong>,
+    performs calculations, and presents the results as KPIs, charts, and tables — with color-coded alerts so you can
+    instantly spot issues. When you select a specific project or filter by type/status, <strong>every number on the
+      dashboard updates automatically</strong> to show you exactly what's happening in that subset of the portfolio.
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="num">12</div>
+      <div class="label">Live KPIs</div>
+    </div>
+    <div class="stat">
+      <div class="num">23</div>
+      <div class="label">Charts</div>
+    </div>
+    <div class="stat">
+      <div class="num">15</div>
+      <div class="label">Data Tables</div>
+    </div>
+    <div class="stat">
+      <div class="num">25</div>
+      <div class="label">Analytics Engines</div>
+    </div>
+    <div class="stat">
+      <div class="num">17</div>
+      <div class="label">Data Sources</div>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <h2>Smart Filtering System <span class="badge">4 FEATURES</span></h2>
+  <div class="why"><strong>Why this matters:</strong> Instead of building separate reports for each project or category,
+    the filters let anyone instantly slice the entire dashboard by project, type, or status — saving hours of manual
+    report generation.</div>
+  <table>
+    <tr>
+      <th style="width:28%">Feature</th>
+      <th>What It Does</th>
+    </tr>
+    <tr>
+      <td><span class="fn">1</span> Project Filter</td>
+      <td>Select any specific project from a dropdown — all KPIs, charts, and tables instantly show only that project's
+        data</td>
+    </tr>
+    <tr>
+      <td><span class="fn">2</span> Type Filter</td>
+      <td>Filter by project type (High-Rise, Villa, Infrastructure, Mixed-Use) to compare performance across categories
+      </td>
+    </tr>
+    <tr>
+      <td><span class="fn">3</span> Status Filter</td>
+      <td>Filter by status (In Progress, Delayed, Completed, On Hold) to focus on projects at a specific stage</td>
+    </tr>
+    <tr>
+      <td><span class="fn">4</span> One-Click Reset</td>
+      <td>Checkbox that instantly clears all filters back to portfolio-wide view and refreshes the dashboard</td>
+    </tr>
+  </table>
+
+  <!-- KPIs -->
+  <h2>Live KPI Cards <span class="badge">12 METRICS</span></h2>
+  <div class="why"><strong>Why this matters:</strong> These 12 numbers give you an instant portfolio health snapshot.
+    They change color automatically — green means healthy, yellow is a warning, red needs action. No need to dig through
+    data — the dashboard tells you where to look.</div>
+
+  <h3>Portfolio Health — Are we on track overall?</h3>
+  <table>
+    <tr>
+      <th style="width:28%">KPI</th>
+      <th>What It Tells You</th>
+      <th style="width:18%">Data From</th>
+    </tr>
+    <tr>
+      <td><span class="fn">5</span> Active Projects</td>
+      <td>How many projects are currently in progress right now</td>
+      <td><span class="tag tag-blue">Projects</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">6</span> Delayed Projects</td>
+      <td>How many projects have fallen behind schedule — these need immediate attention</td>
+      <td><span class="tag tag-blue">Projects</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">7</span> Total Contract Value</td>
+      <td>The combined financial size of the filtered portfolio in AED millions</td>
+      <td><span class="tag tag-purple">Contracts</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">8</span> Portfolio Completion</td>
+      <td>Overall progress weighted by project size — larger projects carry more weight to give an accurate picture</td>
+      <td><span class="tag tag-blue">Projects</span></td>
+    </tr>
+  </table>
+
+  <h3>Financial Health — Are we spending within budget?</h3>
+  <table>
+    <tr>
+      <th style="width:28%">KPI</th>
+      <th>What It Tells You</th>
+      <th style="width:18%">Data From</th>
+    </tr>
+    <tr>
+      <td><span class="fn">9</span> Budget Overrun %</td>
+      <td>How much actual spending exceeds the planned budget — turns <span class="tag tag-red">red above 10%</span>
+      </td>
+      <td><span class="tag tag-green">Work Packages</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">10</span> Pending Payments</td>
+      <td>Total value of payment applications submitted but not yet certified — represents cash flow pressure on
+        contractors</td>
+      <td><span class="tag tag-yellow">Payments</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">11</span> Approved VOs</td>
+      <td>Total value of approved scope changes — shows how much project scope has grown beyond original contracts</td>
+      <td><span class="tag tag-red">Variation Orders</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">12</span> Cost Performance Index</td>
+      <td>Efficiency of spending — 1.0 means on budget, below 0.8 means serious overrun. <span class="tag tag-red">Red =
+          cost crisis</span></td>
+      <td><span class="tag tag-yellow">Payments</span> <span class="tag tag-purple">Contracts</span></td>
+    </tr>
+  </table>
+
+  <h3>Operations Intelligence — What risks need attention?</h3>
+  <table>
+    <tr>
+      <th style="width:28%">KPI</th>
+      <th>What It Tells You</th>
+      <th style="width:18%">Data From</th>
+    </tr>
+    <tr>
+      <td><span class="fn">13</span> Open Safety Incidents</td>
+      <td>Unresolved safety cases across the portfolio — <span class="tag tag-red">red above 10</span> means HSE backlog
+        is growing</td>
+      <td><span class="tag tag-red">Safety</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">14</span> Inspection Pass Rate</td>
+      <td>What percentage of quality inspections pass — low rates mean rework costs and delays</td>
+      <td><span class="tag tag-green">Inspections</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">15</span> Expiring Permits</td>
+      <td>How many permits need renewal in the next 30 days — expired permits can trigger stop-work orders</td>
+      <td><span class="tag tag-yellow">Permits</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">16</span> Rented Equip. Cost/Day</td>
+      <td>Daily rental expenditure — helps evaluate whether renting or owning equipment is more cost-effective</td>
+      <td><span class="tag tag-blue">Equipment</span></td>
+    </tr>
+  </table>
+
+  <div class="page-break"></div>
+
+  <!-- CHARTS -->
+  <h2>Analytical Charts <span class="badge">23 VISUALIZATIONS</span></h2>
+  <div class="why"><strong>Why this matters:</strong> Charts turn raw numbers into patterns you can see at a glance.
+    Each chart answers a specific operational question — from "which project types cost the most?" to "are we
+    over-relying on rented equipment?"</div>
+
+  <h3>Project Overview — How does the portfolio look?</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:35%">Chart</th>
+      <th>What Question It Answers</th>
+    </tr>
+    <tr>
+      <td><span class="fn">17</span></td>
+      <td>Project Status Distribution</td>
+      <td>What proportion of projects are active vs completed vs delayed?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">18</span></td>
+      <td>Project Completion Progress</td>
+      <td>Which 15 projects are closest to finishing? Are any stalled?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">19</span></td>
+      <td>Cost per SQM</td>
+      <td>Which projects cost the most per square meter? Identifies expensive builds for benchmarking</td>
+    </tr>
+    <tr>
+      <td><span class="fn">20</span></td>
+      <td>Client Portfolio Value</td>
+      <td>Which clients represent our largest contracts? Helps prioritize client relationships</td>
+    </tr>
+  </table>
+
+  <h3>Contractor & Workforce — Who are we working with?</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:35%">Chart</th>
+      <th>What Question It Answers</th>
+    </tr>
+    <tr>
+      <td><span class="fn">21</span></td>
+      <td>Contractor Rating by Specialty</td>
+      <td>Which contractor specialties perform best? Guides future procurement decisions</td>
+    </tr>
+    <tr>
+      <td><span class="fn">22</span></td>
+      <td>Top 10 Contractors</td>
+      <td>Which contractors have the most contracts? Identifies over-reliance on specific firms</td>
+    </tr>
+    <tr>
+      <td><span class="fn">23</span></td>
+      <td>Manpower Trend</td>
+      <td>How is workforce size changing month-to-month? Spots staffing gaps or over-deployment</td>
+    </tr>
+    <tr>
+      <td><span class="fn">24</span></td>
+      <td>Supplier Categories</td>
+      <td>What types of suppliers are in our network? Shows supply chain diversity</td>
+    </tr>
+  </table>
+
+  <h3>Budget & Payments — Where is the money going?</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:35%">Chart</th>
+      <th>What Question It Answers</th>
+    </tr>
+    <tr>
+      <td><span class="fn">25</span></td>
+      <td>Budget by Phase</td>
+      <td>Which construction phases consume the most budget? (Foundation, Structure, Finishes, etc.)</td>
+    </tr>
+    <tr>
+      <td><span class="fn">26</span></td>
+      <td>Budget vs Actual by Type</td>
+      <td>Are certain project types consistently going over budget?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">27</span></td>
+      <td>PO Monthly Spend</td>
+      <td>Is procurement spending consistent or spiky? Helps forecast cash needs</td>
+    </tr>
+    <tr>
+      <td><span class="fn">28</span></td>
+      <td>Payment Status Pipeline</td>
+      <td>How many payments are pending vs certified vs paid? Shows cash flow bottlenecks</td>
+    </tr>
+  </table>
+
+  <h3>Equipment & Assets — Are we using resources efficiently?</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:35%">Chart</th>
+      <th>What Question It Answers</th>
+    </tr>
+    <tr>
+      <td><span class="fn">29</span></td>
+      <td>Fleet Ownership Split</td>
+      <td>What's the rented vs owned ratio? Are we paying too much in rentals?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">30</span></td>
+      <td>Daily Rate Comparison</td>
+      <td>How do rental costs compare to ownership costs by equipment type?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">31</span></td>
+      <td>Equipment Utilization</td>
+      <td>What percentage of equipment is actually being used? Idle equipment = wasted money</td>
+    </tr>
+    <tr>
+      <td><span class="fn">32</span></td>
+      <td>Document Status</td>
+      <td>How many project documents are approved vs pending vs rejected?</td>
+    </tr>
+  </table>
+
+  <h3>Risk & Compliance — What could go wrong?</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:35%">Chart</th>
+      <th>What Question It Answers</th>
+    </tr>
+    <tr>
+      <td><span class="fn">33</span></td>
+      <td>VO Status Distribution</td>
+      <td>How many variation orders are approved vs still pending decision?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">34</span></td>
+      <td>VO Risk by Type</td>
+      <td>Which project types have the highest average scope changes?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">35</span></td>
+      <td>Incidents by Severity</td>
+      <td>How serious are our safety incidents? What's the High vs Low split?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">36</span></td>
+      <td>Inspection Pass Rate by Type</td>
+      <td>Which project types have the worst quality? Where do we need better QA/QC?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">37</span></td>
+      <td>Planned vs Actual Duration</td>
+      <td>Are certain project types consistently taking longer than planned?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">38</span></td>
+      <td>CPI by Project Type</td>
+      <td>Which project types are the most cost-efficient? Which ones bleed money?</td>
+    </tr>
+    <tr>
+      <td><span class="fn">39</span></td>
+      <td>Safety by Project Type</td>
+      <td>Which project types have the most safety incidents? Helps focus HSE resources</td>
+    </tr>
+  </table>
+
+  <div class="page-break"></div>
+
+  <!-- TABLES -->
+  <h2>Operational Data Tables <span class="badge">15 PANELS</span></h2>
+  <div class="why"><strong>Why this matters:</strong> While KPIs show summaries and charts show trends, these tables
+    show the actual details — project names, specific numbers, exact dates. Each table uses automatic color-coded badges
+    so you can scan rows quickly and focus on the ones that need attention.</div>
+
+  <h3>Schedule & Progress</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:25%">Table</th>
+      <th>What You Can See</th>
+      <th style="width:18%">Color Alerts</th>
+    </tr>
+    <tr>
+      <td><span class="fn">40</span></td>
+      <td>New & Recent Projects</td>
+      <td>Projects started in the last 90 days — tracks how quickly new projects ramp up</td>
+      <td><span class="tag tag-green">New</span> <span class="tag tag-yellow">Maturing</span> <span
+          class="tag tag-red">Aging</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">41</span></td>
+      <td>Phase Progress Tracker</td>
+      <td>Which construction phases are behind schedule? Shows exact days overdue</td>
+      <td><span class="tag tag-red">CRITICAL</span> <span class="tag tag-yellow">BEHIND</span></td>
+    </tr>
+  </table>
+
+  <h3>Contractor Intelligence</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:25%">Table</th>
+      <th>What You Can See</th>
+      <th style="width:18%">Color Alerts</th>
+    </tr>
+    <tr>
+      <td><span class="fn">42</span></td>
+      <td>Contractor Recommendations</td>
+      <td>Ranks contractors using a composite score (contract history + rating + specialty) — helps choose the best
+        firms for future work</td>
+      <td><span class="tag tag-green">A</span> <span class="tag tag-blue">B</span> <span class="tag tag-yellow">C</span>
+        <span class="tag tag-red">D</span></td>
+    </tr>
+  </table>
+
+  <h3>Financial Control</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:25%">Table</th>
+      <th>What You Can See</th>
+      <th style="width:18%">Color Alerts</th>
+    </tr>
+    <tr>
+      <td><span class="fn">43</span></td>
+      <td>Budget Health Monitor</td>
+      <td>Each project's planned vs actual cost — instantly see which ones are over budget and by how much</td>
+      <td><span class="tag tag-green">UNDER</span> <span class="tag tag-yellow">WARNING</span> <span
+          class="tag tag-red">OVER</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">44</span></td>
+      <td>Cash Flow Tracking</td>
+      <td>Follows money from gross claim → retention deducted → net certified per project</td>
+      <td><span class="tag tag-green">Paid</span> <span class="tag tag-yellow">Certified</span> <span
+          class="tag tag-red">Submitted</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">45</span></td>
+      <td>Retention Money Tracker</td>
+      <td>Shows how much retention is being held per project and when it's eligible for release</td>
+      <td><span class="tag tag-green">Released</span> <span class="tag tag-yellow">Active</span> <span
+          class="tag tag-red">Held</span></td>
+    </tr>
+  </table>
+
+  <h3>Equipment & Procurement</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:25%">Table</th>
+      <th>What You Can See</th>
+      <th style="width:18%">Color Alerts</th>
+    </tr>
+    <tr>
+      <td><span class="fn">46</span></td>
+      <td>Equipment Rental Alerts</td>
+      <td>Lists rented equipment sorted by daily cost — flags expensive items to evaluate whether buying is cheaper</td>
+      <td><span class="tag tag-red">HIGH</span> <span class="tag tag-yellow">MEDIUM</span> <span
+          class="tag tag-green">LOW</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">47</span></td>
+      <td>PO Pipeline</td>
+      <td>Pending purchase orders sorted by value — shows what's been ordered but not yet delivered</td>
+      <td><span class="tag tag-red">Overdue</span> <span class="tag tag-yellow">Pending</span></td>
+    </tr>
+  </table>
+
+  <h3>Risk Management</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:25%">Table</th>
+      <th>What You Can See</th>
+      <th style="width:18%">Color Alerts</th>
+    </tr>
+    <tr>
+      <td><span class="fn">48</span></td>
+      <td>VO Impact Tracker</td>
+      <td>Variation orders ranked by financial impact — shows which scope changes carry the biggest cost</td>
+      <td><span class="tag tag-red">CRITICAL</span> <span class="tag tag-yellow">HIGH</span> <span
+          class="tag tag-green">NORMAL</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">49</span></td>
+      <td>LAD Risk Calculator</td>
+      <td>Calculates liquidated damages exposure per contract: daily penalty × days behind = total financial risk</td>
+      <td><span class="tag tag-red">CRITICAL</span> <span class="tag tag-yellow">HIGH</span> <span
+          class="tag tag-green">LOW</span></td>
+    </tr>
+  </table>
+
+  <h3>HSE & Compliance</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:25%">Table</th>
+      <th>What You Can See</th>
+      <th style="width:18%">Color Alerts</th>
+    </tr>
+    <tr>
+      <td><span class="fn">50</span></td>
+      <td>Safety Incidents</td>
+      <td>Most recent safety incidents with severity level and whether they're resolved or still open</td>
+      <td>Severity-based coloring</td>
+    </tr>
+    <tr>
+      <td><span class="fn">51</span></td>
+      <td>Inspection Defects</td>
+      <td>Failed quality inspections — shows what failed and what corrective action is needed</td>
+      <td><span class="tag tag-red">Failed</span> <span class="tag tag-yellow">Conditional</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">52</span></td>
+      <td>Permits Expiry Tracker</td>
+      <td>All permits sorted by urgency — expired ones at top, then those expiring soon</td>
+      <td><span class="tag tag-red">EXPIRED</span> <span class="tag tag-yellow">&lt;30d</span> <span
+          class="tag tag-green">OK</span></td>
+    </tr>
+    <tr>
+      <td><span class="fn">53</span></td>
+      <td>Document Status</td>
+      <td>Project documents that are pending approval or rejected — shows the submission backlog</td>
+      <td><span class="tag tag-red">Rejected</span> <span class="tag tag-yellow">Pending</span></td>
+    </tr>
+  </table>
+
+  <h3>Executive Summary</h3>
+  <table>
+    <tr>
+      <th style="width:5%">#</th>
+      <th style="width:25%">Table</th>
+      <th>What You Can See</th>
+      <th style="width:18%">Color Alerts</th>
+    </tr>
+    <tr>
+      <td><span class="fn">54</span></td>
+      <td>Decision Matrix</td>
+      <td>One-row-per-project-type summary combining count, completion %, CPI, VO rate, pass rate, and overall risk —
+        the ultimate management overview</td>
+      <td><span class="tag tag-red">HIGH</span> <span class="tag tag-yellow">MEDIUM</span> <span
+          class="tag tag-green">LOW</span></td>
+    </tr>
+  </table>
+
+  <div class="page-break"></div>
+
+  <!-- DATA SOURCES -->
+  <h2>Data Integration <span class="badge">17 MODULES</span></h2>
+  <div class="why"><strong>Why this matters:</strong> The dashboard doesn't use any manually entered data. Everything is
+    computed automatically from the 17 data sheets that are already being maintained as part of normal project
+    operations. When those sheets are updated, the dashboard reflects the changes.</div>
+  <table>
+    <tr>
+      <th style="width:22%">Module</th>
+      <th>What Data We Use</th>
+    </tr>
+    <tr>
+      <td>Projects</td>
+      <td>Status, type, completion %, contract value, GFA, start/end dates, client</td>
+    </tr>
+    <tr>
+      <td>Contracts</td>
+      <td>FIDIC type, contract value, LAD rates, retention %, completion dates</td>
+    </tr>
+    <tr>
+      <td>Contractors</td>
+      <td>Company name, specialty, performance rating, prequalification</td>
+    </tr>
+    <tr>
+      <td>Work Packages</td>
+      <td>Planned cost vs actual cost per package — used for budget overrun analysis</td>
+    </tr>
+    <tr>
+      <td>Payment Applications</td>
+      <td>Gross amount, certified amount, deductions, approval status</td>
+    </tr>
+    <tr>
+      <td>Variation Orders</td>
+      <td>VO value, approval status, impact on original contract</td>
+    </tr>
+    <tr>
+      <td>Safety Incidents</td>
+      <td>Severity, resolution status, incident type, lost-time days</td>
+    </tr>
+    <tr>
+      <td>Inspections</td>
+      <td>Pass/fail result, inspection type, defect count, corrective actions</td>
+    </tr>
+    <tr>
+      <td>Permits & Approvals</td>
+      <td>Permit type, expiry date, issuing authority, renewal status</td>
+    </tr>
+    <tr>
+      <td>Equipment</td>
+      <td>Equipment type, rented vs owned, daily rate, utilization status</td>
+    </tr>
+    <tr>
+      <td>Project Phases</td>
+      <td>Phase name, planned vs actual dates, budget allocation</td>
+    </tr>
+    <tr>
+      <td>Purchase Orders</td>
+      <td>Supplier, order value, delivery status</td>
+    </tr>
+    <tr>
+      <td>Project Documents</td>
+      <td>Document type, submission and approval status</td>
+    </tr>
+    <tr>
+      <td>Clients</td>
+      <td>Client name, type, total portfolio value</td>
+    </tr>
+    <tr>
+      <td>Daily Site Reports</td>
+      <td>Manpower counts (direct + subcontractor), weather, work progress</td>
+    </tr>
+    <tr>
+      <td>Suppliers</td>
+      <td>Category, company name, materials/services supplied</td>
+    </tr>
+    <tr>
+      <td>Employees</td>
+      <td>Department, designation, visa status</td>
+    </tr>
+  </table>
+
+  <!-- KEY HIGHLIGHTS -->
+  <h2>Key Highlights</h2>
+  <div class="overview">
+    <p><strong>Fully Automated</strong> — One-click deployment. No manual data entry. All values are computed from
+      existing project data.</p>
+    <p><strong>Filter-Reactive</strong> — Every KPI, chart, and table responds to filter changes in real-time. Select a
+      project and the entire dashboard updates.</p>
+    <p><strong>Color-Coded Alerts</strong> — Red/yellow/green thresholds on all metrics and tables. You can scan the
+      dashboard and immediately know where to focus.</p>
+    <p><strong>Cross-Module Analysis</strong> — Tables join data from multiple sheets (e.g., LAD calculator combines
+      contracts + projects + payment data) to provide insights that aren't visible in any single spreadsheet.</p>
+  </div>
+
+  <div class="footer">
+    <strong>Operations Command Center</strong> · Dubai Project Management · February 2026
+  </div>
+
+</body>
+
+</html>
