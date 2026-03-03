@@ -50,6 +50,7 @@ var ERP = {
       'In Progress':{bg:'#cce5ff',fg:'#004085'}, 'Certified':{bg:'#cce5ff',fg:'#004085'},
       'Under Review':{bg:'#cce5ff',fg:'#004085'}, 'Issued':{bg:'#cce5ff',fg:'#004085'},
       'Delivered':{bg:'#cce5ff',fg:'#004085'}, 'In Use':{bg:'#cce5ff',fg:'#004085'},
+      'Under Investigation':{bg:'#cce5ff',fg:'#004085'},
       'On Hold':{bg:'#fff3cd',fg:'#856404'}, 'Submitted':{bg:'#fff3cd',fg:'#856404'},
       'Pending':{bg:'#fff3cd',fg:'#856404'}, 'Draft':{bg:'#fff3cd',fg:'#856404'},
       'Open':{bg:'#fff3cd',fg:'#856404'}, 'Under Negotiation':{bg:'#fff3cd',fg:'#856404'},
@@ -76,12 +77,12 @@ var ERP = {
       'payment_terms':['Net 30','Net 45','Net 60','Net 90']
     },
     'Employees': {
-      'department':['Engineering','Construction','HSE','Finance','HR','Procurement','QA/QC','Document Control','Admin','IT','PMO'],
-      'status':['Active','On Leave','Resigned','Terminated'],
-      'visa_status':['Valid','Expiring Soon','Expired','In Process','Cancelled']
+      'department':['Engineering','Construction','HSE','Finance','HR','Procurement','QA/QC','Document Control','Admin','IT','PMO','Commercial'],
+      'status':['Active','On Leave','Resigned','Terminated','Inactive'],
+      'visa_status':['Valid','Expiring Soon','Expired','In Process','Cancelled','Employment Visa','Golden Visa','Mission Visa']
     },
     'Contractors': {
-      'specialty':['Concrete Works','Demolition','Electrical','Facade & Cladding','Fire Fighting','Fit-Out','HVAC','Landscaping','MEP','Painting','Piling & Foundations','Plumbing','Structural Steel','Waterproofing'],
+      'specialty':['Concrete Works','Demolition','Electrical','Facade & Cladding','Fire Fighting','Fit-Out','HVAC','Landscaping','MEP','MEP Works','Painting','Piling & Foundations','Plumbing','Road Works','Structural Steel','Waterproofing'],
       'status':['Active','Suspended','Blacklisted'],
       'rating':['A','B','C','D']
     },
@@ -100,22 +101,22 @@ var ERP = {
     },
     'Contracts': {
       'contract_type':['Main Contract','Subcontract'],
-      'status':['Active','Completed','Terminated','Rejected']
+      'status':['Active','Completed','Terminated','Rejected','Closed']
     },
     'Project_Phases': {
-      'phase_name':['Mobilization','Enabling Works','Piling','Substructure','Superstructure','MEP Rough-In','Facade','Internal Finishes','External Works','Testing & Commissioning'],
+      'phase_name':['Mobilization','Enabling Works','Piling','Substructure','Superstructure','MEP Rough-In','Facade','Internal Finishes','External Works','Testing & Commissioning','Excavation & Shoring','Finishes','Handover'],
       'status':['Not Started','In Progress','Completed','Delayed']
     },
     'Permits_Approvals': {
       'permit_type':['Dubai Municipality - Building Permit','Dubai Municipality - NOC','Civil Defense NOC','DEWA Connection','RTA Access Permit','Crane Permit','DDA Approval','Environmental Permit','Etisalat NOC','Trakhees Permit'],
-      'status':['Pending','Submitted','Approved','Expired','Rejected']
+      'status':['Pending','Submitted','Approved','Expired','Rejected','Renewal Required']
     },
     'Inspections': {
       'inspection_type':['Concrete Pour','Rebar Placement','Formwork','Structural','Waterproofing','MEP Rough-In','Fire Safety','Final Handover'],
-      'result':['Pass','Fail','Conditional Pass','Pending']
+      'result':['Pass','Fail','Conditional Pass','Pending','Passed','Failed','Conditional']
     },
     'Safety_Incidents': {
-      'incident_type':['Fall from Height','Struck by Object','Electrical','Heat Stroke','Equipment Malfunction','Caught In/Between','Slip/Trip','Chemical Exposure','Fire','Vehicle Accident'],
+      'incident_type':['Fall from Height','Struck by Object','Electrical','Heat Stroke','Equipment Malfunction','Caught In/Between','Slip/Trip','Chemical Exposure','Fire','Vehicle Accident','Environmental Spill','Fire Incident','First Aid','Lost Time Injury','Medical Treatment','Near Miss','Property Damage'],
       'severity':['Low','Medium','High'],
       'status':['Open','Under Investigation','Closed']
     },
@@ -426,13 +427,17 @@ function expandAllSheets(ss) {
 }
 
 // ============================================================
-// MODULE 5: FORMULA INJECTION
+// MODULE 5: FORMULA INJECTION (BATCH-OPTIMIZED)
 // ============================================================
+function colL(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
+function hMap(sheet) { var hd=sheet.getRange(1,1,1,sheet.getLastColumn()).getValues()[0],h={}; hd.forEach(function(n,i){h[n]=i+1;}); return h; }
+function batchF(sheet,startRow,col,formulas) { if(!formulas.length)return; sheet.getRange(startRow,col,formulas.length,1).setFormulas(formulas.map(function(f){return[f];})); }
+var TRIG = {'Clients':'client_name','Employees':'full_name','Contractors':'company_name','Suppliers':'company_name','Equipment':'equipment_type','Projects':'project_name','Contracts':'contract_type','Project_Phases':'phase_name','Work_Packages':'item_description','Permits_Approvals':'permit_type','Inspections':'inspection_type','Safety_Incidents':'incident_type','Payment_Applications':'ipc_number','Variation_Orders':'vo_number','Purchase_Orders':'po_type','Daily_Site_Reports':'report_date','Project_Documents':'document_type'};
+
 function injectAllFormulas(ss) {
   injectProjectFormulas(ss);
   injectClientFormulas(ss);
   injectContractFormulas(ss);
-  injectPhaseFormulas(ss);
   injectWorkPackageFormulas(ss);
   injectPermitFormulas(ss);
   injectPaymentFormulas(ss);
@@ -440,312 +445,116 @@ function injectAllFormulas(ss) {
   injectTimestampFormulas(ss);
 }
 
-// --- Projects: duration, elapsed, remaining, variance, profit, risk, health ---
 function injectProjectFormulas(ss) {
-  var sheet = ss.getSheetByName('Projects');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var lastData = sheet.getLastRow();
-  var endRow = lastData + ERP.EXTRA_ROWS;
-
-  var h = {};
-  headers.forEach(function(name, idx) { h[name] = idx + 1; }); // 1-indexed
-
-  // Helper: column letter from 1-indexed number
-  function cl(colNum) {
-    var l = '';
-    while (colNum > 0) { var m = (colNum - 1) % 26; l = String.fromCharCode(65 + m) + l; colNum = Math.floor((colNum - 1) / 26); }
-    return l;
+  var sheet=ss.getSheetByName('Projects'); if(!sheet||sheet.getLastRow()<=1)return;
+  var h=hMap(sheet), end=sheet.getLastRow()+ERP.EXTRA_ROWS;
+  var sC=colL(h['start_date']),eC=colL(h['end_date']),vC=colL(h['contract_value_aed']),cC=colL(h['completion_pct']),coC=colL(h['total_cost']),rC=colL(h['total_revenue']),rkC=colL(h['risk_score']);
+  var dur=[],ela=[],rem=[],bv=[],prf=[],hlth=[];
+  for(var r=2;r<=end;r++){
+    dur.push('=IF(AND('+sC+r+'<>"",'+eC+r+'<>""),'+eC+r+'-'+sC+r+',"")');
+    ela.push('=IF(AND('+sC+r+'<>"",'+eC+r+'<>""),MAX(0,MIN(TODAY(),'+eC+r+')-'+sC+r+'),"")');
+    rem.push('=IF('+eC+r+'<>"",MAX(0,'+eC+r+'-TODAY()),"")');
+    bv.push('=IF(AND('+vC+r+'>0,'+cC+r+'>0),ROUND((('+coC+r+'/('+vC+r+'*'+cC+r+'/100))-1)*100,2),0)');
+    prf.push('=IF('+rC+r+'<>"",'+rC+r+'-'+coC+r+',"")');
+    hlth.push('=IF('+rkC+r+'="","",IF('+rkC+r+'<=3,"Green",IF('+rkC+r+'<=6,"Amber","Red")))');
   }
-
-  var startC = cl(h['start_date']), endC = cl(h['end_date']);
-  var valC = cl(h['contract_value_aed']), compC = cl(h['completion_pct']);
-  var costC = cl(h['total_cost']), revC = cl(h['total_revenue']);
-  var riskC = cl(h['risk_score']);
-
-  for (var r = 2; r <= endRow; r++) {
-    var row = r;
-    var trigger = cl(h['project_name']) + row; // B column — main trigger
-
-    // duration_days = end - start
-    if (h['duration_days']) {
-      sheet.getRange(row, h['duration_days']).setFormula(
-        '=IF(AND(' + startC + row + '<>"",' + endC + row + '<>""),' + endC + row + '-' + startC + row + ',"")'
-      );
-    }
-    // elapsed_days
-    if (h['elapsed_days']) {
-      sheet.getRange(row, h['elapsed_days']).setFormula(
-        '=IF(AND(' + startC + row + '<>"",' + endC + row + '<>""),MAX(0,MIN(TODAY(),' + endC + row + ')-' + startC + row + '),"")'
-      );
-    }
-    // remaining_days
-    if (h['remaining_days']) {
-      sheet.getRange(row, h['remaining_days']).setFormula(
-        '=IF(' + endC + row + '<>"",MAX(0,' + endC + row + '-TODAY()),"")'
-      );
-    }
-    // budget_variance_pct
-    if (h['budget_variance_pct'] && h['total_cost'] && h['contract_value_aed'] && h['completion_pct']) {
-      sheet.getRange(row, h['budget_variance_pct']).setFormula(
-        '=IF(AND(' + valC + row + '>0,' + compC + row + '>0),ROUND(((' + costC + row + '/(' + valC + row + '*' + compC + row + '/100))-1)*100,2),0)'
-      );
-    }
-    // profit = revenue - cost
-    if (h['profit']) {
-      sheet.getRange(row, h['profit']).setFormula(
-        '=IF(' + revC + row + '<>"",' + revC + row + '-' + costC + row + ',"")'
-      );
-    }
-    // health_status based on risk_score
-    if (h['health_status'] && h['risk_score']) {
-      sheet.getRange(row, h['health_status']).setFormula(
-        '=IF(' + riskC + row + '="","",IF(' + riskC + row + '<=3,"Green",IF(' + riskC + row + '<=6,"Amber","Red")))'
-      );
-    }
-  }
-  SpreadsheetApp.flush();
-  Logger.log('Project formulas injected');
+  if(h['duration_days'])batchF(sheet,2,h['duration_days'],dur);
+  if(h['elapsed_days'])batchF(sheet,2,h['elapsed_days'],ela);
+  if(h['remaining_days'])batchF(sheet,2,h['remaining_days'],rem);
+  if(h['budget_variance_pct'])batchF(sheet,2,h['budget_variance_pct'],bv);
+  if(h['profit'])batchF(sheet,2,h['profit'],prf);
+  if(h['health_status'])batchF(sheet,2,h['health_status'],hlth);
+  SpreadsheetApp.flush(); Logger.log('Project formulas injected (batch)');
 }
 
-// --- Clients: lifetime_revenue, active_projects, risk_projects ---
 function injectClientFormulas(ss) {
-  var sheet = ss.getSheetByName('Clients');
-  var prjSheet = ss.getSheetByName('Projects');
-  if (!sheet || !prjSheet || sheet.getLastRow() <= 1) return;
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var prjHeaders = prjSheet.getRange(1, 1, 1, prjSheet.getLastColumn()).getValues()[0];
-
-  var h = {};
-  headers.forEach(function(name, idx) { h[name] = idx + 1; });
-  function cl(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
-
-  var cidCol = cl(h['client_id']);
-  var prjCidCol = cl(prjHeaders.indexOf('client_id') + 1);
-  var prjRevCol = cl(prjHeaders.indexOf('total_revenue') + 1);
-  var prjStatusCol = cl(prjHeaders.indexOf('status') + 1);
-  var prjHealthCol = cl(prjHeaders.indexOf('health_status') + 1);
-  var prjLast = prjSheet.getLastRow();
-  var endRow = sheet.getLastRow() + ERP.EXTRA_ROWS;
-
-  for (var r = 2; r <= endRow; r++) {
-    // lifetime_revenue = SUMIF
-    if (h['lifetime_revenue']) {
-      sheet.getRange(r, h['lifetime_revenue']).setFormula(
-        '=IF(' + cidCol + r + '<>"",SUMIF(Projects!' + prjCidCol + '$2:' + prjCidCol + '$' + (prjLast + ERP.EXTRA_ROWS) + ',' + cidCol + r + ',Projects!' + prjRevCol + '$2:' + prjRevCol + '$' + (prjLast + ERP.EXTRA_ROWS) + '),"")'
-      );
-    }
-    // active_projects = COUNTIFS with multiple statuses
-    if (h['active_projects']) {
-      sheet.getRange(r, h['active_projects']).setFormula(
-        '=IF(' + cidCol + r + '<>"",COUNTIFS(Projects!' + prjCidCol + '$2:' + prjCidCol + '$' + (prjLast + ERP.EXTRA_ROWS) + ',' + cidCol + r + ',Projects!' + prjStatusCol + '$2:' + prjStatusCol + '$' + (prjLast + ERP.EXTRA_ROWS) + ',"<>Completed",Projects!' + prjStatusCol + '$2:' + prjStatusCol + '$' + (prjLast + ERP.EXTRA_ROWS) + ',"<>Cancelled"),"")'
-      );
-    }
-    // risk_projects = COUNTIFS health=Red
-    if (h['risk_projects']) {
-      sheet.getRange(r, h['risk_projects']).setFormula(
-        '=IF(' + cidCol + r + '<>"",COUNTIFS(Projects!' + prjCidCol + '$2:' + prjCidCol + '$' + (prjLast + ERP.EXTRA_ROWS) + ',' + cidCol + r + ',Projects!' + prjHealthCol + '$2:' + prjHealthCol + '$' + (prjLast + ERP.EXTRA_ROWS) + ',"Red"),"")'
-      );
-    }
+  var sheet=ss.getSheetByName('Clients'),prj=ss.getSheetByName('Projects');
+  if(!sheet||!prj||sheet.getLastRow()<=1)return;
+  var h=hMap(sheet),pH=prj.getRange(1,1,1,prj.getLastColumn()).getValues()[0];
+  var cC=colL(h['client_id']),pCC=colL(pH.indexOf('client_id')+1),pRC=colL(pH.indexOf('total_revenue')+1);
+  var pSC=colL(pH.indexOf('status')+1),pHC=colL(pH.indexOf('health_status')+1);
+  var pE=prj.getLastRow()+ERP.EXTRA_ROWS,end=sheet.getLastRow()+ERP.EXTRA_ROWS;
+  var rev=[],act=[],rsk=[];
+  for(var r=2;r<=end;r++){
+    var rng='$2:$'+pE;
+    rev.push('=IF('+cC+r+'<>"",SUMIF(Projects!'+pCC+rng+','+cC+r+',Projects!'+pRC+rng+'),"")');
+    act.push('=IF('+cC+r+'<>"",COUNTIFS(Projects!'+pCC+rng+','+cC+r+',Projects!'+pSC+rng+',"<>Completed",Projects!'+pSC+rng+',"<>Cancelled"),"")');
+    rsk.push('=IF('+cC+r+'<>"",COUNTIFS(Projects!'+pCC+rng+','+cC+r+',Projects!'+pHC+rng+',"Red"),"")');
   }
+  if(h['lifetime_revenue'])batchF(sheet,2,h['lifetime_revenue'],rev);
+  if(h['active_projects'])batchF(sheet,2,h['active_projects'],act);
+  if(h['risk_projects'])batchF(sheet,2,h['risk_projects'],rsk);
   SpreadsheetApp.flush();
 }
 
-// --- Contracts: remaining_value, payment_progress_pct ---
 function injectContractFormulas(ss) {
-  var sheet = ss.getSheetByName('Contracts');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var h = {};
-  headers.forEach(function(name, idx) { h[name] = idx + 1; });
-  function cl(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
-
-  var valC = cl(h['contract_value_aed']);
-  var endRow = sheet.getLastRow() + ERP.EXTRA_ROWS;
-
-  for (var r = 2; r <= endRow; r++) {
-    if (h['remaining_value'] && h['payment_progress_pct']) {
-      var ppC = cl(h['payment_progress_pct']);
-      sheet.getRange(r, h['remaining_value']).setFormula(
-        '=IF(' + valC + r + '<>"",' + valC + r + '*(1-' + ppC + r + '/100),"")'
-      );
-    }
-  }
-  SpreadsheetApp.flush();
+  var sheet=ss.getSheetByName('Contracts'); if(!sheet||sheet.getLastRow()<=1)return;
+  var h=hMap(sheet); if(!h['remaining_value']||!h['payment_progress_pct'])return;
+  var vC=colL(h['contract_value_aed']),pC=colL(h['payment_progress_pct']),end=sheet.getLastRow()+ERP.EXTRA_ROWS;
+  var f=[]; for(var r=2;r<=end;r++) f.push('=IF('+vC+r+'<>"",'+vC+r+'*(1-'+pC+r+'/100),"")');
+  batchF(sheet,2,h['remaining_value'],f); SpreadsheetApp.flush();
 }
 
-// --- Phases: no complex formulas needed beyond auto-ID/timestamps ---
-function injectPhaseFormulas(ss) { /* Auto-ID handled in injectAutoIDFormulas */ }
-
-// --- Work Packages: total_amount, executed_amount ---
 function injectWorkPackageFormulas(ss) {
-  var sheet = ss.getSheetByName('Work_Packages');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var h = {};
-  headers.forEach(function(name, idx) { h[name] = idx + 1; });
-  function cl(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
-
-  var qtyC = cl(h['quantity']), rateC = cl(h['unit_rate_aed']);
-  var exQtyC = cl(h['executed_qty']);
-  var endRow = sheet.getLastRow() + ERP.EXTRA_ROWS;
-
-  for (var r = 2; r <= endRow; r++) {
-    // total_amount = qty × rate
-    if (h['total_amount_aed']) {
-      sheet.getRange(r, h['total_amount_aed']).setFormula(
-        '=IF(AND(' + qtyC + r + '<>"",' + rateC + r + '<>""),' + qtyC + r + '*' + rateC + r + ',"")'
-      );
-    }
-    // executed_amount = exec_qty × rate
-    if (h['executed_amount_aed']) {
-      sheet.getRange(r, h['executed_amount_aed']).setFormula(
-        '=IF(AND(' + exQtyC + r + '<>"",' + rateC + r + '<>""),' + exQtyC + r + '*' + rateC + r + ',"")'
-      );
-    }
+  var sheet=ss.getSheetByName('Work_Packages'); if(!sheet||sheet.getLastRow()<=1)return;
+  var h=hMap(sheet),qC=colL(h['quantity']),rC=colL(h['unit_rate_aed']),eC=colL(h['executed_qty']),end=sheet.getLastRow()+ERP.EXTRA_ROWS;
+  var tot=[],exe=[]; for(var r=2;r<=end;r++){
+    tot.push('=IF(AND('+qC+r+'<>"",'+rC+r+'<>""),'+qC+r+'*'+rC+r+',"")');
+    exe.push('=IF(AND('+eC+r+'<>"",'+rC+r+'<>""),'+eC+r+'*'+rC+r+',"")');
   }
+  if(h['total_amount_aed'])batchF(sheet,2,h['total_amount_aed'],tot);
+  if(h['executed_amount_aed'])batchF(sheet,2,h['executed_amount_aed'],exe);
   SpreadsheetApp.flush();
 }
 
-// --- Permits: is_expired formula ---
 function injectPermitFormulas(ss) {
-  var sheet = ss.getSheetByName('Permits_Approvals');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var h = {};
-  headers.forEach(function(name, idx) { h[name] = idx + 1; });
-  function cl(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
-
-  var expC = cl(h['expiry_date']);
-  var endRow = sheet.getLastRow() + ERP.EXTRA_ROWS;
-
-  for (var r = 2; r <= endRow; r++) {
-    if (h['is_expired']) {
-      sheet.getRange(r, h['is_expired']).setFormula(
-        '=IF(' + expC + r + '<>"",IF(TODAY()>' + expC + r + ',TRUE,FALSE),"")'
-      );
-    }
-  }
-  SpreadsheetApp.flush();
+  var sheet=ss.getSheetByName('Permits_Approvals'); if(!sheet||sheet.getLastRow()<=1)return;
+  var h=hMap(sheet); if(!h['is_expired']||!h['expiry_date'])return;
+  var xC=colL(h['expiry_date']),end=sheet.getLastRow()+ERP.EXTRA_ROWS;
+  var f=[]; for(var r=2;r<=end;r++) f.push('=IF('+xC+r+'<>"",IF(TODAY()>'+xC+r+',TRUE,FALSE),"")');
+  batchF(sheet,2,h['is_expired'],f); SpreadsheetApp.flush();
 }
 
-// --- Payments: remaining_balance ---
 function injectPaymentFormulas(ss) {
-  var sheet = ss.getSheetByName('Payment_Applications');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var h = {};
-  headers.forEach(function(name, idx) { h[name] = idx + 1; });
-  function cl(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
-
-  var grossC = cl(h['gross_value_aed']), cumC = cl(h['cumulative_value_aed']);
-  var retC = cl(h['retention_aed']), dedC = cl(h['deductions_aed']);
-  var endRow = sheet.getLastRow() + ERP.EXTRA_ROWS;
-
-  for (var r = 2; r <= endRow; r++) {
-    // net_certified = gross - retention - deductions
-    if (h['net_certified_aed']) {
-      sheet.getRange(r, h['net_certified_aed']).setFormula(
-        '=IF(' + grossC + r + '<>"",' + grossC + r + '-IF(' + retC + r + '<>"",' + retC + r + ',0)-IF(' + dedC + r + '<>"",' + dedC + r + ',0),"")'
-      );
-    }
-  }
-  SpreadsheetApp.flush();
+  var sheet=ss.getSheetByName('Payment_Applications'); if(!sheet||sheet.getLastRow()<=1)return;
+  var h=hMap(sheet); if(!h['net_certified_aed'])return;
+  var gC=colL(h['gross_value_aed']),rC=colL(h['retention_aed']),dC=colL(h['deductions_aed']),end=sheet.getLastRow()+ERP.EXTRA_ROWS;
+  var f=[]; for(var r=2;r<=end;r++) f.push('=IF('+gC+r+'<>"",'+gC+r+'-IF('+rC+r+'<>"",'+rC+r+',0)-IF('+dC+r+'<>"",'+dC+r+',0),"")');
+  batchF(sheet,2,h['net_certified_aed'],f); SpreadsheetApp.flush();
 }
 
-// --- Auto-ID formulas for all sheets (new rows only) ---
 function injectAutoIDFormulas(ss) {
-  for (var sheetName in ERP.SHEETS) {
-    var sheet = ss.getSheetByName(sheetName);
-    if (!sheet || sheet.getLastRow() <= 1) continue;
-    var cfg = ERP.SHEETS[sheetName];
-    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-    var pkIdx = headers.indexOf(cfg.pk);
-    if (pkIdx < 0) continue;
-
-    // Find a "trigger" column — the main data column user would fill first
-    var triggerCols = {
-      'Clients':'client_name', 'Employees':'full_name', 'Contractors':'company_name',
-      'Suppliers':'company_name', 'Equipment':'equipment_type', 'Projects':'project_name',
-      'Contracts':'contract_type', 'Project_Phases':'phase_name', 'Work_Packages':'item_description',
-      'Permits_Approvals':'permit_type', 'Inspections':'inspection_type', 'Safety_Incidents':'incident_type',
-      'Payment_Applications':'ipc_number', 'Variation_Orders':'vo_number', 'Purchase_Orders':'po_type',
-      'Daily_Site_Reports':'report_date', 'Project_Documents':'document_type'
-    };
-    var trigCol = triggerCols[sheetName] || headers[1]; // Default to 2nd column
-    var trigIdx = headers.indexOf(trigCol);
-    if (trigIdx < 0) trigIdx = 1; // Fallback
-
-    function cl(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
-
-    var pkLetter = cl(pkIdx + 1);
-    var trigLetter = cl(trigIdx + 1);
-    var padStr = new Array(cfg.pad + 1).join('0'); // e.g. "000" or "0000"
-
-    // Only inject into NEW rows (below existing data)
-    var dataEnd = sheet.getLastRow();
-    var endRow = dataEnd + ERP.EXTRA_ROWS;
-
-    for (var r = dataEnd + 1; r <= endRow; r++) {
-      // Auto-ID: =IF(triggerCol<>"", PREFIX & TEXT(MAX(existing IDs)+ROW-dataEnd, "000"), "")
-      sheet.getRange(r, pkIdx + 1).setFormula(
-        '=IF(' + trigLetter + r + '<>"","' + cfg.prefix + '"&TEXT(COUNTA(' + pkLetter + '$2:' + pkLetter + (r - 1) + ')+1,"' + padStr + '"),"")'
-      );
-    }
+  for(var sn in ERP.SHEETS){
+    var sheet=ss.getSheetByName(sn); if(!sheet||sheet.getLastRow()<=1)continue;
+    var cfg=ERP.SHEETS[sn],h=hMap(sheet),pkI=h[cfg.pk]; if(!pkI)continue;
+    var tC=TRIG[sn]||Object.keys(h)[1],tI=h[tC]||2;
+    var pkL=colL(pkI),tL=colL(tI),pad=new Array(cfg.pad+1).join('0');
+    var dEnd=sheet.getLastRow(),end=dEnd+ERP.EXTRA_ROWS,f=[];
+    for(var r=dEnd+1;r<=end;r++) f.push('=IF('+tL+r+'<>"","'+cfg.prefix+'"&TEXT(COUNTA('+pkL+'$2:'+pkL+(r-1)+')+1,"'+pad+'"),"")');
+    if(f.length>0)batchF(sheet,dEnd+1,pkI,f);
     SpreadsheetApp.flush();
   }
 }
 
-// --- Timestamp formulas for new rows ---
 function injectTimestampFormulas(ss) {
-  for (var sheetName in ERP.SHEETS) {
-    var sheet = ss.getSheetByName(sheetName);
-    if (!sheet || sheet.getLastRow() <= 1) continue;
-    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-    var cfg = ERP.SHEETS[sheetName];
-
-    var triggerCols = {
-      'Clients':'client_name', 'Employees':'full_name', 'Contractors':'company_name',
-      'Suppliers':'company_name', 'Equipment':'equipment_type', 'Projects':'project_name',
-      'Contracts':'contract_type', 'Project_Phases':'phase_name', 'Work_Packages':'item_description',
-      'Permits_Approvals':'permit_type', 'Inspections':'inspection_type', 'Safety_Incidents':'incident_type',
-      'Payment_Applications':'ipc_number', 'Variation_Orders':'vo_number', 'Purchase_Orders':'po_type',
-      'Daily_Site_Reports':'report_date', 'Project_Documents':'document_type'
-    };
-    var trigCol = triggerCols[sheetName] || headers[1];
-    var trigIdx = headers.indexOf(trigCol);
-    if (trigIdx < 0) trigIdx = 1;
-    function cl(n) { var l=''; while(n>0){var m=(n-1)%26;l=String.fromCharCode(65+m)+l;n=Math.floor((n-1)/26);}return l; }
-    var trigLetter = cl(trigIdx + 1);
-
-    var catIdx = headers.indexOf('created_at');
-    var uatIdx = headers.indexOf('last_updated_at');
-    var cbIdx = headers.indexOf('created_by');
-    var rvIdx = headers.indexOf('record_version');
-    var iaIdx = headers.indexOf('is_active');
-
-    var dataEnd = sheet.getLastRow();
-    var endRow = dataEnd + ERP.EXTRA_ROWS;
-
-    for (var r = dataEnd + 1; r <= endRow; r++) {
-      if (catIdx >= 0) {
-        sheet.getRange(r, catIdx + 1).setFormula('=IF(' + trigLetter + r + '<>"",NOW(),"")');
-      }
-      if (uatIdx >= 0) {
-        sheet.getRange(r, uatIdx + 1).setFormula('=IF(' + trigLetter + r + '<>"",NOW(),"")');
-      }
-      if (cbIdx >= 0) {
-        sheet.getRange(r, cbIdx + 1).setFormula('=IF(' + trigLetter + r + '<>"","' + ERP.ADMIN + '","")');
-      }
-      if (rvIdx >= 0) {
-        sheet.getRange(r, rvIdx + 1).setFormula('=IF(' + trigLetter + r + '<>"",1,"")');
-      }
-      if (iaIdx >= 0) {
-        sheet.getRange(r, iaIdx + 1).setFormula('=IF(' + trigLetter + r + '<>"",TRUE,"")');
-      }
+  for(var sn in ERP.SHEETS){
+    var sheet=ss.getSheetByName(sn); if(!sheet||sheet.getLastRow()<=1)continue;
+    var h=hMap(sheet),tC=TRIG[sn]||Object.keys(h)[1],tI=h[tC]||2,tL=colL(tI);
+    var dEnd=sheet.getLastRow(),end=dEnd+ERP.EXTRA_ROWS,cnt=end-dEnd; if(cnt<=0)continue;
+    var ca=[],ua=[],cb=[],rv=[],ia=[];
+    for(var r=dEnd+1;r<=end;r++){
+      ca.push('=IF('+tL+r+'<>"",NOW(),"")');
+      ua.push('=IF('+tL+r+'<>"",NOW(),"")');
+      cb.push('=IF('+tL+r+'<>"","'+ERP.ADMIN+'","")');
+      rv.push('=IF('+tL+r+'<>"",1,"")');
+      ia.push('=IF('+tL+r+'<>"",TRUE,"")');
     }
+    if(h['created_at'])batchF(sheet,dEnd+1,h['created_at'],ca);
+    if(h['last_updated_at'])batchF(sheet,dEnd+1,h['last_updated_at'],ua);
+    if(h['created_by'])batchF(sheet,dEnd+1,h['created_by'],cb);
+    if(h['record_version'])batchF(sheet,dEnd+1,h['record_version'],rv);
+    if(h['is_active'])batchF(sheet,dEnd+1,h['is_active'],ia);
     SpreadsheetApp.flush();
-    Utilities.sleep(200);
   }
 }
 
