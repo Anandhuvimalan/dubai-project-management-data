@@ -152,36 +152,44 @@ function setupERPSystem() {
   var ui = SpreadsheetApp.getUi();
   ss.toast('Setting up Formula-Based ERP...', '⚙️', -1);
 
+  // 0. Ensure all sheets have enough rows for formulas
+  ss.toast('0/8 Expanding sheets...', '⚙️', -1);
+  expandAllSheets(ss);
+
   // 1. Build _Lookups sheet
-  ss.toast('1/7 Building lookup tables...', '⚙️', -1);
+  ss.toast('1/8 Building lookup tables...', '⚙️', -1);
   buildLookupsSheet(ss);
 
   // 2. Apply base styling
-  ss.toast('2/7 Styling all sheets...', '⚙️', -1);
+  ss.toast('2/8 Styling all sheets...', '⚙️', -1);
   styleAllSheets(ss);
 
   // 3. Apply dropdown validations
-  ss.toast('3/7 Adding dropdowns...', '⚙️', -1);
+  ss.toast('3/8 Adding dropdowns...', '⚙️', -1);
   applyAllDropdowns(ss);
 
-  // 4. Apply smart FK dropdowns (name+ID)
-  ss.toast('4/7 Smart FK dropdowns...', '⚙️', -1);
-  applySmartFKDropdowns(ss);
+  // 4. Apply FK ID dropdowns
+  ss.toast('4/8 FK dropdowns...', '⚙️', -1);
+  applyFKDropdowns(ss);
 
   // 5. Inject formulas (auto-ID, timestamps, calculations)
-  ss.toast('5/7 Injecting formulas...', '⚙️', -1);
+  ss.toast('5/8 Injecting formulas...', '⚙️', -1);
   injectAllFormulas(ss);
 
-  // 6. Apply status cell coloring
-  ss.toast('6/7 Status formatting...', '⚙️', -1);
+  // 6. Apply conditional formatting rules
+  ss.toast('6/8 Conditional formatting...', '⚙️', -1);
+  applyConditionalFormatting(ss);
+
+  // 7. Color existing status cells
+  ss.toast('7/8 Coloring existing data...', '⚙️', -1);
   colorAllStatusCells(ss);
 
-  // 7. Auto-resize columns
-  ss.toast('7/7 Resizing columns...', '⚙️', -1);
+  // 8. Auto-resize columns
+  ss.toast('8/8 Resizing columns...', '⚙️', -1);
   autoResizeAll(ss);
 
   ss.toast('✅ ERP Setup Complete!', '⚙️ Done', 10);
-  ui.alert('✅ Formula-Based ERP System Ready!\n\n• _Lookups helper sheet created\n• Smart dropdowns (Name + ID) on all FK fields\n• Auto-ID formulas for new rows\n• Auto-calculated fields (duration, risk, health, profit)\n• Colorblind-safe status badges\n• All formulas pre-filled for ' + ERP.EXTRA_ROWS + ' new rows');
+  ui.alert('✅ Formula-Based ERP System Ready!\n\n• _Lookups sheet (name+ID reference)\n• FK dropdowns (stores ID only)\n• Auto-ID formulas for new rows\n• Conditional formatting (auto-colors on status change)\n• Auto-calculated fields\n• Pre-filled for ' + ERP.EXTRA_ROWS + ' new rows');
 }
 
 // ============================================================
@@ -327,81 +335,52 @@ function applyAllDropdowns(ss) {
     var sheet = ss.getSheetByName(sheetName);
     if (!sheet || sheet.getLastRow() <= 1) continue;
     var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-    var endRow = sheet.getLastRow() + ERP.EXTRA_ROWS;
+    var maxRow = sheet.getMaxRows();
     var dds = ERP.DROPDOWNS[sheetName];
 
     for (var col in dds) {
       var idx = headers.indexOf(col);
       if (idx < 0) continue;
+      sheet.getRange(2, idx + 1, maxRow - 1, 1).clearDataValidations();
       var rule = SpreadsheetApp.newDataValidation()
         .requireValueInList(dds[col], true)
         .setAllowInvalid(true)
         .setHelpText('Select: ' + dds[col].join(', '))
         .build();
-      sheet.getRange(2, idx + 1, endRow - 1, 1).setDataValidation(rule);
+      sheet.getRange(2, idx + 1, maxRow - 1, 1).setDataValidation(rule);
     }
     SpreadsheetApp.flush();
   }
 }
 
 // ============================================================
-// MODULE 4: SMART FK DROPDOWNS (Name + ID)
+// MODULE 4: FK DROPDOWNS (ID-only, with name in tooltip)
 // ============================================================
-function applySmartFKDropdowns(ss) {
+function applyFKDropdowns(ss) {
   var ls = ss.getSheetByName(ERP.LOOKUP_SHEET);
   if (!ls) return;
 
-  // Map: which lookup column has the display values for each FK
-  // Format: { sheetName: { fkColumnHeader: lookupColumnLetter } }
+  // Map: { sheetName: { fkColumnHeader: {idCol in _Lookups, displayCol for helpText} } }
   var FK_MAP = {
-    'Projects': {
-      'client_id': {displayCol: 4, idCol: 5},        // _Lookups D:E
-      'project_manager_id': {displayCol: 1, idCol: 2} // _Lookups A:B
-    },
-    'Contracts': {
-      'project_id': {displayCol: 13, idCol: 14},      // _Lookups M:N
-      'contractor_id': {displayCol: 7, idCol: 8}      // _Lookups G:H
-    },
-    'Project_Phases': {
-      'project_id': {displayCol: 13, idCol: 14}
-    },
-    'Work_Packages': {
-      'project_id': {displayCol: 13, idCol: 14},
-      'contractor_id': {displayCol: 7, idCol: 8}
-    },
-    'Permits_Approvals': {
-      'project_id': {displayCol: 13, idCol: 14}
-    },
-    'Inspections': {
-      'project_id': {displayCol: 13, idCol: 14},
-      'inspector_id': {displayCol: 1, idCol: 2}
-    },
-    'Safety_Incidents': {
-      'project_id': {displayCol: 13, idCol: 14}
-    },
-    'Payment_Applications': {
-      'project_id': {displayCol: 13, idCol: 14}
-    },
-    'Variation_Orders': {
-      'project_id': {displayCol: 13, idCol: 14}
-    },
-    'Purchase_Orders': {
-      'project_id': {displayCol: 13, idCol: 14}
-    },
-    'Daily_Site_Reports': {
-      'project_id': {displayCol: 13, idCol: 14},
-      'prepared_by': {displayCol: 1, idCol: 2}
-    },
-    'Project_Documents': {
-      'project_id': {displayCol: 13, idCol: 14}
-    }
+    'Projects': { 'client_id': {idCol:5}, 'project_manager_id': {idCol:2} },
+    'Contracts': { 'project_id': {idCol:14}, 'contractor_id': {idCol:8} },
+    'Project_Phases': { 'project_id': {idCol:14} },
+    'Work_Packages': { 'project_id': {idCol:14}, 'contractor_id': {idCol:8} },
+    'Permits_Approvals': { 'project_id': {idCol:14} },
+    'Inspections': { 'project_id': {idCol:14}, 'inspector_id': {idCol:2} },
+    'Safety_Incidents': { 'project_id': {idCol:14} },
+    'Payment_Applications': { 'project_id': {idCol:14} },
+    'Variation_Orders': { 'project_id': {idCol:14} },
+    'Purchase_Orders': { 'project_id': {idCol:14} },
+    'Daily_Site_Reports': { 'project_id': {idCol:14}, 'prepared_by': {idCol:2} },
+    'Project_Documents': { 'project_id': {idCol:14} }
   };
 
   for (var sheetName in FK_MAP) {
     var sheet = ss.getSheetByName(sheetName);
     if (!sheet || sheet.getLastRow() <= 1) continue;
     var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-    var endRow = sheet.getLastRow() + ERP.EXTRA_ROWS;
+    var maxRow = sheet.getMaxRows();
     var fks = FK_MAP[sheetName];
 
     for (var fkCol in fks) {
@@ -409,31 +388,40 @@ function applySmartFKDropdowns(ss) {
       if (idx < 0) continue;
       var info = fks[fkCol];
 
-      // Get lookup values
+      // Get ONLY IDs from _Lookups
       var lookupLastRow = ls.getLastRow();
-      var displayValues = ls.getRange(2, info.displayCol, Math.max(1, lookupLastRow - 1), 1).getValues();
-      var valueList = [];
-      for (var v = 0; v < displayValues.length; v++) {
-        if (displayValues[v][0] && String(displayValues[v][0]).trim() !== '') {
-          valueList.push(String(displayValues[v][0]));
-        }
+      if (lookupLastRow <= 1) continue;
+      var idValues = ls.getRange(2, info.idCol, lookupLastRow - 1, 1).getValues();
+      var idList = [];
+      for (var v = 0; v < idValues.length; v++) {
+        var val = String(idValues[v][0]).trim();
+        if (val !== '' && val !== 'undefined') idList.push(val);
       }
 
-      if (valueList.length > 0) {
-        // For existing data: keep current IDs as-is
-        // For new rows below data: set dropdown with Name (ID) format
-        var newRowStart = sheet.getLastRow() + 1;
-        if (newRowStart <= endRow) {
-          var rule = SpreadsheetApp.newDataValidation()
-            .requireValueInList(valueList, true)
-            .setAllowInvalid(true)
-            .setHelpText('Search & select ' + fkCol)
-            .build();
-          sheet.getRange(newRowStart, idx + 1, endRow - newRowStart + 1, 1).setDataValidation(rule);
-        }
+      if (idList.length > 0) {
+        // Clear existing validation first to avoid red marks
+        sheet.getRange(2, idx + 1, maxRow - 1, 1).clearDataValidations();
+        var rule = SpreadsheetApp.newDataValidation()
+          .requireValueInList(idList, true)
+          .setAllowInvalid(true)
+          .setHelpText('Select ' + fkCol + ' — see _Lookups sheet for name reference')
+          .build();
+        sheet.getRange(2, idx + 1, maxRow - 1, 1).setDataValidation(rule);
       }
     }
     SpreadsheetApp.flush();
+  }
+}
+
+// Ensure all managed sheets have enough rows for formulas
+function expandAllSheets(ss) {
+  for (var name in ERP.SHEETS) {
+    var sheet = ss.getSheetByName(name);
+    if (!sheet) continue;
+    var needed = sheet.getLastRow() + ERP.EXTRA_ROWS;
+    if (sheet.getMaxRows() < needed) {
+      sheet.insertRowsAfter(sheet.getMaxRows(), needed - sheet.getMaxRows());
+    }
   }
 }
 
@@ -762,7 +750,58 @@ function injectTimestampFormulas(ss) {
 }
 
 // ============================================================
-// MODULE 6: STATUS CELL COLORING
+// MODULE 6A: CONDITIONAL FORMATTING RULES (auto-colors new entries)
+// ============================================================
+function applyConditionalFormatting(ss) {
+  for (var sheetName in ERP.SHEETS) {
+    var sheet = ss.getSheetByName(sheetName);
+    if (!sheet || sheet.getLastRow() <= 1) continue;
+    var cfg = ERP.SHEETS[sheetName];
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+    var maxRow = sheet.getMaxRows();
+
+    // Find status/result/severity/health columns
+    var colorCols = [];
+    if (cfg.statusCol) colorCols.push(cfg.statusCol);
+    ['health_status','severity','result'].forEach(function(c) {
+      if (headers.indexOf(c) >= 0 && colorCols.indexOf(c) < 0) colorCols.push(c);
+    });
+    if (colorCols.length === 0) continue;
+
+    sheet.clearConditionalFormatRules();
+    var rules = [];
+
+    for (var ci = 0; ci < colorCols.length; ci++) {
+      var colIdx = headers.indexOf(colorCols[ci]);
+      if (colIdx < 0) continue;
+      var colLetter = '';
+      var cn = colIdx + 1;
+      while (cn > 0) { var m = (cn-1) % 26; colLetter = String.fromCharCode(65+m) + colLetter; cn = Math.floor((cn-1)/26); }
+
+      var cellRange = sheet.getRange(2, colIdx + 1, maxRow - 1, 1);
+
+      // Add a rule for each known status value
+      for (var status in ERP.COLORS.STATUS) {
+        var style = ERP.COLORS.STATUS[status];
+        try {
+          var rule = SpreadsheetApp.newConditionalFormatRule()
+            .whenTextEqualTo(status)
+            .setBackground(style.bg)
+            .setFontColor(style.fg)
+            .setBold(true)
+            .setRanges([cellRange])
+            .build();
+          rules.push(rule);
+        } catch(e) {}
+      }
+    }
+    if (rules.length > 0) sheet.setConditionalFormatRules(rules);
+    SpreadsheetApp.flush();
+  }
+}
+
+// ============================================================
+// MODULE 6B: COLOR EXISTING STATUS CELLS (one-time for imported data)
 // ============================================================
 function colorAllStatusCells(ss) {
   for (var sheetName in ERP.SHEETS) {
@@ -772,7 +811,6 @@ function colorAllStatusCells(ss) {
     var data = sheet.getDataRange().getValues();
     var cfg = ERP.SHEETS[sheetName];
 
-    // Find status/result/severity/health columns
     var colorCols = [];
     if (cfg.statusCol) colorCols.push(cfg.statusCol);
     ['health_status','severity','result'].forEach(function(c) {
@@ -792,9 +830,7 @@ function colorAllStatusCells(ss) {
         }
       }
     }
-    sheet.clearConditionalFormatRules();
     SpreadsheetApp.flush();
-    Utilities.sleep(100);
   }
 }
 
