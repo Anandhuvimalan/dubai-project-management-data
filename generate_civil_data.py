@@ -985,6 +985,51 @@ def main():
     else:
         print(f"\n  ⚠ {errors} integrity issues found")
 
+    # === FILL EMPTY FIELDS ===
+    print("\n--- Filling empty fields with defaults ---")
+    all_dfs = {
+        'clients.csv': clients_df, 'employees.csv': employees_df,
+        'contractors.csv': contractors_df, 'suppliers.csv': suppliers_df,
+        'equipment.csv': equipment_df, 'projects.csv': projects_df,
+        'contracts.csv': contracts_df, 'project_phases.csv': phases_df,
+        'work_packages.csv': packages_df, 'permits_approvals.csv': permits_df,
+        'inspections.csv': inspections_df, 'safety_incidents.csv': incidents_df,
+        'payment_applications.csv': payments_df, 'variation_orders.csv': variations_df,
+        'purchase_orders.csv': pos_df, 'daily_site_reports.csv': reports_df,
+        'project_documents.csv': documents_df,
+    }
+    # Context-aware fill rules
+    fill_rules = {
+        'internal_notes': '—', 'tags': '—', 'remarks': '—', 'issues': 'None reported',
+        'corrective_action': 'N/A', 'description': '—', 'file_path': '—',
+        'mmup_license': 'N/A', 'current_project': 'Unassigned',
+    }
+    for fname, df in all_dfs.items():
+        filled = 0
+        for col in df.columns:
+            if col in fill_rules:
+                mask = df[col].isna() | (df[col].astype(str).str.strip() == '')
+                df.loc[mask, col] = fill_rules[col]
+                filled += mask.sum()
+            elif col in ('approved_date', 'payment_date', 'reinspection_date',
+                         'actual_start', 'actual_end', 'approved_by'):
+                mask = df[col].isna() | (df[col].astype(str).str.strip() == '')
+                df.loc[mask, col] = '—'
+                filled += mask.sum()
+            elif col == 'contractor_id':
+                mask = df[col].isna() | (df[col].astype(str).str.strip() == '')
+                df.loc[mask, col] = '—'
+                filled += mask.sum()
+            elif col == 'last_activity_date':
+                mask = df[col].isna() | (df[col].astype(str).str.strip() == '')
+                df.loc[mask, col] = TODAY.isoformat()
+                filled += mask.sum()
+        df.to_csv(fname, index=False)
+        if filled > 0:
+            print(f"  ✓ {fname}: {filled} empty cells filled")
+        else:
+            print(f"  ✓ {fname}: all fields complete")
+
     print("\n" + "=" * 60)
     print("DATA GENERATION COMPLETE!")
     print(f"Files saved to: {output_dir}")
