@@ -1,151 +1,151 @@
-equipment_id,equipment_type,model,serial_number,ownership,daily_rate_aed,status,current_project,last_service_date,operator_required
-EQ-0001,Compactor,CAT GP-151,SN-20377889,Rented,497,Available,,2024-05-03,True
-EQ-0002,Concrete Pump,Volvo yA-554,SN-59051518,Owned,2242,In Use,,2025-06-10,True
-EQ-0003,Generator,JCB UQ-644,SN-92519254,Owned,394,Available,,2025-05-24,True
-EQ-0004,Backhoe Loader,Liebherr Tf-629,SN-48652816,Rented,752,Available,,2025-01-29,True
-EQ-0005,Excavator,Volvo tl-505,SN-35733221,Rented,1231,In Use,,2024-08-17,True
-EQ-0006,Scaffolding Set,CAT VH-188,SN-05929622,Rented,132,Available,,2024-05-20,False
-EQ-0007,Forklift,Volvo cA-927,SN-53794738,Owned,367,Available,,2024-07-04,True
-EQ-0008,Backhoe Loader,CAT xR-473,SN-97746886,Leased,670,In Use,,2024-05-05,True
-EQ-0009,Scaffolding Set,Hitachi qd-392,SN-75818141,Rented,156,In Use,,2025-08-15,True
-EQ-0010,Welding Machine,Hitachi Gj-247,SN-61375060,Owned,88,In Use,,2024-11-03,False
-EQ-0011,Boom Lift,Komatsu yf-853,SN-53051522,Leased,560,Available,,2024-01-30,True
-EQ-0012,Dump Truck,Liebherr WT-472,SN-77901043,Leased,694,Available,,2025-10-10,True
-EQ-0013,Concrete Pump,Liebherr HB-289,SN-14341036,Leased,1873,Available,,2025-05-11,False
-EQ-0014,Wheel Loader,JCB hF-971,SN-98089324,Owned,1163,Available,,2024-11-29,False
-EQ-0015,Batching Plant,Potain pK-095,SN-62185188,Owned,2897,In Use,,2025-01-29,False
-EQ-0016,Mobile Crane,Hitachi yE-880,SN-06540515,Leased,3378,In Use,,2024-07-06,True
-EQ-0017,Forklift,Liebherr ic-195,SN-58527722,Owned,314,Under Maintenance,,2024-02-19,True
-EQ-0018,Boom Lift,Volvo mc-704,SN-30548687,Leased,437,In Use,,2024-07-15,False
-EQ-0019,Batching Plant,JCB wX-034,SN-05415667,Leased,3094,In Use,,2025-11-25,False
-EQ-0020,Concrete Pump,JCB FS-652,SN-75841616,Owned,2309,In Use,,2025-04-12,False
-EQ-0021,Scaffolding Set,JCB ug-284,SN-15447962,Owned,113,Available,,2025-06-19,False
-EQ-0022,Forklift,Liebherr cU-757,SN-59640165,Owned,415,In Use,,2025-02-02,True
-EQ-0023,Generator,Potain MR-202,SN-70213556,Leased,369,In Use,,2025-03-16,True
-EQ-0024,Tower Crane,CAT RC-092,SN-55719285,Rented,3954,In Use,,2024-11-05,False
-EQ-0025,Compactor,JCB hb-543,SN-27868144,Owned,528,In Use,,2025-06-30,True
-EQ-0026,Batching Plant,Hitachi sS-739,SN-73121727,Owned,2706,Available,,2024-03-09,True
-EQ-0027,Mobile Crane,Liebherr JI-551,SN-44225831,Leased,3885,Available,,2024-06-05,True
-EQ-0028,Welding Machine,Potain bx-237,SN-89578291,Owned,94,In Use,,2024-02-21,True
-EQ-0029,Batching Plant,Hitachi HA-467,SN-69125177,Owned,3067,In Use,,2025-06-12,True
-EQ-0030,Batching Plant,CAT XJ-852,SN-92268018,Leased,3478,Under Maintenance,,2024-04-28,True
-EQ-0031,Dump Truck,CAT uT-422,SN-35841438,Rented,422,Under Maintenance,,2024-08-01,True
-EQ-0032,Tower Crane,Hitachi If-249,SN-82992299,Rented,4827,Available,,2024-09-19,False
-EQ-0033,Scaffolding Set,Komatsu fc-900,SN-94396907,Owned,166,Available,,2025-11-21,False
-EQ-0034,Excavator,Liebherr Ep-844,SN-64710276,Leased,1273,Available,,2025-01-11,True
-EQ-0035,Forklift,Komatsu Mj-735,SN-55562588,Owned,413,Under Maintenance,,2024-03-23,True
-EQ-0036,Concrete Pump,CAT hr-537,SN-73210469,Owned,1960,In Use,,2024-11-20,True
-EQ-0037,Concrete Pump,CAT KU-325,SN-53278774,Owned,1710,In Use,,2025-01-21,False
-EQ-0038,Scaffolding Set,Hitachi GD-016,SN-33950047,Owned,173,Available,,2025-04-09,False
-EQ-0039,Excavator,Liebherr ag-748,SN-62456506,Rented,1001,In Use,,2024-02-09,True
-EQ-0040,Backhoe Loader,Potain xJ-983,SN-41687849,Leased,770,Under Maintenance,,2025-06-12,True
-EQ-0041,Generator,Volvo gz-912,SN-55852398,Leased,500,Available,,2024-11-07,True
-EQ-0042,Dump Truck,Hitachi ci-800,SN-57872982,Leased,488,Under Maintenance,,2024-09-11,False
-EQ-0043,Scaffolding Set,Liebherr zN-952,SN-49588879,Owned,186,Available,,2024-08-20,True
-EQ-0044,Mobile Crane,Komatsu vR-705,SN-16940974,Rented,2239,Available,,2025-05-24,True
-EQ-0045,Boom Lift,Komatsu Ud-993,SN-97289623,Leased,614,In Use,,2024-01-25,True
-EQ-0046,Generator,Volvo bC-913,SN-56263689,Leased,295,In Use,,2025-01-01,False
-EQ-0047,Compactor,Potain nJ-028,SN-57865278,Owned,584,Available,,2024-09-22,True
-EQ-0048,Backhoe Loader,Komatsu NE-854,SN-33484344,Owned,661,In Use,,2025-07-01,False
-EQ-0049,Tower Crane,Hitachi Ew-375,SN-84419866,Rented,5449,Available,,2025-09-27,True
-EQ-0050,Excavator,Komatsu cs-524,SN-15747338,Leased,1375,In Use,,2024-07-29,False
-EQ-0051,Batching Plant,Volvo gN-842,SN-93308330,Leased,2851,Under Maintenance,,2024-03-18,True
-EQ-0052,Batching Plant,Komatsu gR-657,SN-20826773,Owned,3157,Available,,2025-08-10,True
-EQ-0053,Backhoe Loader,CAT Pd-454,SN-19380262,Rented,615,In Use,,2024-01-29,True
-EQ-0054,Excavator,Hitachi Vs-672,SN-00499154,Leased,1379,Under Maintenance,,2024-12-18,True
-EQ-0055,Compactor,JCB iG-887,SN-74315274,Owned,593,Available,,2025-07-12,True
-EQ-0056,Scaffolding Set,JCB Ys-205,SN-93296685,Rented,169,Available,,2024-03-08,False
-EQ-0057,Batching Plant,JCB iE-612,SN-53046374,Owned,2870,Available,,2024-09-13,False
-EQ-0058,Welding Machine,Potain aq-499,SN-53017426,Owned,88,Available,,2025-06-16,True
-EQ-0059,Backhoe Loader,Liebherr Os-841,SN-59332727,Owned,724,Available,,2025-08-03,True
-EQ-0060,Wheel Loader,Hitachi SJ-956,SN-78339187,Rented,1038,Available,,2025-02-14,False
-EQ-0061,Excavator,Hitachi hd-519,SN-88398225,Owned,1011,Available,,2025-10-25,False
-EQ-0062,Dump Truck,JCB Rn-871,SN-97187072,Rented,675,Available,,2025-02-02,True
-EQ-0063,Boom Lift,Liebherr dJ-679,SN-74064039,Rented,693,In Use,,2024-02-26,False
-EQ-0064,Forklift,Hitachi Se-065,SN-80170462,Owned,284,In Use,,2025-08-20,True
-EQ-0065,Backhoe Loader,Hitachi yC-265,SN-66182512,Owned,859,Available,,2025-02-21,True
-EQ-0066,Excavator,Potain Uo-682,SN-00478686,Rented,1053,Under Maintenance,,2025-10-01,True
-EQ-0067,Batching Plant,Komatsu wj-337,SN-43106903,Rented,3285,In Use,,2024-06-09,True
-EQ-0068,Batching Plant,CAT cC-119,SN-90306738,Owned,2825,In Use,,2024-06-17,False
-EQ-0069,Backhoe Loader,Potain so-028,SN-95995342,Rented,732,In Use,,2025-05-27,True
-EQ-0070,Generator,CAT tr-836,SN-08926870,Owned,434,Under Maintenance,,2024-09-24,False
-EQ-0071,Boom Lift,Liebherr SA-685,SN-62462873,Owned,673,In Use,,2025-10-21,True
-EQ-0072,Concrete Pump,Hitachi ZD-342,SN-08668826,Owned,2006,In Use,,2024-07-07,True
-EQ-0073,Welding Machine,Liebherr Pf-435,SN-75183046,Rented,120,In Use,,2025-06-07,True
-EQ-0074,Generator,Hitachi em-990,SN-98373540,Leased,375,Under Maintenance,,2024-06-13,True
-EQ-0075,Tower Crane,CAT pS-317,SN-93638546,Leased,3533,Available,,2024-12-28,True
-EQ-0076,Batching Plant,Volvo qx-854,SN-87717535,Owned,2876,Available,,2024-08-31,False
-EQ-0077,Excavator,Potain oV-609,SN-20489964,Rented,962,In Use,,2024-04-28,True
-EQ-0078,Forklift,Liebherr yK-353,SN-37854777,Rented,271,In Use,,2024-05-10,False
-EQ-0079,Forklift,Komatsu UI-522,SN-72808010,Owned,351,Under Maintenance,,2025-08-16,True
-EQ-0080,Boom Lift,Potain Oo-062,SN-12038750,Owned,619,Under Maintenance,,2025-04-24,True
-EQ-0081,Boom Lift,CAT ba-977,SN-88600848,Owned,509,In Use,,2024-08-10,True
-EQ-0082,Excavator,JCB Zl-086,SN-11823398,Owned,1331,Under Maintenance,,2024-07-15,True
-EQ-0083,Tower Crane,CAT fx-546,SN-67933410,Rented,5173,Available,,2024-03-13,True
-EQ-0084,Boom Lift,Komatsu JE-666,SN-00217659,Leased,436,Available,,2025-10-28,True
-EQ-0085,Mobile Crane,Potain on-180,SN-97401489,Owned,2211,In Use,,2025-05-26,True
-EQ-0086,Backhoe Loader,Komatsu bn-025,SN-92614293,Leased,896,Available,,2025-03-16,False
-EQ-0087,Forklift,Komatsu yW-685,SN-21850163,Owned,385,In Use,,2025-10-13,True
-EQ-0088,Generator,Potain XN-159,SN-96504773,Owned,425,In Use,,2024-10-03,False
-EQ-0089,Wheel Loader,Potain lR-866,SN-96194311,Owned,1021,In Use,,2024-07-27,False
-EQ-0090,Batching Plant,Hitachi Vy-262,SN-55110475,Owned,2177,Available,,2025-08-14,True
-EQ-0091,Scaffolding Set,CAT fl-412,SN-67888610,Leased,144,In Use,,2024-03-10,True
-EQ-0092,Scaffolding Set,Komatsu MM-581,SN-56046618,Owned,135,Under Maintenance,,2024-07-07,True
-EQ-0093,Wheel Loader,JCB Ry-982,SN-22444721,Rented,627,Under Maintenance,,2024-05-09,True
-EQ-0094,Wheel Loader,JCB tE-646,SN-15437993,Owned,1001,In Use,,2024-12-21,False
-EQ-0095,Tower Crane,Hitachi az-124,SN-59657569,Owned,4513,In Use,,2024-04-15,True
-EQ-0096,Wheel Loader,Volvo Sm-459,SN-75265479,Owned,1140,Available,,2025-08-30,True
-EQ-0097,Dump Truck,Komatsu rY-356,SN-65193982,Leased,691,In Use,,2025-06-13,True
-EQ-0098,Compactor,Potain Tn-807,SN-74167243,Owned,541,Available,,2024-07-15,True
-EQ-0099,Generator,CAT eC-266,SN-97968868,Owned,334,Available,,2024-01-29,True
-EQ-0100,Tower Crane,Hitachi Of-589,SN-13529096,Leased,4537,In Use,,2025-08-07,False
-EQ-0101,Boom Lift,JCB ag-561,SN-43888993,Leased,616,Under Maintenance,,2024-12-12,True
-EQ-0102,Mobile Crane,Potain XR-567,SN-98250714,Owned,2568,Available,,2024-11-19,True
-EQ-0103,Mobile Crane,JCB wt-112,SN-57387571,Owned,3995,Available,,2024-12-06,False
-EQ-0104,Dump Truck,Volvo tc-751,SN-10512382,Owned,558,Under Maintenance,,2025-03-04,True
-EQ-0105,Boom Lift,Hitachi BD-258,SN-36226609,Owned,429,Available,,2025-11-16,True
-EQ-0106,Concrete Pump,CAT By-379,SN-03341918,Leased,2126,In Use,,2024-05-25,True
-EQ-0107,Backhoe Loader,Potain Dh-553,SN-47859696,Owned,561,Available,,2025-03-31,False
-EQ-0108,Excavator,Potain DN-155,SN-24991251,Owned,967,In Use,,2024-07-04,True
-EQ-0109,Compactor,JCB xS-412,SN-28669296,Rented,385,In Use,,2024-11-24,True
-EQ-0110,Boom Lift,Hitachi SP-278,SN-28274225,Rented,775,Available,,2025-10-15,True
-EQ-0111,Dump Truck,Hitachi wa-790,SN-72368876,Leased,539,In Use,,2025-06-15,True
-EQ-0112,Backhoe Loader,Potain Fk-767,SN-19034043,Owned,754,In Use,,2025-02-21,False
-EQ-0113,Dump Truck,CAT KV-427,SN-78819148,Leased,690,Available,,2025-10-01,True
-EQ-0114,Excavator,Liebherr WU-580,SN-78361340,Owned,1387,Under Maintenance,,2024-12-15,False
-EQ-0115,Mobile Crane,Komatsu Ch-451,SN-33959629,Owned,2090,Available,,2024-04-18,True
-EQ-0116,Tower Crane,Volvo Kw-330,SN-84982544,Rented,4284,Available,,2025-03-20,True
-EQ-0117,Welding Machine,CAT iW-481,SN-60422325,Leased,78,In Use,,2025-10-05,True
-EQ-0118,Concrete Pump,Potain jK-367,SN-46671168,Rented,1777,Available,,2025-08-05,False
-EQ-0119,Dump Truck,CAT Fu-457,SN-90175186,Owned,491,Available,,2024-06-18,False
-EQ-0120,Tower Crane,Volvo ru-637,SN-45892975,Owned,5296,In Use,,2025-11-25,True
-EQ-0121,Scaffolding Set,Hitachi OY-001,SN-70127706,Rented,141,Available,,2024-06-06,False
-EQ-0122,Batching Plant,CAT rf-242,SN-54152064,Rented,2410,In Use,,2025-07-17,False
-EQ-0123,Scaffolding Set,Liebherr Tg-361,SN-03712938,Owned,159,In Use,,2025-06-12,False
-EQ-0124,Batching Plant,Hitachi Sv-700,SN-16271361,Owned,3500,In Use,,2025-07-21,True
-EQ-0125,Excavator,CAT xt-115,SN-26221890,Leased,824,Available,,2025-04-19,False
-EQ-0126,Dump Truck,Potain Un-275,SN-26973112,Owned,571,Available,,2025-08-07,False
-EQ-0127,Concrete Pump,Hitachi wB-196,SN-52341389,Rented,1606,Available,,2025-04-11,False
-EQ-0128,Wheel Loader,Volvo Qt-940,SN-38983640,Leased,661,Available,,2025-08-31,False
-EQ-0129,Backhoe Loader,CAT hp-376,SN-79180552,Owned,618,In Use,,2024-10-27,True
-EQ-0130,Boom Lift,Liebherr IR-965,SN-27109104,Leased,782,Available,,2024-06-16,False
-EQ-0131,Mobile Crane,JCB Gs-006,SN-86661889,Owned,3305,In Use,,2024-04-28,True
-EQ-0132,Generator,JCB fG-414,SN-32856914,Owned,422,Under Maintenance,,2025-06-26,True
-EQ-0133,Wheel Loader,Liebherr pf-630,SN-61799042,Rented,922,In Use,,2024-04-02,False
-EQ-0134,Welding Machine,Potain kF-020,SN-58842524,Rented,90,In Use,,2025-07-23,True
-EQ-0135,Wheel Loader,CAT ZB-105,SN-48149177,Owned,739,In Use,,2025-01-31,True
-EQ-0136,Excavator,CAT Kk-507,SN-52419138,Owned,1260,In Use,,2024-01-02,True
-EQ-0137,Concrete Pump,CAT cE-003,SN-56220863,Rented,2487,Available,,2024-09-06,True
-EQ-0138,Backhoe Loader,Volvo re-365,SN-95180238,Rented,561,Available,,2024-02-05,True
-EQ-0139,Scaffolding Set,Potain sX-617,SN-45187053,Rented,190,Under Maintenance,,2024-08-14,False
-EQ-0140,Tower Crane,Komatsu pD-949,SN-59738320,Rented,3803,Available,,2024-11-14,False
-EQ-0141,Wheel Loader,Liebherr wO-038,SN-05064138,Leased,1125,Available,,2024-07-03,False
-EQ-0142,Backhoe Loader,Liebherr jT-670,SN-41038657,Owned,515,In Use,,2025-08-03,True
-EQ-0143,Compactor,Potain Gi-191,SN-61990623,Owned,348,In Use,,2024-08-14,True
-EQ-0144,Scaffolding Set,Hitachi SV-456,SN-55743132,Owned,115,Available,,2025-08-28,True
-EQ-0145,Welding Machine,Hitachi gk-912,SN-77561853,Owned,66,Available,,2024-12-17,True
-EQ-0146,Dump Truck,Potain hf-474,SN-24903521,Owned,698,In Use,,2025-07-06,True
-EQ-0147,Welding Machine,CAT Gd-356,SN-44206788,Owned,58,Available,,2024-07-13,False
-EQ-0148,Batching Plant,Hitachi ZY-171,SN-21003236,Owned,2188,In Use,,2024-10-16,True
-EQ-0149,Tower Crane,Volvo qe-199,SN-01372151,Owned,3844,In Use,,2024-02-03,True
-EQ-0150,Welding Machine,Potain KB-702,SN-67066253,Leased,113,Available,,2024-05-25,True
+equipment_id,equipment_type,model,serial_number,ownership,daily_rate_aed,status,current_project,last_service_date,operator_required,internal_notes,created_at,last_updated_at,created_by,record_version,is_active,tags
+EQ-0001,Boom Lift,JCB oC-261,SN-50606853,Owned,654,In Use,,2024-09-27,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0002,Dump Truck,CAT bu-153,SN-15220472,Leased,690,Available,,2025-06-15,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0003,Excavator,Liebherr af-779,SN-04328986,Owned,1387,Under Maintenance,,2024-03-18,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0004,Mobile Crane,Komatsu hd-434,SN-36971179,Owned,2090,Available,,2025-01-10,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0005,Tower Crane,Volvo Tj-893,SN-46095396,Rented,4284,Available,,2024-05-11,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0006,Welding Machine,CAT eH-185,SN-88880670,Leased,78,In Use,,2025-03-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0007,Concrete Pump,Potain wY-540,SN-15319520,Rented,1777,Available,,2024-09-03,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0008,Dump Truck,CAT SE-527,SN-22170430,Owned,491,Available,,2025-07-07,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0009,Tower Crane,Volvo Gz-054,SN-87403450,Owned,5296,In Use,,2025-08-29,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0010,Scaffolding Set,Hitachi Zx-541,SN-66765277,Rented,141,Available,,2024-09-14,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0011,Batching Plant,CAT UB-841,SN-16928451,Rented,2410,In Use,,2024-02-26,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0012,Scaffolding Set,Liebherr MT-447,SN-62757059,Owned,159,In Use,,2025-11-29,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0013,Batching Plant,Hitachi QO-401,SN-65820297,Owned,3500,In Use,,2024-01-25,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0014,Excavator,CAT xy-135,SN-90927557,Leased,824,Available,,2025-06-18,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0015,Dump Truck,Potain xz-928,SN-54310278,Owned,571,Available,,2024-09-27,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0016,Concrete Pump,Hitachi Xq-814,SN-73947312,Rented,1606,Available,,2025-08-19,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0017,Wheel Loader,Volvo fZ-727,SN-55188442,Leased,661,Available,,2025-05-13,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0018,Backhoe Loader,CAT oh-258,SN-32370589,Owned,618,In Use,,2024-09-15,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0019,Boom Lift,Liebherr fe-829,SN-46786691,Leased,782,Available,,2024-03-28,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0020,Mobile Crane,JCB DR-517,SN-85289226,Owned,3305,In Use,,2024-12-18,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0021,Generator,JCB jt-018,SN-22535841,Owned,422,Under Maintenance,,2024-06-24,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0022,Wheel Loader,Liebherr Ot-842,SN-98182992,Rented,922,In Use,,2024-04-29,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0023,Welding Machine,Potain Kc-995,SN-01094396,Rented,90,In Use,,2025-03-08,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0024,Wheel Loader,CAT sP-078,SN-47364710,Owned,739,In Use,,2024-04-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0025,Excavator,CAT nv-677,SN-92555625,Owned,1260,In Use,,2024-12-26,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0026,Concrete Pump,CAT Dh-153,SN-47321046,Rented,2487,Available,,2025-08-27,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0027,Backhoe Loader,Volvo uK-632,SN-53278774,Rented,561,Available,,2024-12-14,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0028,Scaffolding Set,Potain Dp-168,SN-39500479,Rented,190,Under Maintenance,,2025-09-09,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0029,Tower Crane,Komatsu ag-748,SN-62456506,Rented,3803,Available,,2024-02-05,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0030,Wheel Loader,Liebherr Js-835,SN-16878499,Leased,1125,Available,,2024-03-24,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0031,Backhoe Loader,Liebherr Yv-165,SN-85239868,Owned,515,In Use,,2024-01-29,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0032,Compactor,Potain ZE-025,SN-87298259,Owned,348,In Use,,2024-08-10,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0033,Scaffolding Set,Hitachi Lv-694,SN-88879470,Owned,115,Available,,2024-09-14,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0034,Welding Machine,Hitachi tY-169,SN-09749930,Owned,66,Available,,2025-02-12,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0035,Dump Truck,Potain Xy-289,SN-23091307,Owned,698,In Use,,2024-08-07,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0036,Welding Machine,CAT AG-263,SN-97028385,Owned,58,Available,,2025-11-29,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0037,Batching Plant,Hitachi ul-786,SN-78585497,Owned,2188,In Use,,2024-05-14,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0038,Tower Crane,Volvo to-348,SN-44375758,Owned,3844,In Use,,2025-10-15,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0039,Welding Machine,Potain KR-441,SN-86652404,Leased,113,Available,,2025-10-30,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0040,Forklift,Volvo Pq-157,SN-73384842,Owned,340,Available,,2024-03-17,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0041,Backhoe Loader,Liebherr dQ-933,SN-83301657,Leased,576,Available,,2024-03-11,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0042,Generator,JCB kA-208,SN-77345401,Owned,351,In Use,,2025-04-01,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0043,Compactor,Volvo lA-380,SN-20672400,Owned,344,In Use,,2024-07-27,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0044,Excavator,Volvo sD-915,SN-88728743,Owned,1458,In Use,,2025-07-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0045,Forklift,Hitachi Pq-527,SN-20549329,Owned,347,Under Maintenance,,2025-08-22,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0046,Batching Plant,JCB uf-668,SN-61227530,Leased,2704,In Use,,2024-07-01,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0047,Dump Truck,Volvo vt-374,SN-99045301,Rented,492,Available,,2024-11-21,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0048,Generator,Komatsu TX-268,SN-41459332,Owned,343,Available,,2024-11-30,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0049,Compactor,Liebherr AS-795,SN-87833918,Owned,381,Available,,2024-11-08,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0050,Forklift,Komatsu hd-519,SN-88398225,Rented,386,Under Maintenance,,2025-08-21,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0051,Scaffolding Set,Komatsu TL-713,SN-71870728,Leased,145,Available,,2024-10-17,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0052,Wheel Loader,JCB DR-908,SN-40640391,Rented,967,In Use,,2024-02-01,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0053,Boom Lift,Potain de-518,SN-70462265,Rented,690,In Use,,2025-11-25,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0054,Generator,Komatsu yf-676,SN-82512868,Leased,477,In Use,,2024-03-30,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0055,Batching Plant,CAT tD-300,SN-86863375,Owned,2115,Available,,2024-04-18,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0056,Wheel Loader,CAT ZQ-310,SN-69033119,Leased,600,In Use,,2024-01-24,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0057,Wheel Loader,Hitachi Vc-903,SN-67383028,Owned,948,Under Maintenance,,2025-11-26,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0058,Scaffolding Set,Hitachi KM-395,SN-53428364,Rented,107,Available,,2024-07-11,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0059,Generator,Potain OR-892,SN-68705685,Owned,256,In Use,,2025-05-02,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0060,Mobile Crane,Liebherr yl-624,SN-87334270,Leased,3200,Available,,2025-01-28,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0061,Backhoe Loader,Liebherr iy-688,SN-34351751,Owned,580,Under Maintenance,,2025-01-09,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0062,Scaffolding Set,Potain yR-304,SN-99013983,Leased,183,In Use,,2024-12-01,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0063,Boom Lift,JCB nm-540,SN-17393638,Rented,514,Under Maintenance,,2024-08-13,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0064,Welding Machine,Komatsu IP-467,SN-54458771,Leased,89,Under Maintenance,,2025-07-15,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0065,Backhoe Loader,Komatsu xu-753,SN-60932048,Owned,873,Available,,2025-10-16,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0066,Generator,Volvo jm-964,SN-53693785,Owned,293,In Use,,2024-06-29,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0067,Scaffolding Set,JCB kU-777,SN-52287280,Owned,181,In Use,,2025-01-01,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0068,Batching Plant,Komatsu Ai-100,SN-31203875,Rented,2159,Available,,2024-02-12,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0069,Dump Truck,Komatsu ba-977,SN-88600848,Owned,571,In Use,,2025-11-15,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0070,Backhoe Loader,Komatsu Zl-086,SN-11823398,Owned,854,Available,,2024-06-25,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0071,Backhoe Loader,Hitachi fx-546,SN-67933410,Owned,868,Available,,2024-03-06,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0072,Concrete Pump,Volvo Ed-668,SN-02176591,Leased,2492,Available,,2025-09-18,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0073,Batching Plant,Volvo SK-033,SN-74014890,Rented,3118,In Use,,2024-05-05,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0074,Welding Machine,Volvo Lj-503,SN-61429396,Owned,70,In Use,,2025-04-18,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0075,Scaffolding Set,Hitachi WV-856,SN-21850163,Owned,137,Available,,2025-08-10,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0076,Backhoe Loader,CAT Mz-599,SN-50477358,Owned,675,Available,,2025-10-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0077,Excavator,Potain Qy-629,SN-19431142,Owned,1360,Available,,2024-09-22,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0078,Generator,JCB xg-265,SN-10475412,Leased,215,In Use,,2024-03-02,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0079,Excavator,JCB JG-678,SN-61015819,Leased,960,Available,,2025-02-22,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0080,Dump Truck,Komatsu sA-560,SN-61839826,Owned,609,Under Maintenance,,2024-04-28,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0081,Boom Lift,Potain Fj-444,SN-12646471,Rented,738,In Use,,2024-09-09,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0082,Wheel Loader,CAT Nm-379,SN-71240659,Owned,1002,In Use,,2024-09-22,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0083,Welding Machine,Volvo BP-575,SN-92459375,Owned,56,In Use,,2024-05-04,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0084,Concrete Pump,CAT VS-654,SN-79356465,Rented,2343,Under Maintenance,,2024-03-20,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0085,Generator,Volvo Il-939,SN-80737416,Owned,249,Available,,2025-04-16,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0086,Excavator,Potain qQ-243,SN-26617979,Rented,883,In Use,,2024-10-07,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0087,Backhoe Loader,Hitachi cY-868,SN-58911352,Leased,741,In Use,,2025-03-28,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0088,Backhoe Loader,CAT Wv-096,SN-61014388,Leased,594,In Use,,2025-01-25,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0089,Dump Truck,Komatsu xz-937,SN-79825071,Leased,422,In Use,,2024-07-25,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0090,Batching Plant,Liebherr wt-112,SN-57387571,Owned,2550,In Use,,2024-11-02,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0091,Excavator,Hitachi tc-751,SN-10512382,Owned,887,Under Maintenance,,2025-01-21,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0092,Scaffolding Set,JCB Do-586,SN-62266093,Leased,196,In Use,,2024-11-10,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0093,Compactor,CAT Tn-660,SN-34191825,Leased,567,In Use,,2024-08-16,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0094,Forklift,Hitachi QF-714,SN-85969691,Leased,396,Available,,2024-08-31,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0095,Backhoe Loader,CAT RT-792,SN-49912513,Leased,865,Available,,2024-08-01,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0096,Generator,JCB Gy-252,SN-69296627,Owned,261,In Use,,2025-03-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0097,Excavator,Komatsu Fs-282,SN-22579050,Owned,929,Available,,2024-12-05,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0098,Mobile Crane,Potain GP-368,SN-76767721,Leased,2413,Under Maintenance,,2025-01-30,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0099,Welding Machine,JCB ro-340,SN-84279788,Rented,90,Under Maintenance,,2024-03-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0100,Mobile Crane,Volvo xI-148,SN-07836134,Leased,3130,In Use,,2025-09-04,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0101,Compactor,Volvo wf-074,SN-71339596,Owned,600,In Use,,2024-04-26,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0102,Mobile Crane,Volvo Zd-233,SN-95849825,Owned,2303,In Use,,2025-11-16,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0103,Generator,Hitachi rG-449,SN-12604223,Owned,254,In Use,,2024-04-12,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0104,Scaffolding Set,Liebherr Fj-536,SN-94667116,Rented,152,In Use,,2024-12-26,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0105,Forklift,Volvo Fu-457,SN-90175186,Leased,259,Available,,2024-06-01,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0106,Concrete Pump,Komatsu ru-637,SN-45892975,Leased,1539,In Use,,2025-09-17,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0107,Boom Lift,Komatsu OY-001,SN-70127706,Owned,781,In Use,,2024-05-21,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0108,Dump Truck,CAT rf-242,SN-54152064,Rented,555,In Use,,2025-05-23,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0109,Welding Machine,Volvo Tg-361,SN-03712938,Owned,79,Available,,2025-04-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0110,Boom Lift,Volvo hB-005,SN-27136111,Rented,537,Under Maintenance,,2024-08-07,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0111,Generator,Potain XW-426,SN-22189092,Owned,296,In Use,,2024-11-04,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0112,Welding Machine,Volvo NR-326,SN-73112196,Leased,147,In Use,,2024-09-03,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0113,Welding Machine,CAT pr-652,SN-13899940,Owned,58,In Use,,2025-08-16,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0114,Compactor,Volvo MG-438,SN-36403761,Owned,568,In Use,,2024-06-17,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0115,Excavator,Komatsu ax-918,SN-52696582,Owned,859,Available,,2025-06-17,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0116,Batching Plant,CAT ea-109,SN-43006848,Rented,3443,Available,,2025-06-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0117,Dump Truck,Hitachi OI-661,SN-89241418,Leased,658,In Use,,2025-10-06,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0118,Mobile Crane,Potain zL-285,SN-14630316,Owned,2495,In Use,,2024-03-22,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0119,Generator,Volvo tQ-990,SN-21020275,Owned,442,In Use,,2025-01-01,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0120,Dump Truck,Liebherr iV-425,SN-41056481,Owned,532,Under Maintenance,,2024-07-03,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0121,Mobile Crane,Liebherr DG-917,SN-50792524,Owned,2791,Available,,2025-06-25,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0122,Welding Machine,JCB VG-913,SN-00030756,Owned,78,Under Maintenance,,2025-10-06,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0123,Forklift,Komatsu ZT-208,SN-63536541,Rented,416,In Use,,2025-02-04,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0124,Tower Crane,Hitachi lo-180,SN-80617445,Owned,4470,Available,,2024-03-01,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0125,Excavator,JCB ms-705,SN-94937597,Owned,1029,In Use,,2025-11-29,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0126,Scaffolding Set,Liebherr ja-383,SN-60385050,Rented,154,In Use,,2025-06-15,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0127,Batching Plant,Liebherr nH-641,SN-36702410,Owned,2955,In Use,,2025-10-06,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0128,Compactor,Hitachi DV-865,SN-19182619,Leased,599,Available,,2025-02-01,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0129,Compactor,Potain sq-623,SN-56557431,Rented,587,Under Maintenance,,2025-10-22,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0130,Generator,Liebherr jg-291,SN-27756185,Rented,255,In Use,,2025-11-06,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0131,Dump Truck,Liebherr Dq-374,SN-11249035,Rented,541,In Use,,2024-04-13,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0132,Boom Lift,Potain Gd-356,SN-44206788,Rented,496,Available,,2024-06-23,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0133,Scaffolding Set,Komatsu ha-712,SN-03236519,Owned,176,In Use,,2025-02-14,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0134,Dump Truck,Potain mP-101,SN-72151070,Owned,413,Under Maintenance,,2024-04-27,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0135,Backhoe Loader,Liebherr Fb-966,SN-66253244,Leased,707,In Use,,2024-11-08,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0136,Tower Crane,JCB NN-209,SN-34768701,Owned,4202,Under Maintenance,,2024-07-14,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,Maintenance Due
+EQ-0137,Wheel Loader,Potain PZ-263,SN-83806578,Leased,967,In Use,,2025-07-01,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0138,Welding Machine,Komatsu uy-598,SN-42059304,Owned,87,Available,,2024-02-11,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0139,Excavator,Potain XL-785,SN-32133480,Rented,1372,Available,,2025-06-18,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0140,Dump Truck,Potain wl-396,SN-23955905,Owned,513,In Use,,2025-10-25,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0141,Boom Lift,Hitachi mZ-929,SN-78427010,Rented,615,In Use,,2024-06-11,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0142,Backhoe Loader,JCB Ea-308,SN-59325250,Rented,737,Available,,2024-01-16,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0143,Tower Crane,Hitachi Hx-921,SN-15691545,Owned,4467,Available,,2024-04-05,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0144,Mobile Crane,Hitachi Pu-267,SN-28953926,Leased,3085,In Use,,2024-08-02,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0145,Tower Crane,Hitachi Ua-422,SN-96902959,Owned,3781,Available,,2024-06-03,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0146,Concrete Pump,JCB jv-917,SN-13552157,Leased,1646,In Use,,2024-01-08,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0147,Excavator,Hitachi wq-331,SN-10067626,Owned,1299,In Use,,2024-12-11,False,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0148,Excavator,Liebherr yg-658,SN-79327104,Owned,804,In Use,,2024-01-15,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0149,Wheel Loader,Hitachi vk-411,SN-62181599,Owned,1190,Available,,2025-09-17,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
+EQ-0150,Scaffolding Set,Hitachi MB-062,SN-20153368,Owned,116,In Use,,2025-05-20,True,,2026-03-03T10:38:09,2026-03-03T10:38:09,system@alrashdeng.ae,1,True,
