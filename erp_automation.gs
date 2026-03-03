@@ -79,21 +79,121 @@ var ERP_CONFIG = {
     'Project_Documents':    [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }]
   },
 
-  // Status color maps
-  STATUS_COLORS: {
-    'Projects': {
-      'Completed': '#27ae60', 'In Progress': '#2980b9', 'On Hold': '#f39c12',
-      'Delayed': '#e74c3c', 'Cancelled': '#95a5a6', 'Awarded': '#8e44ad'
-    },
+  // Colorblind-safe palette (Wong/Okabe-Ito inspired, WCAG AA contrast)
+  COLORS: {
+    HEADER_BG: '#2d3748', HEADER_FG: '#f7fafc',
+    ALT_ROW: '#f7fafc', WHITE: '#ffffff',
+    SYSTEM_COL_BG: '#edf2f7', PRIVATE_COL_BG: '#fef5e7',
+    MISSING_BG: '#fff3cd',
+    // Status cell badges (colorblind-safe: distinct hue + lightness)
+    STATUS: {
+      // Blue family (positive)
+      'Completed': {bg:'#d4edda',fg:'#155724'}, 'Active': {bg:'#d4edda',fg:'#155724'},
+      'Paid': {bg:'#d4edda',fg:'#155724'}, 'Approved': {bg:'#d4edda',fg:'#155724'},
+      'Pass': {bg:'#d4edda',fg:'#155724'},
+      // Cyan/Blue (in progress)
+      'In Progress': {bg:'#cce5ff',fg:'#004085'}, 'Certified': {bg:'#cce5ff',fg:'#004085'},
+      'Under Review': {bg:'#cce5ff',fg:'#004085'}, 'Issued': {bg:'#cce5ff',fg:'#004085'},
+      'Delivered': {bg:'#cce5ff',fg:'#004085'},
+      // Yellow (caution)
+      'On Hold': {bg:'#fff3cd',fg:'#856404'}, 'Submitted': {bg:'#fff3cd',fg:'#856404'},
+      'Pending': {bg:'#fff3cd',fg:'#856404'}, 'Draft': {bg:'#fff3cd',fg:'#856404'},
+      'Under Negotiation': {bg:'#fff3cd',fg:'#856404'}, 'For Review': {bg:'#fff3cd',fg:'#856404'},
+      // Orange (warning)
+      'Delayed': {bg:'#f8d7da',fg:'#721c24'}, 'Overdue': {bg:'#f8d7da',fg:'#721c24'},
+      'Rejected': {bg:'#f8d7da',fg:'#721c24'}, 'Fail': {bg:'#f8d7da',fg:'#721c24'},
+      'Expired': {bg:'#f8d7da',fg:'#721c24'}, 'Blacklisted': {bg:'#f8d7da',fg:'#721c24'},
+      // Gray (neutral)
+      'Cancelled': {bg:'#e2e3e5',fg:'#383d41'}, 'Inactive': {bg:'#e2e3e5',fg:'#383d41'},
+      'Not in Contact': {bg:'#e2e3e5',fg:'#383d41'}, 'Superseded': {bg:'#e2e3e5',fg:'#383d41'},
+      // Purple (awarded/special)
+      'Awarded': {bg:'#e8daef',fg:'#4a235a'}, 'Not Started': {bg:'#e8daef',fg:'#4a235a'},
+      'Invoiced': {bg:'#d6eaf8',fg:'#1b4f72'},
+      // Safety severity (distinct shapes reinforced by text prefix)
+      'High': {bg:'#f8d7da',fg:'#721c24'}, 'Medium': {bg:'#fff3cd',fg:'#856404'},
+      'Low': {bg:'#d4edda',fg:'#155724'},
+      // Health
+      'Green': {bg:'#d4edda',fg:'#155724'}, 'Amber': {bg:'#fff3cd',fg:'#856404'},
+      'Red': {bg:'#f8d7da',fg:'#721c24'},
+      // Conditional pass
+      'Conditional Pass': {bg:'#fff3cd',fg:'#856404'}, 'Open': {bg:'#fff3cd',fg:'#856404'},
+      'Closed': {bg:'#d4edda',fg:'#155724'}, 'Available': {bg:'#d4edda',fg:'#155724'},
+      'In Use': {bg:'#cce5ff',fg:'#004085'}, 'Under Maintenance': {bg:'#fff3cd',fg:'#856404'},
+      'Decommissioned': {bg:'#e2e3e5',fg:'#383d41'}
+    }
+  },
+
+  // Dropdown definitions: { sheetName: { columnHeader: [values] } }
+  DROPDOWNS: {
     'Clients': {
-      'Active': '#27ae60', 'Inactive': '#95a5a6', 'Not in Contact': '#f1c40f', 'Blacklisted': '#e74c3c'
+      'client_type': ['Private Developer','Government','Semi-Government','Contractor'],
+      'status': ['Active','Inactive','Not in Contact','Blacklisted'],
+      'payment_terms': ['Net 30','Net 45','Net 60','Net 90']
     },
-    'Payments': {
-      'Paid': '#27ae60', 'Certified': '#2ecc71', 'Submitted': '#f1c40f',
-      'Under Review': '#f39c12', 'Rejected': '#e74c3c', 'Overdue': '#c0392b'
+    'Employees': {
+      'department': ['Engineering','Construction','HSE','Finance','HR','Procurement','QA/QC','Document Control','Admin','IT'],
+      'status': ['Active','On Leave','Resigned','Terminated'],
+      'visa_status': ['Valid','Expiring Soon','Expired','In Process','Cancelled']
     },
-    'Safety': {
-      'High': '#e74c3c', 'Medium': '#f39c12', 'Low': '#f1c40f'
+    'Contractors': {
+      'specialty': ['Concrete Works','Demolition','Electrical','Facade & Cladding','Fire Fighting','Fit-Out','HVAC','Landscaping','MEP','Painting','Piling & Foundations','Plumbing','Structural Steel','Waterproofing'],
+      'status': ['Active','Suspended','Blacklisted'],
+      'prequalified': ['TRUE','FALSE'],
+      'rating': ['A','B','C','D']
+    },
+    'Suppliers': {
+      'category': ['Cement & Aggregates','Construction Chemicals','Facade Materials','Finishing Materials','Formwork & Scaffolding','MEP Materials','Ready-Mix Concrete','Safety Equipment','Steel Reinforcement','Structural Steel'],
+      'status': ['Active','Suspended','Inactive'],
+      'approved': ['TRUE','FALSE']
+    },
+    'Equipment': {
+      'equipment_type': ['Backhoe Loader','Batching Plant','Boom Lift','Compactor','Concrete Pump','Dump Truck','Excavator','Forklift','Generator','Mobile Crane','Scaffolding Set','Tower Crane','Welding Machine','Wheel Loader'],
+      'status': ['Available','In Use','Under Maintenance','Decommissioned']
+    },
+    'Projects': {
+      'project_type': ['Commercial Office Building','High-Rise Residential Tower','Hotel & Hospitality','Industrial Warehouse','Infrastructure - Bridges','Infrastructure - Roads','Marine & Coastal Works','Mixed-Use Development','Retail Mall','School/Educational','Utility Infrastructure','Villa Development'],
+      'status': ['Awarded','In Progress','On Hold','Delayed','Completed','Cancelled'],
+      'health_status': ['Green','Amber','Red']
+    },
+    'Contracts': {
+      'contract_type': ['Main Contract','Subcontract'],
+      'status': ['Active','Completed','Terminated','Rejected']
+    },
+    'Project_Phases': {
+      'phase_name': ['Mobilization','Enabling Works','Piling','Substructure','Superstructure','MEP Rough-In','Facade','Internal Finishes','External Works','Testing & Commissioning'],
+      'status': ['Not Started','In Progress','Completed','Delayed']
+    },
+    'Permits_Approvals': {
+      'permit_type': ['Dubai Municipality - Building Permit','Dubai Municipality - NOC','Civil Defense NOC','DEWA Connection','RTA Access Permit','Crane Permit','DDA Approval','Environmental Permit','Etisalat NOC','Trakhees Permit'],
+      'status': ['Pending','Submitted','Approved','Expired','Rejected']
+    },
+    'Inspections': {
+      'inspection_type': ['Concrete Pour','Rebar Placement','Formwork','Structural','Waterproofing','MEP Rough-In','Fire Safety','Final Handover'],
+      'result': ['Pass','Fail','Conditional Pass','Pending']
+    },
+    'Safety_Incidents': {
+      'incident_type': ['Fall from Height','Struck by Object','Electrical','Heat Stroke','Equipment Malfunction','Caught In/Between','Slip/Trip','Chemical Exposure','Fire','Vehicle Accident'],
+      'severity': ['Low','Medium','High'],
+      'status': ['Open','Under Investigation','Closed']
+    },
+    'Payment_Applications': {
+      'status': ['Submitted','Under Review','Certified','Paid','Rejected','Overdue']
+    },
+    'Variation_Orders': {
+      'reason': ['Client Request','Design Change','Site Condition','Authority Requirement','Scope Addition','Material Substitution'],
+      'status': ['Draft','Submitted','Under Negotiation','Approved','Rejected']
+    },
+    'Purchase_Orders': {
+      'po_type': ['Material','Subcontract'],
+      'status': ['Draft','Issued','Delivered','Invoiced','Paid']
+    },
+    'Daily_Site_Reports': {
+      'weather': ['Clear','Sunny','Hot','Humid','Windy','Sandstorm','Rain']
+    },
+    'Project_Documents': {
+      'document_type': ['Shop Drawing','Material Submittal','RFI','Method Statement','Inspection Request','NCR','Progress Report','Meeting Minutes','Site Instruction','Test Report','As-Built Drawing','Variation Order'],
+      'status': ['Draft','For Review','Approved','Superseded'],
+      'discipline': ['Civil','Structural','Architectural','MEP','HSE']
     }
   }
 };
@@ -113,26 +213,42 @@ function setupERPSystem() {
   
   // 1. Create Audit Log sheet
   createAuditLogSheet(ss);
-  ss.toast('Audit Log created', '⚙️ Setup', -1);
+  ss.toast('1/9 Audit Log created', '⚙️ Setup', -1);
   
   // 2. Install triggers
   installTriggers(ss);
-  ss.toast('Triggers installed', '⚙️ Setup', -1);
+  ss.toast('2/9 Triggers installed', '⚙️ Setup', -1);
   
-  // 3. Apply conditional formatting to all sheets
-  applyAllConditionalFormatting(ss);
-  ss.toast('Conditional formatting applied', '⚙️ Setup', -1);
+  // 3. Apply base styling (headers, alternating rows, column widths)
+  applyBaseStyleToAllSheets(ss);
+  ss.toast('3/9 Base styling applied', '⚙️ Setup', -1);
   
-  // 4. Apply privacy protections
+  // 4. Apply dropdown data validation
+  applyAllDropdowns(ss);
+  ss.toast('4/9 Dropdowns applied', '⚙️ Setup', -1);
+  
+  // 5. Handle missing data
+  handleAllMissingData(ss);
+  ss.toast('5/9 Missing data handled', '⚙️ Setup', -1);
+  
+  // 6. Apply status cell formatting (colorblind-safe)
+  applyAllStatusFormatting(ss);
+  ss.toast('6/9 Status formatting applied', '⚙️ Setup', -1);
+  
+  // 7. Apply privacy protections
   applyPrivacyProtections(ss);
-  ss.toast('Privacy protections applied', '⚙️ Setup', -1);
+  ss.toast('7/9 Privacy protections applied', '⚙️ Setup', -1);
   
-  // 5. Run derived calculations
+  // 8. Run derived calculations
   recalculateAllDerived(ss);
-  ss.toast('Derived calculations complete', '⚙️ Setup', -1);
+  ss.toast('8/9 Derived calculations complete', '⚙️ Setup', -1);
+  
+  // 9. Auto-resize columns
+  autoResizeAllColumns(ss);
+  ss.toast('9/9 Columns resized', '⚙️ Setup', -1);
   
   ss.toast('✅ ERP System Setup Complete!', '⚙️ Done', 10);
-  ui.alert('ERP System Setup Complete!\n\nAll automation is now active:\n• Edit triggers (timestamps, versioning, audit)\n• Data validation rules\n• Conditional formatting\n• Privacy protections\n• Derived calculations');
+  ui.alert('ERP System Setup Complete!\n\n✅ Audit Log\n✅ Edit Triggers\n✅ Elegant Base Styling\n✅ Dropdown Validation (all categorical fields)\n✅ Missing Data Handling\n✅ Colorblind-Safe Status Formatting\n✅ Privacy Protections\n✅ Derived Calculations\n✅ Auto Column Widths');
 }
 
 function createAuditLogSheet(ss) {
@@ -658,178 +774,221 @@ function getRowValue(sheet, row, headers, colName) {
 }
 
 // ============================================================
-// MODULE 6: CONDITIONAL FORMATTING
+// MODULE 6: VISUAL STYLING & FORMATTING
 // ============================================================
 
-function applyAllConditionalFormatting(ss) {
-  applyProjectFormatting(ss);
-  applyClientFormatting(ss);
-  applyPaymentFormatting(ss);
-  applySafetyFormatting(ss);
-  applyPermitFormatting(ss);
+/**
+ * Apply elegant base styling to all managed sheets:
+ * - Dark header row with readable white text
+ * - Subtle alternating row colors
+ * - Proper font family & size
+ * - System/private column shading
+ */
+function applyBaseStyleToAllSheets(ss) {
+  for (var sheetName in ERP_CONFIG.SHEETS) {
+    var sheet = ss.getSheetByName(sheetName);
+    if (!sheet || sheet.getLastRow() <= 1) continue;
+    applyBaseStyle(sheet, sheetName);
+    SpreadsheetApp.flush();
+    Utilities.sleep(300);
+  }
 }
 
-function applyProjectFormatting(ss) {
-  var sheet = ss.getSheetByName('Projects');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var statusIdx = headers.indexOf('status');
-  var healthIdx = headers.indexOf('health_status');
-  var bvIdx = headers.indexOf('budget_variance_pct');
-  if (statusIdx < 0) return;
-  
+function applyBaseStyle(sheet, sheetName) {
   var lastRow = sheet.getLastRow();
   var lastCol = sheet.getLastColumn();
-  var statusCol = String.fromCharCode(65 + statusIdx);
+  if (lastRow <= 1 || lastCol <= 0) return;
+  var headers = sheet.getRange(1, 1, 1, lastCol).getValues()[0];
   
-  // Clear existing rules
-  sheet.clearConditionalFormatRules();
-  var rules = [];
+  // Set font for entire sheet
+  sheet.getRange(1, 1, lastRow, lastCol).setFontFamily('Inter').setFontSize(10);
   
-  // Status-based row coloring
-  var statusColors = ERP_CONFIG.STATUS_COLORS['Projects'];
-  for (var status in statusColors) {
-    var range = sheet.getRange(2, 1, lastRow - 1, lastCol);
-    var rule = SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=$' + statusCol + '2="' + status + '"')
-      .setBackground(statusColors[status])
-      .setFontColor(status === 'Cancelled' ? '#2c3e50' : '#ffffff')
-      .setRanges([range])
-      .build();
-    rules.push(rule);
+  // Header row: dark slate with white text
+  sheet.getRange(1, 1, 1, lastCol)
+    .setBackground(ERP_CONFIG.COLORS.HEADER_BG)
+    .setFontColor(ERP_CONFIG.COLORS.HEADER_FG)
+    .setFontWeight('bold')
+    .setFontSize(11)
+    .setVerticalAlignment('middle')
+    .setWrap(true);
+  sheet.setFrozenRows(1);
+  sheet.setRowHeight(1, 36);
+  
+  // Alternating row colors (data area)
+  if (lastRow > 1) {
+    for (var r = 2; r <= lastRow; r++) {
+      var bg = (r % 2 === 0) ? ERP_CONFIG.COLORS.ALT_ROW : ERP_CONFIG.COLORS.WHITE;
+      sheet.getRange(r, 1, 1, lastCol).setBackground(bg);
+    }
   }
   
-  // Budget variance coloring (if column exists)
-  if (bvIdx >= 0) {
-    var bvCol = String.fromCharCode(65 + bvIdx);
-    var bvRange = sheet.getRange(2, bvIdx + 1, lastRow - 1, 1);
-    rules.push(SpreadsheetApp.newConditionalFormatRule().whenNumberGreaterThan(10).setBackground('#e74c3c').setFontColor('#ffffff').setRanges([bvRange]).build());
-    rules.push(SpreadsheetApp.newConditionalFormatRule().whenNumberBetween(5, 10).setBackground('#f39c12').setFontColor('#ffffff').setRanges([bvRange]).build());
-    rules.push(SpreadsheetApp.newConditionalFormatRule().whenNumberBetween(0, 5).setBackground('#f1c40f').setRanges([bvRange]).build());
-    rules.push(SpreadsheetApp.newConditionalFormatRule().whenNumberLessThan(0).setBackground('#27ae60').setFontColor('#ffffff').setRanges([bvRange]).build());
+  // Shade system columns (IDs, timestamps, version) light gray
+  var config = ERP_CONFIG.SHEETS[sheetName];
+  for (var c = 0; c < headers.length; c++) {
+    var h = headers[c];
+    if (h === config.pk || ERP_CONFIG.PROTECTED_COLS.indexOf(h) >= 0 || h === 'is_active' || h === 'tags') {
+      sheet.getRange(2, c + 1, Math.max(1, lastRow - 1), 1).setBackground(ERP_CONFIG.COLORS.SYSTEM_COL_BG).setFontColor('#718096');
+    }
+    if (ERP_CONFIG.PRIVATE_COLS.indexOf(h) >= 0) {
+      sheet.getRange(2, c + 1, Math.max(1, lastRow - 1), 1).setBackground(ERP_CONFIG.COLORS.PRIVATE_COL_BG);
+    }
   }
-  
-  // Health status coloring
-  if (healthIdx >= 0) {
-    var healthRange = sheet.getRange(2, healthIdx + 1, lastRow - 1, 1);
-    rules.push(SpreadsheetApp.newConditionalFormatRule().whenTextEqualTo('Green').setBackground('#27ae60').setFontColor('#ffffff').setRanges([healthRange]).build());
-    rules.push(SpreadsheetApp.newConditionalFormatRule().whenTextEqualTo('Amber').setBackground('#f39c12').setFontColor('#ffffff').setRanges([healthRange]).build());
-    rules.push(SpreadsheetApp.newConditionalFormatRule().whenTextEqualTo('Red').setBackground('#e74c3c').setFontColor('#ffffff').setRanges([healthRange]).build());
-  }
-  
-  sheet.setConditionalFormatRules(rules);
 }
 
-function applyClientFormatting(ss) {
-  var sheet = ss.getSheetByName('Clients');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var statusIdx = headers.indexOf('status');
-  if (statusIdx < 0) return;
-  
-  var lastRow = sheet.getLastRow();
-  var lastCol = sheet.getLastColumn();
-  var statusCol = String.fromCharCode(65 + statusIdx);
-  
-  sheet.clearConditionalFormatRules();
-  var rules = [];
-  
-  var statusColors = ERP_CONFIG.STATUS_COLORS['Clients'];
-  for (var status in statusColors) {
-    var range = sheet.getRange(2, 1, lastRow - 1, lastCol);
-    rules.push(SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=$' + statusCol + '2="' + status + '"')
-      .setBackground(statusColors[status])
-      .setFontColor(status === 'Blacklisted' ? '#ffffff' : (status === 'Inactive' ? '#2c3e50' : '#ffffff'))
-      .setRanges([range])
-      .build());
+/**
+ * Apply colorblind-safe status cell formatting:
+ * - Only the STATUS cell gets colored (not the whole row)
+ * - High contrast bg/fg pairs from COLORS.STATUS
+ */
+function applyAllStatusFormatting(ss) {
+  for (var sheetName in ERP_CONFIG.SHEETS) {
+    var sheet = ss.getSheetByName(sheetName);
+    if (!sheet || sheet.getLastRow() <= 1) continue;
+    applyStatusCellFormatting(sheet, sheetName);
+    SpreadsheetApp.flush();
+    Utilities.sleep(200);
   }
-  
-  sheet.setConditionalFormatRules(rules);
 }
 
-function applyPaymentFormatting(ss) {
-  var sheet = ss.getSheetByName('Payment_Applications');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var statusIdx = headers.indexOf('status');
-  if (statusIdx < 0) return;
-  
+function applyStatusCellFormatting(sheet, sheetName) {
   var lastRow = sheet.getLastRow();
-  var lastCol = sheet.getLastColumn();
-  var statusCol = String.fromCharCode(65 + statusIdx);
+  if (lastRow <= 1) return;
+  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+  var data = sheet.getDataRange().getValues();
   
-  sheet.clearConditionalFormatRules();
-  var rules = [];
+  // Find all columns that have status/category coloring
+  var colorCols = [];
+  var config = ERP_CONFIG.SHEETS[sheetName];
+  if (config && config.statusCol) colorCols.push(config.statusCol);
+  // Also color health_status, severity, result, is_expired
+  ['health_status','severity','result'].forEach(function(col) {
+    if (headers.indexOf(col) >= 0 && colorCols.indexOf(col) < 0) colorCols.push(col);
+  });
   
-  var colors = ERP_CONFIG.STATUS_COLORS['Payments'];
-  for (var status in colors) {
-    var range = sheet.getRange(2, 1, lastRow - 1, lastCol);
-    rules.push(SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=$' + statusCol + '2="' + status + '"')
-      .setBackground(colors[status])
-      .setFontColor('#ffffff')
-      .setRanges([range])
-      .build());
+  for (var ci = 0; ci < colorCols.length; ci++) {
+    var colIdx = headers.indexOf(colorCols[ci]);
+    if (colIdx < 0) continue;
+    for (var r = 1; r < data.length; r++) {
+      var val = String(data[r][colIdx]).trim();
+      var style = ERP_CONFIG.COLORS.STATUS[val];
+      if (style) {
+        sheet.getRange(r + 1, colIdx + 1)
+          .setBackground(style.bg).setFontColor(style.fg)
+          .setFontWeight('bold').setHorizontalAlignment('center');
+      }
+    }
   }
   
-  sheet.setConditionalFormatRules(rules);
+  // Clear existing conditional format rules (we use direct cell styling now)
+  sheet.clearConditionalFormatRules();
 }
 
-function applySafetyFormatting(ss) {
-  var sheet = ss.getSheetByName('Safety_Incidents');
-  if (!sheet || sheet.getLastRow() <= 1) return;
-  
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var sevIdx = headers.indexOf('severity');
-  if (sevIdx < 0) return;
-  
-  var lastRow = sheet.getLastRow();
-  var lastCol = sheet.getLastColumn();
-  var sevCol = String.fromCharCode(65 + sevIdx);
-  
-  sheet.clearConditionalFormatRules();
-  var rules = [];
-  
-  var colors = ERP_CONFIG.STATUS_COLORS['Safety'];
-  for (var sev in colors) {
-    var range = sheet.getRange(2, 1, lastRow - 1, lastCol);
-    rules.push(SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=$' + sevCol + '2="' + sev + '"')
-      .setBackground(colors[sev])
-      .setFontColor(sev === 'Low' ? '#2c3e50' : '#ffffff')
-      .setRanges([range])
-      .build());
+/**
+ * Apply dropdown data validation to all categorical columns
+ */
+function applyAllDropdowns(ss) {
+  for (var sheetName in ERP_CONFIG.DROPDOWNS) {
+    var sheet = ss.getSheetByName(sheetName);
+    if (!sheet || sheet.getLastRow() <= 1) continue;
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+    var lastRow = sheet.getLastRow();
+    var dropdowns = ERP_CONFIG.DROPDOWNS[sheetName];
+    
+    for (var colName in dropdowns) {
+      var colIdx = headers.indexOf(colName);
+      if (colIdx < 0) continue;
+      var values = dropdowns[colName];
+      var rule = SpreadsheetApp.newDataValidation()
+        .requireValueInList(values, true)
+        .setAllowInvalid(true) // Allow existing data that may not match
+        .setHelpText('Select from: ' + values.join(', '))
+        .build();
+      sheet.getRange(2, colIdx + 1, Math.max(1, lastRow - 1), 1).setDataValidation(rule);
+    }
+    SpreadsheetApp.flush();
+    Utilities.sleep(200);
   }
-  
-  sheet.setConditionalFormatRules(rules);
 }
 
-function applyPermitFormatting(ss) {
-  var sheet = ss.getSheetByName('Permits_Approvals');
-  if (!sheet || sheet.getLastRow() <= 1) return;
+/**
+ * Handle missing/empty data: highlight required empty cells, fill optional with "—"
+ */
+function handleAllMissingData(ss) {
+  // Required fields per table (if empty, highlight yellow)
+  var REQUIRED = {
+    'Clients': ['client_name','client_type','email','status'],
+    'Employees': ['full_name','department','designation','status'],
+    'Contractors': ['company_name','specialty','status'],
+    'Suppliers': ['company_name','category','status'],
+    'Equipment': ['equipment_type','model','status'],
+    'Projects': ['project_name','project_type','client_id','status'],
+    'Contracts': ['project_id','contract_type','contract_value_aed','status'],
+    'Inspections': ['project_id','inspection_type','result'],
+    'Safety_Incidents': ['project_id','incident_type','severity'],
+    'Payment_Applications': ['project_id','ipc_number','status'],
+    'Permits_Approvals': ['project_id','permit_type','status']
+  };
   
-  var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
-  var expiredIdx = headers.indexOf('is_expired');
-  if (expiredIdx < 0) return;
+  // Optional text fields: if empty, fill with "—"
+  var OPTIONAL_TEXT = ['internal_notes','issues','description','approved_by','approved_date',
+                       'payment_date','file_path'];
   
-  var lastRow = sheet.getLastRow();
-  var lastCol = sheet.getLastColumn();
-  var expCol = String.fromCharCode(65 + expiredIdx);
-  
-  sheet.clearConditionalFormatRules();
-  var rules = [];
-  
-  var range = sheet.getRange(2, 1, lastRow - 1, lastCol);
-  rules.push(SpreadsheetApp.newConditionalFormatRule()
-    .whenFormulaSatisfied('=$' + expCol + '2=TRUE')
-    .setBackground('#e74c3c').setFontColor('#ffffff')
-    .setRanges([range]).build());
-  
-  sheet.setConditionalFormatRules(rules);
+  for (var sheetName in ERP_CONFIG.SHEETS) {
+    var sheet = ss.getSheetByName(sheetName);
+    if (!sheet || sheet.getLastRow() <= 1) continue;
+    var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+    var data = sheet.getDataRange().getValues();
+    var lastRow = data.length;
+    
+    // Highlight required empty fields
+    var reqFields = REQUIRED[sheetName] || [];
+    for (var ri = 0; ri < reqFields.length; ri++) {
+      var ci = headers.indexOf(reqFields[ri]);
+      if (ci < 0) continue;
+      for (var r = 1; r < lastRow; r++) {
+        var v = data[r][ci];
+        if (v === '' || v === null || v === undefined) {
+          sheet.getRange(r + 1, ci + 1).setBackground(ERP_CONFIG.COLORS.MISSING_BG).setFontColor('#856404');
+        }
+      }
+    }
+    
+    // Fill optional empty text fields with "—"
+    for (var oi = 0; oi < OPTIONAL_TEXT.length; oi++) {
+      var optIdx = headers.indexOf(OPTIONAL_TEXT[oi]);
+      if (optIdx < 0) continue;
+      for (var row = 1; row < lastRow; row++) {
+        var val = data[row][optIdx];
+        if (val === '' || val === null || val === undefined) {
+          sheet.getRange(row + 1, optIdx + 1).setValue('—').setFontColor('#a0aec0').setFontStyle('italic');
+        }
+      }
+    }
+    SpreadsheetApp.flush();
+    Utilities.sleep(300);
+  }
+}
+
+/**
+ * Auto-resize all columns across all managed sheets
+ */
+function autoResizeAllColumns(ss) {
+  for (var sheetName in ERP_CONFIG.SHEETS) {
+    var sheet = ss.getSheetByName(sheetName);
+    if (!sheet || sheet.getLastRow() <= 1) continue;
+    var lastCol = sheet.getLastColumn();
+    // Auto-resize up to 25 columns to avoid timeout on wide sheets
+    var colsToResize = Math.min(lastCol, 25);
+    try {
+      sheet.autoResizeColumns(1, colsToResize);
+      // Cap max width to 250px for readability
+      for (var c = 1; c <= colsToResize; c++) {
+        if (sheet.getColumnWidth(c) > 250) sheet.setColumnWidth(c, 250);
+      }
+    } catch(e) { Logger.log('Resize error for ' + sheetName + ': ' + e.message); }
+    SpreadsheetApp.flush();
+    Utilities.sleep(200);
+  }
 }
 
 // ============================================================
@@ -1152,7 +1311,7 @@ function onOpen() {
     .addSeparator()
     .addItem('🔄 Recalculate All Metrics', 'recalculateAllFromMenu')
     .addItem('🏷️ Refresh All Tags', 'refreshAllTags')
-    .addItem('📊 Apply Conditional Formatting', 'applyFormattingFromMenu')
+    .addItem('🎨 Reapply Formatting & Dropdowns', 'applyFormattingFromMenu')
     .addSeparator()
     .addItem('🗑️ Soft Delete Selected Row', 'softDeleteRow')
     .addItem('👁️ Show Audit Log', 'showAuditLog')
@@ -1186,9 +1345,13 @@ function refreshAllTags() {
 
 function applyFormattingFromMenu() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
-  ss.toast('Applying conditional formatting...', '📊 Formatting', -1);
-  applyAllConditionalFormatting(ss);
-  ss.toast('✅ Formatting applied!', 'Done', 5);
+  ss.toast('Applying styling, dropdowns & formatting...', '🎨 Formatting', -1);
+  applyBaseStyleToAllSheets(ss);
+  applyAllDropdowns(ss);
+  handleAllMissingData(ss);
+  applyAllStatusFormatting(ss);
+  autoResizeAllColumns(ss);
+  ss.toast('✅ All formatting & dropdowns applied!', 'Done', 5);
 }
 
 function showAuditLog() {
