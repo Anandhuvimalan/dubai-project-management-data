@@ -15,7 +15,7 @@
 // ============================================================
 var ERP = {
   ADMIN: 'anandhu7833@gmail.com',
-  EXTRA_ROWS: 200, // Pre-fill formulas for new data entry
+  EXTRA_ROWS: 100, // Pre-fill formulas for new data entry
   LOOKUP_SHEET: '_Lookups',
 
   SHEETS: {
@@ -154,43 +154,40 @@ function setupERPSystem() {
   ss.toast('Setting up Formula-Based ERP...', '⚙️', -1);
 
   // 0. Ensure all sheets have enough rows for formulas
-  ss.toast('0/8 Expanding sheets...', '⚙️', -1);
+  ss.toast('0/7 Expanding sheets...', '⚙️', -1);
   expandAllSheets(ss);
 
   // 1. Build _Lookups sheet
-  ss.toast('1/8 Building lookup tables...', '⚙️', -1);
+  ss.toast('1/7 Building lookup tables...', '⚙️', -1);
   buildLookupsSheet(ss);
 
   // 2. Apply base styling
-  ss.toast('2/8 Styling all sheets...', '⚙️', -1);
+  ss.toast('2/7 Styling all sheets...', '⚙️', -1);
   styleAllSheets(ss);
 
-  // 3. Apply dropdown validations
-  ss.toast('3/8 Adding dropdowns...', '⚙️', -1);
+  // 3. Apply dropdown validations + FK dropdowns
+  ss.toast('3/7 Adding dropdowns...', '⚙️', -1);
   applyAllDropdowns(ss);
-
-  // 4. Apply FK ID dropdowns
-  ss.toast('4/8 FK dropdowns...', '⚙️', -1);
   applyFKDropdowns(ss);
 
-  // 5. Inject formulas (auto-ID, timestamps, calculations)
-  ss.toast('5/8 Injecting formulas...', '⚙️', -1);
+  // 4. Inject formulas (auto-ID, timestamps, defaults, calculations)
+  ss.toast('4/7 Injecting formulas...', '⚙️', -1);
   injectAllFormulas(ss);
 
-  // 6. Apply conditional formatting rules
-  ss.toast('6/8 Conditional formatting...', '⚙️', -1);
+  // 5. Apply conditional formatting rules
+  ss.toast('5/7 Conditional formatting...', '⚙️', -1);
   applyConditionalFormatting(ss);
 
-  // 7. Color existing status cells
-  ss.toast('7/8 Coloring existing data...', '⚙️', -1);
+  // 6. Color existing status cells
+  ss.toast('6/7 Coloring existing data...', '⚙️', -1);
   colorAllStatusCells(ss);
 
-  // 8. Auto-resize columns
-  ss.toast('8/8 Resizing columns...', '⚙️', -1);
-  autoResizeAll(ss);
+  // 7. Done!
+  ss.toast('7/7 Finalizing...', '⚙️', -1);
+  SpreadsheetApp.flush();
 
   ss.toast('✅ ERP Setup Complete!', '⚙️ Done', 10);
-  ui.alert('✅ Formula-Based ERP System Ready!\n\n• _Lookups sheet (name+ID reference)\n• FK dropdowns (stores ID only)\n• Auto-ID formulas for new rows\n• Conditional formatting (auto-colors on status change)\n• Auto-calculated fields\n• Pre-filled for ' + ERP.EXTRA_ROWS + ' new rows');
+  ui.alert('✅ Formula-Based ERP Ready!\n\n• _Lookups reference sheet\n• FK dropdowns (ID only)\n• Auto-ID + timestamps + default status for new rows\n• Calculated fields (duration, profit, health, etc.)\n• Conditional formatting\n• Pre-filled for ' + ERP.EXTRA_ROWS + ' new rows\n\nTip: Use menu > Resize Columns separately');
 }
 
 // ============================================================
@@ -443,6 +440,7 @@ function injectAllFormulas(ss) {
   injectPaymentFormulas(ss);
   injectAutoIDFormulas(ss);
   injectTimestampFormulas(ss);
+  injectDefaultValueFormulas(ss);
 }
 
 function injectProjectFormulas(ss) {
@@ -558,8 +556,74 @@ function injectTimestampFormulas(ss) {
   }
 }
 
+// --- Default values for new rows (status, tags, internal_notes, etc.) ---
+function injectDefaultValueFormulas(ss) {
+  // Default status per sheet when trigger column is filled
+  var DEFAULTS = {
+    'Clients':            {status:'Active', tags:'"—"', internal_notes:'"—"'},
+    'Employees':          {status:'Active', visa_status:'Valid', tags:'"—"', internal_notes:'"—"'},
+    'Contractors':        {status:'Active', prequalified:'FALSE', rating:'"C"', tags:'"—"', internal_notes:'"—"'},
+    'Suppliers':          {status:'Active', approved:'TRUE', tags:'"—"', internal_notes:'"—"'},
+    'Equipment':          {status:'Available', tags:'"—"', internal_notes:'"—"'},
+    'Projects':           {status:'Awarded', completion_pct:'0', risk_score:'1', tags:'"—"', internal_notes:'"—"'},
+    'Contracts':          {status:'Active', retention_pct:'10', performance_bond_pct:'10', advance_payment_pct:'0', defect_liability_months:'12', payment_progress_pct:'0', tags:'"—"', internal_notes:'"—"'},
+    'Project_Phases':     {status:'Not Started', progress_pct:'0', tags:'"—"', internal_notes:'"—"'},
+    'Work_Packages':      {executed_qty:'0', tags:'"—"', internal_notes:'"—"'},
+    'Permits_Approvals':  {status:'Pending', tags:'"—"', internal_notes:'"—"', remarks:'"—"'},
+    'Inspections':        {result:'Pending', defects_found:'0', tags:'"—"', internal_notes:'"—"', remarks:'"—"', corrective_action:'"N/A"'},
+    'Safety_Incidents':   {severity:'Low', status:'Open', injured_persons:'0', lti_days:'0', tags:'"—"', internal_notes:'"—"'},
+    'Payment_Applications': {status:'Submitted', deductions_aed:'0', tags:'"—"', internal_notes:'"—"'},
+    'Variation_Orders':   {status:'Draft', tags:'"—"', internal_notes:'"—"'},
+    'Purchase_Orders':    {status:'Draft', tags:'"—"', internal_notes:'"—"'},
+    'Daily_Site_Reports': {weather:'Clear', tags:'"—"', internal_notes:'"—"', issues:'"None reported"'},
+    'Project_Documents':  {status:'Draft', tags:'"—"', internal_notes:'"—"'}
+  };
+
+  for (var sn in DEFAULTS) {
+    var sheet = ss.getSheetByName(sn); if (!sheet || sheet.getLastRow() <= 1) continue;
+    var h = hMap(sheet);
+    var tC = TRIG[sn] || Object.keys(h)[1], tI = h[tC] || 2, tL = colL(tI);
+    var dEnd = sheet.getLastRow(), end = dEnd + ERP.EXTRA_ROWS;
+    if (end <= dEnd) continue;
+    var defs = DEFAULTS[sn];
+
+    for (var col in defs) {
+      if (!h[col]) continue;
+      var val = defs[col];
+      var isString = String(val).charAt(0) === '"';
+      var formulas = [];
+      for (var r = dEnd + 1; r <= end; r++) {
+        if (isString) {
+          formulas.push('=IF(' + tL + r + '<>"",' + val + ',"")');
+        } else {
+          formulas.push('=IF(' + tL + r + '<>"",' + val + ',"")');
+        }
+      }
+      batchF(sheet, dEnd + 1, h[col], formulas);
+    }
+    SpreadsheetApp.flush();
+  }
+}
+
 // ============================================================
-// MODULE 6A: CONDITIONAL FORMATTING RULES (auto-colors new entries)
+// MODULE 7: AUTO-RESIZE (separate, not in setup to avoid timeout)
+// ============================================================
+function autoResizeAll(ss) {
+  if (!ss) ss = SpreadsheetApp.getActiveSpreadsheet();
+  for (var name in ERP.SHEETS) {
+    var sheet = ss.getSheetByName(name);
+    if (!sheet || sheet.getLastRow() <= 1) continue;
+    try {
+      var cols = Math.min(sheet.getLastColumn(), 20);
+      sheet.autoResizeColumns(1, cols);
+      for (var c = 1; c <= cols; c++) {
+        if (sheet.getColumnWidth(c) > 250) sheet.setColumnWidth(c, 250);
+        if (sheet.getColumnWidth(c) < 80) sheet.setColumnWidth(c, 80);
+      }
+    } catch(e) {}
+    SpreadsheetApp.flush();
+  }
+}
 // ============================================================
 function applyConditionalFormatting(ss) {
   for (var sheetName in ERP.SHEETS) {
@@ -675,6 +739,7 @@ function onOpen() {
     .addItem('🔄 Rebuild Lookups', 'rebuildLookups')
     .addItem('🎨 Reapply Formatting', 'reapplyFormatting')
     .addItem('🔄 Recolor Status Cells', 'recolorStatus')
+    .addItem('📏 Resize All Columns', 'resizeColumnsMenu')
     .addToUi();
 }
 
@@ -700,4 +765,11 @@ function recolorStatus() {
   ss.toast('Recoloring status cells...', '🔄', -1);
   colorAllStatusCells(ss);
   ss.toast('✅ Status cells recolored!', 'Done', 5);
+}
+
+function resizeColumnsMenu() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  ss.toast('Resizing columns...', '📏', -1);
+  autoResizeAll(ss);
+  ss.toast('✅ Columns resized!', 'Done', 5);
 }
