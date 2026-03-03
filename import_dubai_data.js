@@ -25,66 +25,100 @@ var CONFIG = {
     GITHUB_USER: 'Anandhuvimalan',
     REPO: 'dubai-project-management-data',
     BRANCH: 'main',
-    BATCH_SIZE: 5000,
+    BATCH_SIZE: 2000,
     ADMIN_EMAIL: 'anandhu7833@gmail.com',
 
     // Schema definitions: name, sheet, primary key column, expected headers (first 5 for validation), FK references
     FILES: [
         // Core Master Tables (no FK dependencies)
-        { name: 'clients.csv', sheet: 'Clients', pk: 'client_id', fks: [],
-          requiredHeaders: ['client_id','client_name','client_type','email','status','created_at','is_active','tags'] },
-        { name: 'employees.csv', sheet: 'Employees', pk: 'employee_id', fks: [],
-          requiredHeaders: ['employee_id','full_name','department','designation','created_at','is_active','tags'] },
-        { name: 'contractors.csv', sheet: 'Contractors', pk: 'contractor_id', fks: [],
-          requiredHeaders: ['contractor_id','company_name','specialty','created_at','is_active','tags'] },
-        { name: 'suppliers.csv', sheet: 'Suppliers', pk: 'supplier_id', fks: [],
-          requiredHeaders: ['supplier_id','company_name','category','created_at','is_active','tags'] },
-        { name: 'equipment.csv', sheet: 'Equipment', pk: 'equipment_id', fks: [],
-          requiredHeaders: ['equipment_id','equipment_type','model','created_at','is_active','tags'] },
+        {
+            name: 'clients.csv', sheet: 'Clients', pk: 'client_id', fks: [],
+            requiredHeaders: ['client_id', 'client_name', 'client_type', 'email', 'status', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'employees.csv', sheet: 'Employees', pk: 'employee_id', fks: [],
+            requiredHeaders: ['employee_id', 'full_name', 'department', 'designation', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'contractors.csv', sheet: 'Contractors', pk: 'contractor_id', fks: [],
+            requiredHeaders: ['contractor_id', 'company_name', 'specialty', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'suppliers.csv', sheet: 'Suppliers', pk: 'supplier_id', fks: [],
+            requiredHeaders: ['supplier_id', 'company_name', 'category', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'equipment.csv', sheet: 'Equipment', pk: 'equipment_id', fks: [],
+            requiredHeaders: ['equipment_id', 'equipment_type', 'model', 'created_at', 'is_active', 'tags']
+        },
 
         // Project & Contract Management (FK dependencies)
-        { name: 'projects.csv', sheet: 'Projects', pk: 'project_id',
-          fks: [{col: 'client_id', ref: 'Clients', refCol: 'client_id'}, {col: 'project_manager_id', ref: 'Employees', refCol: 'employee_id'}],
-          requiredHeaders: ['project_id','project_name','client_id','project_manager_id','status','risk_score','health_status','created_at','is_active','tags'] },
-        { name: 'contracts.csv', sheet: 'Contracts', pk: 'contract_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['contract_id','project_id','contract_type','contract_value_aed','status','created_at','is_active','tags'] },
-        { name: 'project_phases.csv', sheet: 'Project_Phases', pk: 'phase_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['phase_id','project_id','phase_name','status','created_at','is_active','tags'] },
-        { name: 'work_packages.csv', sheet: 'Work_Packages', pk: 'package_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['package_id','project_id','item_description','created_at','is_active','tags'] },
+        {
+            name: 'projects.csv', sheet: 'Projects', pk: 'project_id',
+            fks: [{ col: 'client_id', ref: 'Clients', refCol: 'client_id' }, { col: 'project_manager_id', ref: 'Employees', refCol: 'employee_id' }],
+            requiredHeaders: ['project_id', 'project_name', 'client_id', 'project_manager_id', 'status', 'risk_score', 'health_status', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'contracts.csv', sheet: 'Contracts', pk: 'contract_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['contract_id', 'project_id', 'contract_type', 'contract_value_aed', 'status', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'project_phases.csv', sheet: 'Project_Phases', pk: 'phase_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['phase_id', 'project_id', 'phase_name', 'status', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'work_packages.csv', sheet: 'Work_Packages', pk: 'package_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['package_id', 'project_id', 'item_description', 'created_at', 'is_active', 'tags']
+        },
 
         // Compliance & Approvals
-        { name: 'permits_approvals.csv', sheet: 'Permits_Approvals', pk: 'permit_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['permit_id','project_id','permit_type','status','is_expired','created_at','is_active','tags'] },
-        { name: 'inspections.csv', sheet: 'Inspections', pk: 'inspection_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['inspection_id','project_id','inspection_type','result','created_at','is_active','tags'] },
-        { name: 'safety_incidents.csv', sheet: 'Safety_Incidents', pk: 'incident_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['incident_id','project_id','incident_type','severity','created_at','is_active','tags'] },
+        {
+            name: 'permits_approvals.csv', sheet: 'Permits_Approvals', pk: 'permit_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['permit_id', 'project_id', 'permit_type', 'status', 'is_expired', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'inspections.csv', sheet: 'Inspections', pk: 'inspection_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['inspection_id', 'project_id', 'inspection_type', 'result', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'safety_incidents.csv', sheet: 'Safety_Incidents', pk: 'incident_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['incident_id', 'project_id', 'incident_type', 'severity', 'created_at', 'is_active', 'tags']
+        },
 
         // Financial Management
-        { name: 'payment_applications.csv', sheet: 'Payment_Applications', pk: 'ipc_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['ipc_id','project_id','ipc_number','status','remaining_balance','created_at','is_active','tags'] },
-        { name: 'variation_orders.csv', sheet: 'Variation_Orders', pk: 'vo_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['vo_id','project_id','vo_number','status','created_at','is_active','tags'] },
-        { name: 'purchase_orders.csv', sheet: 'Purchase_Orders', pk: 'po_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['po_id','project_id','po_type','status','created_at','is_active','tags'] },
+        {
+            name: 'payment_applications.csv', sheet: 'Payment_Applications', pk: 'ipc_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['ipc_id', 'project_id', 'ipc_number', 'status', 'remaining_balance', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'variation_orders.csv', sheet: 'Variation_Orders', pk: 'vo_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['vo_id', 'project_id', 'vo_number', 'status', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'purchase_orders.csv', sheet: 'Purchase_Orders', pk: 'po_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['po_id', 'project_id', 'po_type', 'status', 'created_at', 'is_active', 'tags']
+        },
 
         // Resource & Documentation
-        { name: 'daily_site_reports.csv', sheet: 'Daily_Site_Reports', pk: 'report_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['report_id','project_id','report_date','created_at','is_active','tags'] },
-        { name: 'project_documents.csv', sheet: 'Project_Documents', pk: 'document_id',
-          fks: [{col: 'project_id', ref: 'Projects', refCol: 'project_id'}],
-          requiredHeaders: ['document_id','project_id','document_type','status','created_at','is_active','tags'] }
+        {
+            name: 'daily_site_reports.csv', sheet: 'Daily_Site_Reports', pk: 'report_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['report_id', 'project_id', 'report_date', 'created_at', 'is_active', 'tags']
+        },
+        {
+            name: 'project_documents.csv', sheet: 'Project_Documents', pk: 'document_id',
+            fks: [{ col: 'project_id', ref: 'Projects', refCol: 'project_id' }],
+            requiredHeaders: ['document_id', 'project_id', 'document_type', 'status', 'created_at', 'is_active', 'tags']
+        }
     ]
 };
 
@@ -108,7 +142,7 @@ function importAllData() {
     // Phase 1: Import all tables with schema validation
     for (var i = 0; i < CONFIG.FILES.length; i++) {
         var file = CONFIG.FILES[i];
-        ss.toast('Importing ' + file.sheet + ' (' + (i+1) + '/' + CONFIG.FILES.length + ')...', '🏗️ Import', -1);
+        ss.toast('Importing ' + file.sheet + ' (' + (i + 1) + '/' + CONFIG.FILES.length + ')...', '🏗️ Import', -1);
 
         try {
             var result = importWithValidation(ss, baseUrl + file.name, file);
@@ -124,8 +158,6 @@ function importAllData() {
                 status: result.status
             });
             Logger.log('✓ ' + file.sheet + ': ' + result.rows + ' rows (' + result.skipped + ' skipped)');
-            SpreadsheetApp.flush();
-            Utilities.sleep(500);
         } catch (e) {
             results.push({ file: file.sheet, rows: 0, status: 'ERROR: ' + e.message, skipped: 0, errors: e.message });
             importLog.push({
@@ -139,6 +171,9 @@ function importAllData() {
             });
             Logger.log('✗ ' + file.sheet + ': ERROR - ' + e.message);
         }
+        // Memory management: flush and pause between tables
+        SpreadsheetApp.flush();
+        Utilities.sleep(2000);
     }
 
     // Phase 2: Post-import FK validation
@@ -151,7 +186,7 @@ function importAllData() {
 
     // Remove temporary sheet if it exists
     var tempSheet = ss.getSheetByName('Temp');
-    if (tempSheet) { try { ss.deleteSheet(tempSheet); } catch(e) {} }
+    if (tempSheet) { try { ss.deleteSheet(tempSheet); } catch (e) { } }
 
     ss.toast('✅ COMPLETE! ' + totalRows + ' rows imported in ' + duration + ' min.', 'Done', 10);
 }
@@ -163,7 +198,12 @@ function importWithValidation(ss, url, fileConfig) {
     var response = fetchWithRetry(url, 5);
     if (!response) throw new Error('Failed to fetch after 5 retries');
 
-    var csvData = Utilities.parseCsv(response.getContentText());
+    var csvText = response.getContentText();
+    response = null; // Release response memory
+
+    var csvData = Utilities.parseCsv(csvText);
+    csvText = null; // Release raw text memory
+
     if (!csvData || csvData.length === 0) throw new Error('Empty CSV data');
 
     var headers = csvData[0];
@@ -177,12 +217,8 @@ function importWithValidation(ss, url, fileConfig) {
         }
     }
     if (missingHeaders.length > 0) {
-        result.schemaValid = false;
-        result.status = 'SCHEMA_MISMATCH: Missing ' + missingHeaders.join(', ');
-        result.errors = result.status;
-        Logger.log('⚠ Schema mismatch for ' + fileConfig.sheet + ': ' + result.status);
-        // Abort this table's import
-        throw new Error(result.status);
+        csvData = null;
+        throw new Error('SCHEMA_MISMATCH: Missing ' + missingHeaders.join(', '));
     }
 
     // Find PK column index for duplicate detection
@@ -190,63 +226,22 @@ function importWithValidation(ss, url, fileConfig) {
 
     var sheet = ss.getSheetByName(fileConfig.sheet);
     if (sheet) {
-        // Upsert mode: check for existing PKs
-        var existingData = sheet.getDataRange().getValues();
-        if (existingData.length > 1) {
-            var existingPkIdx = existingData[0].indexOf(fileConfig.pk);
-            if (existingPkIdx >= 0) {
-                var existingPks = {};
-                for (var r = 1; r < existingData.length; r++) {
-                    existingPks[existingData[r][existingPkIdx]] = r + 1; // 1-indexed row
-                }
-                // Upsert: update existing, append new
-                var newRows = [];
-                for (var d = 1; d < csvData.length; d++) {
-                    var pk = csvData[d][pkIdx];
-                    if (existingPks[pk]) {
-                        // Update existing row
-                        sheet.getRange(existingPks[pk], 1, 1, csvData[d].length).setValues([csvData[d]]);
-                        result.skipped++;
-                    } else {
-                        newRows.push(csvData[d]);
-                    }
-                }
-                if (newRows.length > 0) {
-                    var startRow = sheet.getLastRow() + 1;
-                    sheet.getRange(startRow, 1, newRows.length, newRows[0].length).setValues(newRows);
-                }
-                result.rows = csvData.length - 1;
-                formatSheet(sheet, headers.length, sheet.getLastRow());
-                return result;
-            }
-        }
         sheet.clear();
     } else {
         sheet = ss.insertSheet(fileConfig.sheet);
     }
 
-    // Fresh import: deduplicate by PK
-    var seen = {};
-    var deduped = [csvData[0]]; // Keep header
-    for (var i = 1; i < csvData.length; i++) {
-        var pkVal = csvData[i][pkIdx];
-        if (!seen[pkVal]) {
-            seen[pkVal] = true;
-            deduped.push(csvData[i]);
-        } else {
-            result.skipped++;
-            Logger.log('  Skipped duplicate PK: ' + pkVal);
-        }
+    // Fresh import: write directly (no upsert needed for clean import)
+    var totalRows = csvData.length;
+    var numCols = csvData[0].length;
+
+    if (totalRows <= CONFIG.BATCH_SIZE) {
+        sheet.getRange(1, 1, totalRows, numCols).setValues(csvData);
+    } else {
+        writeInBatches(sheet, csvData, CONFIG.BATCH_SIZE);
     }
 
-    // Write data
-    var totalRows = deduped.length;
-    var numCols = deduped[0].length;
-    if (totalRows <= CONFIG.BATCH_SIZE) {
-        sheet.getRange(1, 1, totalRows, numCols).setValues(deduped);
-    } else {
-        writeInBatches(sheet, deduped, CONFIG.BATCH_SIZE);
-    }
+    csvData = null; // Release parsed CSV memory
 
     result.rows = totalRows - 1; // Exclude header
     formatSheet(sheet, numCols, totalRows);
@@ -342,9 +337,9 @@ function fetchWithRetry(url, maxRetries) {
         try {
             var response = UrlFetchApp.fetch(url, { muteHttpExceptions: true });
             if (response.getResponseCode() === 200) return response;
-            Logger.log('Fetch attempt ' + (i+1) + ' returned ' + response.getResponseCode());
+            Logger.log('Fetch attempt ' + (i + 1) + ' returned ' + response.getResponseCode());
         } catch (e) {
-            Logger.log('Fetch attempt ' + (i+1) + ' failed: ' + e.message);
+            Logger.log('Fetch attempt ' + (i + 1) + ' failed: ' + e.message);
             Utilities.sleep(1000 * Math.pow(2, i));
         }
     }
@@ -391,7 +386,7 @@ function createSummarySheet(ss, results, totalRows, duration, fkResults) {
         ['', '', '', '', ''],
         ['TABLE', 'ROWS', 'SKIPPED', 'STATUS', 'ERRORS']
     ];
-    results.forEach(function(r) {
+    results.forEach(function (r) {
         data.push([r.file, r.rows, r.skipped || 0, r.status, r.errors || '']);
     });
 
@@ -400,7 +395,7 @@ function createSummarySheet(ss, results, totalRows, duration, fkResults) {
         data.push(['', '', '', '', '']);
         data.push(['FOREIGN KEY VALIDATION', '', '', '', '']);
         data.push(['TABLE', 'FK COLUMN', 'REFERENCES', 'ORPHANS', 'STATUS']);
-        fkResults.forEach(function(fk) {
+        fkResults.forEach(function (fk) {
             data.push([fk.table, fk.fk, fk.ref, fk.orphans, fk.status]);
         });
     }
@@ -426,7 +421,7 @@ function createImportLog(ss, importLog) {
 
     var headers = ['Timestamp', 'Table', 'Rows Imported', 'Rows Skipped', 'Schema Valid', 'FK Errors', 'Status'];
     var data = [headers];
-    importLog.forEach(function(entry) {
+    importLog.forEach(function (entry) {
         data.push([
             entry.timestamp, entry.table, entry.rows_imported,
             entry.rows_skipped, entry.schema_valid, entry.fk_errors, entry.status
@@ -456,6 +451,6 @@ function runFKValidation() {
     ss.toast('Running FK validation...', '🔍 Validation', -1);
     var results = validateAllForeignKeys(ss);
     var msg = 'FK Validation Results:\n';
-    results.forEach(function(r) { msg += r.table + '.' + r.fk + ' → ' + r.ref + ': ' + r.status + '\n'; });
+    results.forEach(function (r) { msg += r.table + '.' + r.fk + ' → ' + r.ref + ': ' + r.status + '\n'; });
     SpreadsheetApp.getUi().alert(msg);
 }
